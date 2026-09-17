@@ -1,4 +1,4 @@
-# LeadHunter Pro | Triagem Comercial & Propostas Visuais com IA
+# LeadHunter Brasil | Triagem Comercial & Propostas Visuais com IA
 
 Um web app completo construído com **Next.js 15**, **Supabase**, **Tailwind CSS** e **Vercel**, desenvolvido especificamente para **prospecção ativa**, **triagem de comércios locais no Google Maps** e **geração de propostas visuais de alta conversão** enviadas pelo **WhatsApp em 1 clique**.
 

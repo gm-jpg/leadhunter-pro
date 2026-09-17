@@ -20,7 +20,7 @@ export function Navbar({ onOpenSettings, onOpenContacts, developerName, isGoogle
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-slate-900 tracking-tight text-lg">
-                LeadHunter<span className="text-violet-600">.pro</span>
+                LeadHunter<span className="text-violet-600"> Brasil</span>
               </span>
 
               {isGoogleLiveActive ? (

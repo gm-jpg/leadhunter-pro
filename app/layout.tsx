@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'LeadHunter Pro | Triagem Comercial & Propostas Visuais com IA',
-  description: 'Prospecção inteligente de estabelecimentos comerciais, diagnóstico de presença digital e geração de propostas personalizadas com fechamento via WhatsApp.',
+  title: 'LeadHunter Brasil | Triagem Comercial & Propostas Visuais com IA',
+  description: 'Prospecção inteligente de estabelecimentos comerciais, diagnóstico de presença digital e geração de propostas personalizadas com fechamento via WhatsApp no Brasil.',
 };
 
 export default function RootLayout({
