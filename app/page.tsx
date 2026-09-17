@@ -33,9 +33,9 @@ export default function DashboardPage() {
   >('all');
 
   // Perfil do Desenvolvedor & Chaves de Busca (Salvo no navegador)
-  const [developerName, setDeveloperName] = useState('Desenvolvedor Web & Automação');
-  const [developerPhone, setDeveloperPhone] = useState('5511999999999');
-  const [googleApiKey, setGoogleApiKey] = useState('');
+  const [developerName, setDeveloperName] = useState('José | LeadHunter Brasil');
+  const [developerPhone, setDeveloperPhone] = useState('5521972850211');
+  const [googleApiKey, setGoogleApiKey] = useState('AIzaSyBSWVYMG8hi2iK1M5uViY3dhIwmKYo-MF0');
   const [geminiApiKey, setGeminiApiKey] = useState('');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isContactsModalOpen, setIsContactsModalOpen] = useState(false);
@@ -457,6 +457,7 @@ export default function DashboardPage() {
       {/* Modal de Disparo WhatsApp */}
       <WhatsAppModal
         lead={selectedWhatsAppLead}
+        myPhone={developerPhone}
         onClose={() => setSelectedWhatsAppLead(null)}
         onContactSaved={handleContactSaved}
       />

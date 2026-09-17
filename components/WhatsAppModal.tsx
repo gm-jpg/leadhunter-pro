@@ -11,33 +11,48 @@ import {
   Send,
   AlertCircle,
   Sparkles,
+  Smartphone,
+  FlaskConical,
 } from 'lucide-react';
 import { Lead } from '@/types/lead';
 import { buildWhatsAppLink, parseBrazilianPhone } from '@/lib/phone-utils';
 
 interface Props {
   lead: Lead | null;
+  myPhone?: string;
   onClose: () => void;
   onContactSaved?: (leadId: string, record: any) => void;
 }
 
-export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
+export function WhatsAppModal({ lead, myPhone, onClose, onContactSaved }: Props) {
   if (!lead || !lead.developerPitch) return null;
+
+  const defaultMyPhone =
+    myPhone ||
+    process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP ||
+    '5521972850211';
 
   const [message, setMessage] = useState(lead.developerPitch.whatsappMessage);
   const [copied, setCopied] = useState(false);
-  const [customPhone, setCustomPhone] = useState(lead.phoneRaw || '');
+  const [destinationMode, setDestinationMode] = useState<'client' | 'test'>('client');
+  const [clientPhone, setClientPhone] = useState(lead.phoneRaw || '');
+  const [testPhone, setTestPhone] = useState(defaultMyPhone);
 
   useEffect(() => {
     if (lead?.developerPitch?.whatsappMessage) {
       setMessage(lead.developerPitch.whatsappMessage);
     }
     if (lead?.phoneRaw) {
-      setCustomPhone(lead.phoneRaw);
+      setClientPhone(lead.phoneRaw);
     }
-  }, [lead]);
+    if (myPhone) {
+      setTestPhone(myPhone);
+    }
+  }, [lead, myPhone]);
 
-  const phoneInfo = parseBrazilianPhone(customPhone);
+  const activePhone = destinationMode === 'test' ? testPhone : clientPhone;
+  const phoneInfo = parseBrazilianPhone(activePhone);
+  const myPhoneInfo = parseBrazilianPhone(testPhone);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(message);
@@ -45,15 +60,21 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleOpenWhatsApp = async () => {
-    // Registra imediatamente na base de dados anti-duplicidade
+  // Envio de teste para o WhatsApp do próprio desenvolvedor
+  const handleSendTestToMe = () => {
+    const link = buildWhatsAppLink(testPhone, message);
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
+  // Envio oficial para o cliente (registra na base anti-duplicidade)
+  const handleSendToClient = async () => {
     try {
       const res = await fetch('/api/contacts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          phone: customPhone,
-          whatsapp: customPhone,
+          phone: clientPhone,
+          whatsapp: clientPhone,
           placeId: lead.placeId,
           businessName: lead.name,
           city: lead.city,
@@ -71,7 +92,7 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
       console.warn('Erro ao salvar contato no banco:', e);
     }
 
-    const link = buildWhatsAppLink(customPhone, message);
+    const link = buildWhatsAppLink(clientPhone, message);
     window.open(link, '_blank', 'noopener,noreferrer');
   };
 
@@ -87,7 +108,7 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-extrabold text-slate-900 text-base sm:text-lg">
-                  Disparo WhatsApp em 1 Clique
+                  Disparo WhatsApp & Prévia
                 </h3>
                 <span className="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full border border-emerald-200">
                   Custo Zero
@@ -108,23 +129,67 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
 
         {/* Corpo do Modal com Scroll */}
         <div className="p-6 space-y-5 overflow-y-auto flex-1">
-          {/* Alerta Anti-Duplicidade */}
-          {lead.isContacted && (
-            <div className="p-4 bg-amber-50/90 border border-amber-200 rounded-2xl flex items-start gap-3 shadow-xs">
-              <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-              <div>
-                <h4 className="text-xs font-black text-amber-900">
-                  ⚠️ Atenção Anti-Duplicidade: Comércio já Contatado
+          {/* Seletor de Modo: Enviar para Cliente OU Testar no Próprio Celular */}
+          <div className="p-1.5 bg-slate-100 rounded-2xl flex items-center gap-1.5 border border-slate-200/80">
+            <button
+              type="button"
+              onClick={() => setDestinationMode('client')}
+              className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all ${
+                destinationMode === 'client'
+                  ? 'bg-white text-slate-900 shadow-sm border border-slate-200/60 font-extrabold'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <span>👤 Enviar para o Cliente</span>
+              <span className="text-[10px] text-slate-400">({clientPhone || 'Lead'})</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setDestinationMode('test')}
+              className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all ${
+                destinationMode === 'test'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md font-extrabold'
+                  : 'text-blue-700 hover:text-blue-900 bg-blue-50/60'
+              }`}
+            >
+              <FlaskConical className="w-3.5 h-3.5" />
+              <span>🧪 Enviar pro Meu WhatsApp</span>
+              <span className="text-[10px] opacity-80">(Polir antes)</span>
+            </button>
+          </div>
+
+          {/* Banner Explicativo do Modo de Teste */}
+          {destinationMode === 'test' ? (
+            <div className="p-4 bg-blue-50 border border-blue-200 rounded-2xl flex items-start gap-3 shadow-xs">
+              <Smartphone className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+              <div className="space-y-1">
+                <h4 className="text-xs font-black text-blue-950">
+                  🧪 Modo de Teste Ativo (Seu Celular: +55 {myPhoneInfo.formattedDisplay})
                 </h4>
-                <p className="text-[11px] text-amber-800 mt-0.5 leading-relaxed font-medium">
-                  Este estabelecimento já foi registrado no banco como contatado em{' '}
-                  <span className="font-bold">
-                    {lead.contactedRecord?.formattedDate || 'data anterior'}
-                  </span>
-                  . O envio atual servirá como mensagem de acompanhamento (follow-up).
+                <p className="text-[11px] text-blue-900 leading-relaxed font-medium">
+                  A mensagem e o link serão abertos no <strong>seu próprio WhatsApp</strong>. Você poderá abrir no celular, ver como a mensagem chega, testar o link da proposta e polir os detalhes com calma antes de enviar para o cliente. O lead <strong>não</strong> será marcado como contatado ainda.
                 </p>
               </div>
             </div>
+          ) : (
+            lead.isContacted && (
+              <div className="p-4 bg-amber-50/90 border border-amber-200 rounded-2xl flex items-start gap-3 shadow-xs">
+                <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-xs font-black text-amber-900">
+                    ⚠️ Atenção Anti-Duplicidade: Comércio já Contatado
+                  </h4>
+                  <p className="text-[11px] text-amber-800 mt-0.5 leading-relaxed font-medium">
+                    Este estabelecimento já foi registrado no banco como contatado em{' '}
+                    <span className="font-bold">
+                      {lead.contactedRecord?.formattedDate || 'data anterior'}
+                    </span>
+                    . O envio atual servirá como mensagem de acompanhamento (follow-up).
+                  </p>
+                </div>
+              </div>
+            )
           )}
 
           {/* Posicionamento Estratégico do Desenvolvedor */}
@@ -153,11 +218,11 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
-                WhatsApp de Destino:
+                {destinationMode === 'test' ? 'Seu Número de Teste:' : 'WhatsApp do Comércio:'}
               </label>
               {phoneInfo.isMobile ? (
                 <span className="text-[11px] font-extrabold text-emerald-600 flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-lg border border-emerald-200">
-                  ✓ Celular Válido (+55 {phoneInfo.formattedDisplay})
+                  ✓ Válido (+55 {phoneInfo.formattedDisplay})
                 </span>
               ) : (
                 <span className="text-[11px] font-bold text-amber-700 flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded-lg border border-amber-200">
@@ -167,9 +232,15 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
             </div>
             <input
               type="text"
-              value={customPhone}
-              onChange={(e) => setCustomPhone(e.target.value)}
-              placeholder="Ex: (11) 98765-4321 ou 5511987654321"
+              value={destinationMode === 'test' ? testPhone : clientPhone}
+              onChange={(e) => {
+                if (destinationMode === 'test') {
+                  setTestPhone(e.target.value);
+                } else {
+                  setClientPhone(e.target.value);
+                }
+              }}
+              placeholder="Ex: (21) 97285-0211"
               className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 font-mono text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white shadow-inner"
             />
           </div>
@@ -178,7 +249,7 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
-                Tom da Abordagem:
+                Mensagem que será enviada (edite e personalize à vontade):
               </label>
               <button
                 type="button"
@@ -195,7 +266,7 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
               <button
                 type="button"
                 onClick={() => {
-                  const devName = lead.developerPitch?.developerName || 'Desenvolvedor Parceiro';
+                  const devName = lead.developerPitch?.developerName || 'José | LeadHunter Brasil';
                   const propUrl = `${typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000'}/proposta/${lead.id}`;
                   setMessage(
                     `Olá pessoal da *${lead.name}*, tudo bem com vocês? Espero que a semana esteja ótima por aí! 😊\n\nMeu nome é ${devName}, sou desenvolvedor aqui na região e estava pesquisando os comércios de ${lead.city} no Google. Fiquei muito bem impressionado com os elogios e as avaliações de vocês! 👏\n\nReparei que vocês têm um trabalho super elogiado, mas quem procura pelo celular no Google acaba não encontrando um site com fotos profissionais, catálogo fácil e atendimento direto no WhatsApp.\n\nPensando nisso, preparei com muito carinho uma demonstração visual — bem moderna e sem compromisso algum — de como ficaria um site modelo da *${lead.name}* com fotos elaboradas, catálogo interativo e um atendente no WhatsApp que agiliza as respostas pra equipe de vocês:\n\n👉 ${propUrl}\n\nDá uma olhadinha quando tiver 1 minuto livre! Se curtirem o conceito, a gente bate um papo descontraído pra eu mostrar como funciona. Um abraço e ótimas vendas por aí!`
@@ -250,24 +321,51 @@ export function WhatsAppModal({ lead, onClose, onContactSaved }: Props) {
           </div>
         </div>
 
-        {/* Rodapé com Disparo */}
-        <div className="p-4 sm:p-6 border-t border-slate-100 bg-slate-50/80 flex items-center justify-between gap-3">
+        {/* Rodapé com Disparos (Teste para Mim ou Envio Oficial) */}
+        <div className="p-4 sm:p-6 border-t border-slate-100 bg-slate-50/80 flex flex-col sm:flex-row items-center justify-between gap-3">
           <button
             type="button"
             onClick={onClose}
-            className="px-5 py-3 rounded-2xl border border-slate-200 text-slate-600 hover:bg-slate-200 text-xs font-bold transition-colors"
+            className="w-full sm:w-auto px-5 py-3 rounded-2xl border border-slate-200 text-slate-600 hover:bg-slate-200 text-xs font-bold transition-colors"
           >
             Fechar
           </button>
 
-          <button
-            type="button"
-            onClick={handleOpenWhatsApp}
-            className="flex-1 sm:flex-initial px-8 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white text-sm font-extrabold flex items-center justify-center gap-2 shadow-xl shadow-emerald-200 hover:shadow-emerald-300 transition-all active:scale-[0.98]"
-          >
-            <Send className="w-4 h-4" />
-            <span>Abrir WhatsApp com 1 Clique</span>
-          </button>
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            {/* Botão de Envio de Teste para o Meu WhatsApp */}
+            <button
+              type="button"
+              onClick={handleSendTestToMe}
+              className="flex-1 sm:flex-initial px-5 py-3.5 rounded-2xl bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 transition-all active:scale-[0.98]"
+              title="Abre a mensagem no seu próprio WhatsApp para você conferir antes"
+            >
+              <FlaskConical className="w-4 h-4 text-blue-600" />
+              <span>Testar no Meu WhatsApp</span>
+            </button>
+
+            {/* Botão Oficial para o Cliente */}
+            <button
+              type="button"
+              onClick={destinationMode === 'test' ? handleSendTestToMe : handleSendToClient}
+              className={`flex-1 sm:flex-initial px-6 py-3.5 rounded-2xl text-white text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 shadow-xl transition-all active:scale-[0.98] ${
+                destinationMode === 'test'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-blue-200'
+                  : 'bg-gradient-to-r from-emerald-500 via-emerald-600 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-emerald-200 hover:shadow-emerald-300'
+              }`}
+            >
+              {destinationMode === 'test' ? (
+                <>
+                  <FlaskConical className="w-4 h-4" />
+                  <span>Abrir Teste no Meu Celular</span>
+                </>
+              ) : (
+                <>
+                  <Send className="w-4 h-4" />
+                  <span>Disparar para o Cliente</span>
+                </>
+              )}
+            </button>
+          </div>
         </div>
       </div>
     </div>

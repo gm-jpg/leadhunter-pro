@@ -101,8 +101,8 @@ export default function PublicProposalPage() {
 
   useEffect(() => {
     let foundLead: Lead | null = null;
-    let devName = 'Desenvolvedor Parceiro';
-    let devPhone = '5511999999999';
+    let devName = process.env.NEXT_PUBLIC_DEVELOPER_NAME || 'José | LeadHunter Brasil';
+    let devPhone = process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP || '5521972850211';
 
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('lead_hunter_leads');
@@ -241,8 +241,8 @@ export default function PublicProposalPage() {
   }
 
   const pitch = lead.developerPitch;
-  const devName = pitch?.developerName || 'Desenvolvedor Parceiro';
-  const devWhatsApp = process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP || '5511999999999';
+  const devName = pitch?.developerName || process.env.NEXT_PUBLIC_DEVELOPER_NAME || 'José | LeadHunter Brasil';
+  const devWhatsApp = process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP || '5521972850211';
   const showcase: NicheShowcaseData = getNicheShowcase(lead.category, lead.name, lead.city);
 
   const developerDirectLink = `https://wa.me/${devWhatsApp}?text=${encodeURIComponent(

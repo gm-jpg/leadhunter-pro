@@ -96,7 +96,7 @@ export function SettingsModal({
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Ex: (11) 99999-9999 ou 5511999999999"
+              placeholder="Ex: (21) 97285-0211 ou 5521972850211"
               required
               className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 font-mono text-sm font-bold focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
             />
