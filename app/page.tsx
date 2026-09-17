@@ -207,29 +207,51 @@ export default function DashboardPage() {
     updateAndSaveLeads(updatedList);
   };
 
-  // Filtros de pipeline
-  const filteredLeads = leads.filter((lead) => {
-    if (activeFilter === 'high_opportunity') return lead.opportunityScore >= 70;
-    if (activeFilter === 'ready') return Boolean(lead.developerPitch);
-    if (activeFilter === 'contacted') return lead.status === 'contatado';
-    if (activeFilter === 'already_contacted') return lead.isContacted;
-    if (activeFilter === 'negotiating_closed')
-      return lead.status === 'negociando' || lead.status === 'fechado';
-    return true;
-  });
+  // Filtros de pipeline otimizados com useMemo (Zero overhead de re-renderização)
+  const filteredLeads = React.useMemo(() => {
+    return leads.filter((lead) => {
+      if (activeFilter === 'high_opportunity') return lead.opportunityScore >= 70 || !lead.website;
+      if (activeFilter === 'ready') return Boolean(lead.developerPitch);
+      if (activeFilter === 'contacted') return lead.status === 'contatado';
+      if (activeFilter === 'already_contacted') return lead.isContacted;
+      if (activeFilter === 'negotiating_closed')
+        return lead.status === 'negociando' || lead.status === 'fechado';
+      return true;
+    });
+  }, [leads, activeFilter]);
 
-  const totalLeads = leads.length;
-  const highOppCount = leads.filter((l) => leadIsHighOpportunity(l)).length;
-  const readyProposalsCount = leads.filter((l) => Boolean(l.developerPitch)).length;
-  const contactedCount = leads.filter((l) => l.status === 'contatado' || l.isContacted).length;
-  const closedCount = leads.filter((l) => l.status === 'fechado').length;
+  // Métricas do funil em passagem única O(N)
+  const {
+    totalLeads,
+    highOppCount,
+    readyProposalsCount,
+    contactedCount,
+    closedCount,
+    estimatedRevenue,
+  } = React.useMemo(() => {
+    const total = leads.length;
+    let highOpp = 0;
+    let ready = 0;
+    let contacted = 0;
+    let closed = 0;
 
-  function leadIsHighOpportunity(l: Lead) {
-    return l.opportunityScore >= 70 || !l.website;
-  }
+    for (let i = 0; i < total; i++) {
+      const l = leads[i];
+      if (l.opportunityScore >= 70 || !l.website) highOpp++;
+      if (l.developerPitch) ready++;
+      if (l.status === 'contatado' || l.isContacted) contacted++;
+      if (l.status === 'fechado') closed++;
+    }
 
-  // Estimativa de faturamento acumulado (média R$ 1.200 por contrato fechado)
-  const estimatedRevenue = closedCount * 1200;
+    return {
+      totalLeads: total,
+      highOppCount: highOpp,
+      readyProposalsCount: ready,
+      contactedCount: contacted,
+      closedCount: closed,
+      estimatedRevenue: closed * 1200,
+    };
+  }, [leads]);
 
   return (
     <div className="min-h-screen flex flex-col font-sans">

@@ -398,10 +398,12 @@ export default function PublicProposalPage() {
 
                 {/* HERO SECTION COM FOTO ELABORADA E OVERLAY MODERNO */}
                 <div className="relative min-h-[360px] sm:min-h-[460px] flex items-center justify-center overflow-hidden">
-                  {/* Foto de Fundo em Alta Definição */}
+                  {/* Foto de Fundo em Alta Definição (Otimizada para LCP) */}
                   <img
                     src={showcase.heroImage}
                     alt={lead.name}
+                    fetchPriority="high"
+                    decoding="async"
                     className="absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-transform duration-700 hover:scale-100"
                   />
                   {/* Overlay Gradiente Escuro Suave */}
@@ -479,6 +481,8 @@ export default function PublicProposalPage() {
                           <img
                             src={item.imageUrl}
                             alt={item.title}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>

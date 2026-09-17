@@ -38,6 +38,12 @@ body {
   transform: translateY(-2px);
 }
 
+/* Modern Web Performance: Defer offscreen rendering (Modern Web Guidance) */
+.lead-card-optimized {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 420px;
+}
+
 /* Custom modern scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

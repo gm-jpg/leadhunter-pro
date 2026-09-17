@@ -56,7 +56,7 @@ export function LeadCard({
 
   return (
     <div
-      className={`glass-card rounded-3xl border p-6 flex flex-col justify-between shadow-sm hover:shadow-card-hover transition-all duration-300 relative group ${
+      className={`glass-card lead-card-optimized rounded-3xl border p-6 flex flex-col justify-between shadow-sm hover:shadow-card-hover transition-all duration-300 relative group ${
         lead.opportunityScore >= 70
           ? 'border-violet-200/90 bg-gradient-to-b from-white via-white to-violet-50/30 ring-1 ring-violet-200/50'
           : 'border-slate-200/80 bg-white'
