@@ -12,6 +12,7 @@ import {
   AlertCircle,
   Sparkles,
   Smartphone,
+  Camera,
   FlaskConical,
 } from 'lucide-react';
 import { Lead } from '@/types/lead';
@@ -22,9 +23,10 @@ interface Props {
   myPhone?: string;
   onClose: () => void;
   onContactSaved?: (leadId: string, record: any) => void;
+  onOpenImageModal?: (lead: Lead) => void;
 }
 
-export function WhatsAppModal({ lead, myPhone, onClose, onContactSaved }: Props) {
+export function WhatsAppModal({ lead, myPhone, onClose, onContactSaved, onOpenImageModal }: Props) {
   if (!lead || !lead.developerPitch) return null;
 
   const defaultMyPhone =
@@ -261,33 +263,51 @@ export function WhatsAppModal({ lead, myPhone, onClose, onContactSaved }: Props)
               </button>
             </div>
 
-            {/* Seletor de Tom */}
-            <div className="flex items-center gap-2 mb-2">
+            {/* Seletor de Abordagem */}
+            <div className="flex flex-wrap items-center gap-2 mb-2">
               <button
                 type="button"
                 onClick={() => {
-                  const devName = lead.developerPitch?.developerName || 'José | LeadHunter Brasil';
-                  const propUrl = `${typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000'}/proposta/${lead.id}`;
                   setMessage(
-                    `Olá pessoal da *${lead.name}*, tudo bem com vocês? Espero que a semana esteja ótima por aí! 😊\n\nMeu nome é ${devName}, sou desenvolvedor aqui na região e estava pesquisando os comércios de ${lead.city} no Google. Fiquei muito bem impressionado com os elogios e as avaliações de vocês! 👏\n\nReparei que vocês têm um trabalho super elogiado, mas quem procura pelo celular no Google acaba não encontrando um site com fotos profissionais, catálogo fácil e atendimento direto no WhatsApp.\n\nPensando nisso, preparei com muito carinho uma demonstração visual — bem moderna e sem compromisso algum — de como ficaria um site modelo da *${lead.name}* com fotos elaboradas, catálogo interativo e um atendente no WhatsApp que agiliza as respostas pra equipe de vocês:\n\n👉 ${propUrl}\n\nDá uma olhadinha quando tiver 1 minuto livre! Se curtirem o conceito, a gente bate um papo descontraído pra eu mostrar como funciona. Um abraço e ótimas vendas por aí!`
+                    `Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *${lead.name}* e vejo o quanto vocês são elogiados pelo atendimento e pela dedicação (${lead.rating.toFixed(1)}★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *${lead.name}* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada acima).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui. Um abraço!`
                   );
                 }}
-                className="px-3 py-1 rounded-xl text-xs font-bold bg-violet-100 hover:bg-violet-200 text-violet-800 transition-colors flex items-center gap-1.5"
+                className="px-3 py-1.5 rounded-xl text-xs font-black bg-emerald-100 hover:bg-emerald-200 text-emerald-900 transition-colors flex items-center gap-1.5 border border-emerald-300"
               >
-                <span>✨ Descontraída & Educada (Recomendada)</span>
+                <span>📸 Sem Link + Imagem Anexada (Recomendada)</span>
               </button>
+
+              {onOpenImageModal && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose();
+                    onOpenImageModal(lead);
+                  }}
+                  className="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-900 hover:bg-slate-800 text-emerald-400 border border-emerald-500/40 transition-colors flex items-center gap-1.5"
+                  title="Abrir o gerador de imagem da proposta para copiar em alta resolução"
+                >
+                  <Camera className="w-3.5 h-3.5" />
+                  <span>Gerar/Copiar Imagem PNG</span>
+                </button>
+              )}
 
               <button
                 type="button"
                 onClick={() => {
-                  const propUrl = `${typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000'}/proposta/${lead.id}`;
+                  const baseAppUrl =
+                    process.env.NEXT_PUBLIC_APP_URL ||
+                    (typeof window !== 'undefined' && !window.location.origin.includes('localhost')
+                      ? window.location.origin
+                      : 'https://avatar-chips-appear-par.trycloudflare.com');
+                  const propUrl = `${baseAppUrl}/proposta/${lead.placeId || lead.id}`;
                   setMessage(
-                    `Olá! Tudo bem com vocês? Passando rápido para parabenizar a equipe da *${lead.name}* pela nota no Google! 🌟\n\nNotei que vocês poderiam atrair muito mais clientes locais tendo um site moderno com fotos de alto padrão e pedidos automáticos pelo WhatsApp.\n\nMontei uma prévia visual exclusiva para vocês conferirem sem compromisso:\n👉 ${propUrl}\n\nO que acharam da demonstração? Um abraço!`
+                    `Olá pessoal da *${lead.name}*, tudo bem? Me chamo José, moro aqui em Porto Seguro e minha família também é do comércio local.\n\nParabéns pelo trabalho e pelas avaliações no Google! 🌟 Preparei uma demonstração visual sem compromisso de um site moderno com fotos de alto padrão e pedidos automáticos pelo WhatsApp para a *${lead.name}*:\n\n👉 ${propUrl}\n\nO que acharam da proposta? Um abraço e bons negócios!`
                   );
                 }}
-                className="px-3 py-1 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
+                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
               >
-                <span>⚡ Curta & Objetiva</span>
+                <span>🌐 Com Link Web</span>
               </button>
             </div>
 

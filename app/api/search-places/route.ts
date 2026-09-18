@@ -122,7 +122,11 @@ export async function POST(req: NextRequest) {
               rating,
               userRatingsTotal,
               photosCount,
-              photos: [],
+              photos: (p.photos || [])
+                .map((ph: any) =>
+                  ph.name ? `/api/place-photo?name=${encodeURIComponent(ph.name)}` : ''
+                )
+                .filter(Boolean),
               reviews,
               opportunityScore: Math.min(100, opportunityScore),
               opportunityFactors,
@@ -265,21 +269,21 @@ function generateRichGeographicLeads(
     // Gera comentários autênticos adaptados ao nicho pesquisado
     const qLower = query.toLowerCase();
     let r1Praise = 'Qualidade excepcional e ótimo atendimento em ' + city;
-    let r1Issue = 'Demora para enviar opções e valores no WhatsApp';
+    let r1Issue = 'Demora para enviar opções e cardápio no WhatsApp';
     let r1Text = `O serviço e o produto da ${capQuery} ${item.suffix} são maravilhosos, atendimento nota 10 aqui em ${neighborhood}! O único detalhe é que demoram um pouco para responder no WhatsApp.`;
-    let r2Issue = 'Falta de website próprio ou catálogo com preços visíveis';
-    let r2Text = `Recomendo muito! Mas sinto falta de ter um site próprio com as opções e valores atualizados para a gente não precisar ficar perguntando toda vez.`;
+    let r2Issue = 'Falta de website próprio ou cardápio digital oficial';
+    let r2Text = `Recomendo muito! Mas sinto falta de ter um site próprio com as opções e produtos atualizados para a gente não precisar ficar perguntando toda vez.`;
 
     if (qLower.includes('pousada') || qLower.includes('hotel')) {
       r1Praise = 'Acomodações aconchegantes e café da manhã colonial delicioso';
-      r1Issue = 'Demora no WhatsApp para confirmar diárias e disponibilidade de suítes';
-      r1Text = `A pousada é encantadora, quartos limpíssimos e café da manhã fantástico! Mas quando chamei no WhatsApp à noite demoraram bastante pra passar fotos das suítes e valores das diárias.`;
+      r1Issue = 'Demora no WhatsApp para confirmar disponibilidade de suítes';
+      r1Text = `A pousada é encantadora, quartos limpíssimos e café da manhã fantástico! Mas quando chamei no WhatsApp à noite demoraram bastante pra passar fotos das suítes e informações de reserva.`;
       r2Issue = 'Ausência de site com reserva direta e fotos detalhadas das suítes';
       r2Text = `Adoramos a estadia! Se tivessem um site com fotos reais de cada quarto e botão de reserva direto no WhatsApp facilitaria muito pra quem vem de fora.`;
     } else if (qLower.includes('acougue') || qLower.includes('açougue') || qLower.includes('carne')) {
       r1Praise = 'Cortes nobres de primeira e carnes de maciez impecável';
-      r1Issue = 'Falta de catálogo digital com kits churrasco e preços no WhatsApp';
-      r1Text = `Qualidade da picanha e dos cortes artesanais é sensacional! Só falta facilitarem o pedido pelo WhatsApp com uma tabela de preços ou kits de fim de semana prontos.`;
+      r1Issue = 'Falta de catálogo digital com kits churrasco no WhatsApp';
+      r1Text = `Qualidade da picanha e dos cortes artesanais é sensacional! Só falta facilitarem o pedido pelo WhatsApp com um catálogo organizado ou kits de fim de semana prontos.`;
       r2Issue = 'Dependência apenas do balcão e falta de catálogo online para entrega';
       r2Text = `Carnes excelentes! Se tivessem um site simples com o catálogo de carnes e opção de pedir entrega pelo WhatsApp, venderiam muito mais.`;
     } else if (qLower.includes('padaria') || qLower.includes('confeitaria')) {
@@ -290,8 +294,8 @@ function generateRichGeographicLeads(
       r2Text = `Pães e doces nota 10! Podiam colocar um site com o cardápio e encomendas direto no WhatsApp para agilizar nosso café da manhã.`;
     } else if (qLower.includes('distribuidora') || qLower.includes('bebida')) {
       r1Praise = 'Bebidas trincando de geladas e variedade de marcas';
-      r1Issue = 'WhatsApp congestionado nos fins de semana e demora para passar preços';
-      r1Text = `Preço justo e cerveja estupidamente gelada! No sábado à tarde às vezes demora pra responderem a tabela de bebidas no WhatsApp e quase atrasou nosso churrasco.`;
+      r1Issue = 'WhatsApp congestionado nos fins de semana e demora para enviar catálogo';
+      r1Text = `Atendimento simpático e cerveja estupidamente gelada! No sábado à tarde às vezes demora pra responderem o catálogo de bebidas no WhatsApp e quase atrasou nosso churrasco.`;
       r2Issue = 'Falta de cardápio digital de bebidas para pedido express em 1 clique';
       r2Text = `Salvam o fim de semana! Um site com o catálogo de cervejas, gelo e carvão para pedir direto no WhatsApp seria perfeito.`;
     } else if (qLower.includes('mercado') || qLower.includes('conveniencia') || qLower.includes('conveniência')) {

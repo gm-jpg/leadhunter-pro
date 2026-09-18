@@ -9,6 +9,7 @@ import { ProposalPreviewModal } from '@/components/ProposalPreviewModal';
 import { OpportunityReportModal } from '@/components/OpportunityReportModal';
 import { SettingsModal } from '@/components/SettingsModal';
 import { ContactsDatabaseModal } from '@/components/ContactsDatabaseModal';
+import { ProposalImageModal } from '@/components/ProposalImageModal';
 import { Lead, LeadStatus } from '@/types/lead';
 import {
   Building2,
@@ -44,6 +45,7 @@ export default function DashboardPage() {
   const [selectedWhatsAppLead, setSelectedWhatsAppLead] = useState<Lead | null>(null);
   const [selectedPreviewLead, setSelectedPreviewLead] = useState<Lead | null>(null);
   const [selectedReportLead, setSelectedReportLead] = useState<Lead | null>(null);
+  const [selectedImageLead, setSelectedImageLead] = useState<Lead | null>(null);
 
   // Carregar dados salvos no navegador ao iniciar
   useEffect(() => {
@@ -411,6 +413,7 @@ export default function DashboardPage() {
                 onOpenWhatsAppModal={handleOpenWhatsAppModal}
                 onOpenPreview={(l) => setSelectedPreviewLead(l)}
                 onOpenReport={(l) => setSelectedReportLead(l)}
+                onOpenImageModal={(l) => setSelectedImageLead(l)}
                 onUpdateStatus={handleUpdateStatus}
                 onDeleteLead={handleDeleteLead}
                 isGenerating={generatingLeadId === lead.id}
@@ -454,12 +457,13 @@ export default function DashboardPage() {
         )}
       </main>
 
-      {/* Modal de Disparo WhatsApp */}
+      {/* Modal de Disparo no WhatsApp */}
       <WhatsAppModal
         lead={selectedWhatsAppLead}
         myPhone={developerPhone}
         onClose={() => setSelectedWhatsAppLead(null)}
         onContactSaved={handleContactSaved}
+        onOpenImageModal={(l) => setSelectedImageLead(l)}
       />
 
       {/* Modal da Base Anti-Duplicidade */}
@@ -498,6 +502,13 @@ export default function DashboardPage() {
         lead={selectedReportLead}
         onClose={() => setSelectedReportLead(null)}
         onOpenWhatsApp={handleOpenWhatsAppModal}
+      />
+
+      {/* Modal de Exportação da Imagem da Proposta (Sem Link) */}
+      <ProposalImageModal
+        lead={selectedImageLead}
+        isOpen={Boolean(selectedImageLead)}
+        onClose={() => setSelectedImageLead(null)}
       />
 
       {/* Modal de Perfil Profissional */}

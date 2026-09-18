@@ -25,6 +25,7 @@ interface Props {
   onOpenWhatsAppModal: (lead: Lead) => void;
   onOpenPreview: (lead: Lead) => void;
   onOpenReport: (lead: Lead) => void;
+  onOpenImageModal?: (lead: Lead) => void;
   onUpdateStatus?: (id: string, status: LeadStatus) => void;
   onDeleteLead?: (id: string) => void;
   isGenerating: boolean;
@@ -36,6 +37,7 @@ export function LeadCard({
   onOpenWhatsAppModal,
   onOpenPreview,
   onOpenReport,
+  onOpenImageModal,
   onUpdateStatus,
   onDeleteLead,
   isGenerating,
@@ -231,17 +233,29 @@ export function LeadCard({
               </button>
             </div>
 
+            {onOpenImageModal && (
+              <button
+                type="button"
+                onClick={() => onOpenImageModal(lead)}
+                className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all active:scale-[0.98]"
+                title="Criar Imagem/Print em alta resolução sem link para colar no WhatsApp"
+              >
+                <Camera className="w-4 h-4 text-slate-950" />
+                <span>📸 Gerar Imagem do Conceito (Sem Link)</span>
+              </button>
+            )}
+
             <button
               onClick={() => onOpenWhatsAppModal(lead)}
-              className={`w-full py-3 px-4 rounded-2xl text-xs font-black flex items-center justify-center gap-2 transition-all active:scale-[0.98] ${
+              className={`w-full py-2.5 px-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 transition-all active:scale-[0.98] ${
                 lead.isContacted
-                  ? 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-100'
-                  : 'bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white shadow-lg shadow-emerald-200 hover:shadow-emerald-300'
+                  ? 'bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700'
+                  : 'bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-500/40'
               }`}
             >
-              <MessageCircle className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4 text-emerald-400" />
               <span>
-                {lead.isContacted ? 'Reenviar no WhatsApp (Já Contatado)' : 'Enviar no WhatsApp em 1 Clique'}
+                {lead.isContacted ? 'Reenviar no WhatsApp (Já Contatado)' : 'Enviar Mensagem no WhatsApp'}
               </span>
             </button>
           </div>

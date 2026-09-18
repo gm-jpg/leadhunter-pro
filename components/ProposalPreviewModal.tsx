@@ -15,9 +15,10 @@ interface Props {
   lead: Lead | null;
   onClose: () => void;
   onOpenWhatsApp: (lead: Lead) => void;
+  onOpenImageModal?: (lead: Lead) => void;
 }
 
-export function ProposalPreviewModal({ lead, onClose, onOpenWhatsApp }: Props) {
+export function ProposalPreviewModal({ lead, onClose, onOpenWhatsApp, onOpenImageModal }: Props) {
   if (!lead || !lead.developerPitch) return null;
 
   const pitch = lead.developerPitch;
@@ -76,10 +77,12 @@ export function ProposalPreviewModal({ lead, onClose, onOpenWhatsApp }: Props) {
               {concept.subheadline}
             </p>
 
-            <div className="mt-5 pt-4 border-t border-white/20 flex items-center gap-2 text-xs font-bold text-white">
-              <TrendingUp className="w-4 h-4 text-emerald-300" />
-              <span>{concept.revenueProjection}</span>
-            </div>
+            {concept.revenueProjection && (
+              <div className="mt-5 pt-4 border-t border-white/20 flex items-center gap-2 text-xs font-bold text-white">
+                <TrendingUp className="w-4 h-4 text-emerald-300" />
+                <span>{concept.revenueProjection}</span>
+              </div>
+            )}
           </div>
 
           {/* Serviços Sugeridos & Entregáveis */}

@@ -47,6 +47,30 @@ export interface OpportunityAudit {
   }[];
 }
 
+export interface VisualDNA {
+  vibe: string;
+  vibeLabel: string;
+  vibeDescription: string;
+  typographyStyle: 'serif' | 'sans';
+  theme: {
+    boardBg: string;
+    cardBg: string;
+    innerCardBg: string;
+    primaryAccent: string;
+    secondaryAccent: string;
+    textColor: string;
+    textMuted: string;
+    borderColor: string;
+    accentBadgeBg: string;
+    accentBadgeText: string;
+    buttonBg: string;
+    buttonText: string;
+  };
+  highlightedRealAsset: string;
+  elevationConcept: string;
+  signatureQuote?: string;
+}
+
 export interface VisualConcept {
   headline: string;
   subheadline: string;
@@ -63,7 +87,8 @@ export interface VisualConcept {
     customerQuestion: string;
     botReply: string;
   };
-  revenueProjection: string;
+  revenueProjection?: string;
+  visualDNA?: VisualDNA;
 }
 
 export interface DeveloperPitch {
