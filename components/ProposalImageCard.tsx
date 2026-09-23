@@ -4,15 +4,10 @@ import React from 'react';
 import {
   Sparkles,
   MessageCircle,
-  Globe,
-  Lock,
-  Smartphone,
-  Zap,
-  Check,
-  Eye,
-  Layers,
   MapPin,
   ArrowRight,
+  ShieldCheck,
+  Check,
 } from 'lucide-react';
 import { Lead, VisualDNA } from '@/types/lead';
 
@@ -52,524 +47,84 @@ function resolveSafePhotoUrl(url?: string): string {
 }
 
 /**
- * Traduz as evidências reais do comércio em uma identidade visual autêntica
- * universalmente adaptativa para QUALQUER categoria pesquisada.
+ * Normaliza e resolve a identidade visual (Visual DNA) de forma precisa e autêntica
+ * para qualquer categoria pesquisada, sem falsos positivos de substring.
  */
 export function resolveVisualDNA(lead: Lead): EnrichedVisualDNA {
-  const existing =
-    lead.developerPitch?.visualConcept?.visualDNA ||
-    (lead as any).pitch?.visualConcept?.visualDNA;
-
   const name = lead.name || '';
   const category = lead.category || '';
-  const city = lead.city || 'Porto Seguro';
-  const reviews = lead.reviews || [];
-  const lower = (category + ' ' + name).toLowerCase();
-  const reviewsText = reviews.map((r) => r.text).join(' ').toLowerCase();
+  const fullText = (category + ' ' + name).toLowerCase();
 
-  // 1. Saúde, Odontologia & Clínicas
+  // Função auxiliar para testar palavras inteiras ou expressões
+  const has = (...terms: string[]) =>
+    terms.some((term) => fullText.includes(term.toLowerCase()));
+
+  // 1. DISTRIBUIDORAS DE BEBIDAS, ADEGAS, CONVENIÊNCIA & GELO (Alta Prioridade para evitar conflitos)
   if (
-    lower.includes('odonto') ||
-    lower.includes('dent') ||
-    lower.includes('clinica') ||
-    lower.includes('clínica') ||
-    lower.includes('saude') ||
-    lower.includes('saúde') ||
-    lower.includes('medic') ||
-    lower.includes('médic') ||
-    lower.includes('consultorio') ||
-    lower.includes('consultório') ||
-    lower.includes('fisioterapi') ||
-    lower.includes('psicolog') ||
-    lower.includes('oftalm') ||
-    lower.includes('dermatol')
+    has('bebida', 'adega', 'distribuidora', 'deposito de bebida', 'depósito de bebida', 'conveniencia', 'conveniência', 'cerveja', 'gelo', 'chopp', 'whisky', 'vinhos')
   ) {
     return {
-      vibe: 'clinico_humano',
-      vibeLabel: 'Cuidado Humano & Confiança Médica',
-      vibeDescription: 'Acolhimento humanizado, clareza nos procedimentos e segurança que tranquiliza cada paciente.',
+      vibe: 'bebidas_delivery',
+      vibeLabel: 'Bebidas Geladas & Atendimento Rápido',
+      vibeDescription: 'Bebidas trincando de geladas, combos completos e atendimento ágil sem complicação.',
       typographyStyle: 'sans',
       theme: {
-        boardBg: '#091522',
-        cardBg: '#0E1F33',
-        innerCardBg: '#152C47',
+        boardBg: '#09101A',
+        cardBg: '#0F1A28',
+        innerCardBg: '#162438',
         primaryAccent: '#06B6D4',
         secondaryAccent: '#10B981',
         textColor: '#F0F9FF',
         textMuted: '#94A3B8',
-        borderColor: '#1E3E61',
+        borderColor: '#1E324D',
         accentBadgeBg: 'rgba(6, 182, 212, 0.16)',
         accentBadgeText: '#38BDF8',
-        buttonBg: '#0284C7',
-        buttonText: '#FFFFFF',
+        buttonBg: '#06B6D4',
+        buttonText: '#09101A',
       },
-      highlightedRealAsset: 'Ambiente impecável, profissionais atenciosos e atendimento de ponta.',
-      elevationConcept: 'Apresentação clara dos tratamentos e agendamento instantâneo via WhatsApp.',
-      actionLabel: 'Agendar Consulta',
-      actionSubtext: 'Atendimento direto com a recepção',
-      nicheTag: 'Saúde & Odontologia',
-      interfaceFeature: 'Agendamento Direto & Informações de Especialidades',
-      curiosityHook: 'Apresentação humanizada dos profissionais, dúvidas frequentes dos pacientes e pré-agendamento rápido no WhatsApp.',
+      highlightedRealAsset: 'Variedade de marcas, bebidas estupidamente geladas e entrega pontual.',
+      elevationConcept: 'Catálogo de bebidas no celular com envio direto do pedido no WhatsApp sem intermediários.',
+      actionLabel: 'Pedir pelo WhatsApp',
+      actionSubtext: 'Atendimento direto com o depósito',
+      nicheTag: 'Depósito de Bebidas & Conveniência',
+      interfaceFeature: 'Catálogo de Bebidas Geladas & Pedido no WhatsApp',
+      curiosityHook: 'Catálogo completo com fotos das marcas, opções de combos para churrasco e pedidos automáticos no WhatsApp.',
       fallbackPhotos: [
-        'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1518176258769-f227c798150e?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80',
       ],
     };
   }
 
-  // 2. Academia, Fitness, CrossFit & Lutas
-  if (
-    lower.includes('academia') ||
-    lower.includes('fitness') ||
-    lower.includes('crossfit') ||
-    lower.includes('treino') ||
-    lower.includes('musculação') ||
-    lower.includes('musculacao') ||
-    lower.includes('pilates') ||
-    lower.includes('artes marciais') ||
-    lower.includes('luta') ||
-    lower.includes('boxe')
-  ) {
-    return {
-      vibe: 'energia_performance',
-      vibeLabel: 'Energia, Foco & Resultados Reais',
-      vibeDescription: 'Ambiente motivador, equipamentos de primeira linha e acompanhamento focado nos seus objetivos.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#101418',
-        cardBg: '#181F26',
-        innerCardBg: '#222B35',
-        primaryAccent: '#84CC16',
-        secondaryAccent: '#EAB308',
-        textColor: '#F8FAFC',
-        textMuted: '#94A3B8',
-        borderColor: '#2D3A47',
-        accentBadgeBg: 'rgba(132, 204, 22, 0.16)',
-        accentBadgeText: '#A3E635',
-        buttonBg: '#84CC16',
-        buttonText: '#0F172A',
-      },
-      highlightedRealAsset: 'Equipamentos modernos, instrutores preparados e clima inspirador para treinar.',
-      elevationConcept: 'Grade de aulas interativa no celular e convite para aula experimental sem burocracia.',
-      actionLabel: 'Aula Experimental Grátis',
-      actionSubtext: 'Fale direto com a recepção no WhatsApp',
-      nicheTag: 'Fitness & Saúde Ativa',
-      interfaceFeature: 'Horários de Treinos & Planos no Celular',
-      curiosityHook: 'Tour visual dos espaços de treino, depoimentos de alunos e recepção automatizada no WhatsApp.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 3. Salão de Beleza, Estética, Esmalteria & Spa
-  if (
-    lower.includes('salão') ||
-    lower.includes('salao') ||
-    lower.includes('beleza') ||
-    lower.includes('estética') ||
-    lower.includes('estetica') ||
-    lower.includes('spa') ||
-    lower.includes('unha') ||
-    lower.includes('manicure') ||
-    lower.includes('sobrancelha') ||
-    lower.includes('cabel') ||
-    lower.includes('hair') ||
-    lower.includes('lash')
-  ) {
-    return {
-      vibe: 'beleza_sofisticada',
-      vibeLabel: 'Beleza, Cuidado & Bem-Estar',
-      vibeDescription: 'Técnica refinada, produtos nobres e uma experiência de relaxamento e transformação pessoal.',
-      typographyStyle: 'serif',
-      theme: {
-        boardBg: '#181216',
-        cardBg: '#241B21',
-        innerCardBg: '#32262E',
-        primaryAccent: '#F472B6',
-        secondaryAccent: '#F59E0B',
-        textColor: '#FDF2F8',
-        textMuted: '#D8B4E2',
-        borderColor: '#4A3343',
-        accentBadgeBg: 'rgba(244, 114, 182, 0.18)',
-        accentBadgeText: '#F472B6',
-        buttonBg: '#EC4899',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Espaço requintado, profissionais caprichosas e resultados impecáveis.',
-      elevationConcept: 'Catálogo de serviços fotográficos e agendamento VIP no WhatsApp.',
-      actionLabel: 'Agendar Horário VIP',
-      actionSubtext: 'Confirmação rápida com a equipe',
-      nicheTag: 'Beleza & Bem-Estar',
-      interfaceFeature: 'Menu Visual de Procedimentos & Portfólio',
-      curiosityHook: 'Galeria dos melhores resultados reais, detalhamento dos cuidados e seleção rápida de procedimentos.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 4. Barbearia & Grooming Masculino
-  if (
-    lower.includes('barbearia') ||
-    lower.includes('barber') ||
-    lower.includes('barba') ||
-    lower.includes('corte masculino') ||
-    lower.includes('navalha')
-  ) {
-    return {
-      vibe: 'barber_craft',
-      vibeLabel: 'Estilo Clássico & Cuidado Masculino',
-      vibeDescription: 'Cortes precisos, toalha quente, navalha afiada e a clássica resenha entre amigos.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#131314',
-        cardBg: '#1E1E20',
-        innerCardBg: '#28282C',
-        primaryAccent: '#F59E0B',
-        secondaryAccent: '#D97706',
-        textColor: '#F5F5F5',
-        textMuted: '#A3A3A3',
-        borderColor: '#3D3D42',
-        accentBadgeBg: 'rgba(245, 158, 11, 0.16)',
-        accentBadgeText: '#FBBF24',
-        buttonBg: '#D97706',
-        buttonText: '#131314',
-      },
-      highlightedRealAsset: 'Cortes com acabamento perfeito, ambiente descontraído e cerveja gelada.',
-      elevationConcept: 'Cardápio de serviços, fotos dos barbeiros e reserva de cadeira sem filas.',
-      actionLabel: 'Reservar Cadeira',
-      actionSubtext: 'Escolha seu profissional no WhatsApp',
-      nicheTag: 'Barbearia Clássica',
-      interfaceFeature: 'Reserva Direta de Horário & Estilos de Corte',
-      curiosityHook: 'Apresentação dos cortes mais pedidos, escolha do barbeiro de preferência e confirmação instantânea.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 5. Pet Shop & Clínica Veterinária
-  if (
-    lower.includes('pet') ||
-    lower.includes('veterinár') ||
-    lower.includes('veterinar') ||
-    lower.includes('banho e tosa') ||
-    lower.includes('ração') ||
-    lower.includes('racao') ||
-    lower.includes('animal') ||
-    lower.includes('cão') ||
-    lower.includes('gato')
-  ) {
-    return {
-      vibe: 'cuidado_pet',
-      vibeLabel: 'Carinho & Proteção para seu Pet',
-      vibeDescription: 'Dedicação total à saúde, conforto e felicidade dos membros de quatro patas da família.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#0C1717',
-        cardBg: '#132424',
-        innerCardBg: '#1B3333',
-        primaryAccent: '#14B8A6',
-        secondaryAccent: '#F59E0B',
-        textColor: '#F0FDFA',
-        textMuted: '#99F6E4',
-        borderColor: '#234444',
-        accentBadgeBg: 'rgba(20, 184, 166, 0.18)',
-        accentBadgeText: '#2DD4BF',
-        buttonBg: '#0D9488',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Equipe carinhosa, cuidado exemplar com os animais e ambiente limpo.',
-      elevationConcept: 'Agendamento de banho e tosa e catálogo de rações direto no WhatsApp.',
-      actionLabel: 'Agendar Banho & Tosa',
-      actionSubtext: 'Atendimento rápido e com carinho',
-      nicheTag: 'Cuidado Animal & Pet Shop',
-      interfaceFeature: 'Serviços Pet & Catálogo com Pedido Rápido',
-      curiosityHook: 'Agendamento simplificado de banho e tosa, consulta veterinária e entrega de rações direto no celular.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 6. Oficina Mecânica, Auto Center & Estética Automotiva
-  if (
-    lower.includes('oficina') ||
-    lower.includes('mecânica') ||
-    lower.includes('mecanica') ||
-    lower.includes('auto center') ||
-    lower.includes('pneu') ||
-    lower.includes('funilaria') ||
-    lower.includes('lava rápido') ||
-    lower.includes('estética automotiva') ||
-    lower.includes('detail') ||
-    lower.includes('troca de óleo') ||
-    lower.includes('retífica')
-  ) {
-    return {
-      vibe: 'precisao_automotiva',
-      vibeLabel: 'Engenharia, Precisão & Confiança',
-      vibeDescription: 'Diagnóstico transparente, equipamentos de precisão e cuidado minucioso com o seu veículo.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#0F1318',
-        cardBg: '#161C24',
-        innerCardBg: '#202833',
-        primaryAccent: '#2563EB',
-        secondaryAccent: '#38BDF8',
-        textColor: '#F8FAFC',
-        textMuted: '#94A3B8',
-        borderColor: '#2B3746',
-        accentBadgeBg: 'rgba(37, 99, 235, 0.18)',
-        accentBadgeText: '#60A5FA',
-        buttonBg: '#2563EB',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Serviço honesto, mecânicos experientes e entrega no prazo combinado.',
-      elevationConcept: 'Solicitação de orçamento fotográfico e acompanhamento do serviço no celular.',
-      actionLabel: 'Pedir Orçamento Rápido',
-      actionSubtext: 'Envie fotos do problema no WhatsApp',
-      nicheTag: 'Serviços Automotivos',
-      interfaceFeature: 'Check-in Digital & Tabela de Manutenção Preventiva',
-      curiosityHook: 'Diagnóstico transparente, explicação clara de peças e serviços e canal prioritário para orçamentos.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 7. Imobiliária & Corretores
-  if (
-    lower.includes('imobiliária') ||
-    lower.includes('imobiliaria') ||
-    lower.includes('corretor') ||
-    lower.includes('imóve') ||
-    lower.includes('imove') ||
-    lower.includes('aluguel de imóveis') ||
-    lower.includes('condomínio')
-  ) {
-    return {
-      vibe: 'imobiliaria_premium',
-      vibeLabel: 'Arquitetura & Negócios Exclusivos',
-      vibeDescription: 'Curadoria dos melhores endereços, assessoria jurídica segura e o imóvel certo para viver ou investir.',
-      typographyStyle: 'serif',
-      theme: {
-        boardBg: '#0B131E',
-        cardBg: '#131E2D',
-        innerCardBg: '#1C2B3F',
-        primaryAccent: '#EAB308',
-        secondaryAccent: '#38BDF8',
-        textColor: '#F8FAFC',
-        textMuted: '#94A3B8',
-        borderColor: '#233750',
-        accentBadgeBg: 'rgba(234, 179, 8, 0.16)',
-        accentBadgeText: '#FDE047',
-        buttonBg: '#CA8A04',
-        buttonText: '#0B131E',
-      },
-      highlightedRealAsset: 'Portfólio selecionado, corretores transparentes e negociações seguras.',
-      elevationConcept: 'Apresentação imersiva em fotos panorâmicas e agendamento de visitas no WhatsApp.',
-      actionLabel: 'Ver Imóveis Disponíveis',
-      actionSubtext: 'Fale com um corretor especialista',
-      nicheTag: 'Imóveis & Investimentos',
-      interfaceFeature: 'Filtros Rápidos por Região & Tour Fotográfico',
-      curiosityHook: 'Apresentação refinada das oportunidades de compra e locação, fotos em alta resolução e contato direto do corretor.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 8. Escolas, Cursos, Creches & Educação
-  if (
-    lower.includes('escola') ||
-    lower.includes('colégio') ||
-    lower.includes('colegio') ||
-    lower.includes('curso') ||
-    lower.includes('creche') ||
-    lower.includes('idioma') ||
-    lower.includes('educação') ||
-    lower.includes('educacao') ||
-    lower.includes('berçário')
-  ) {
-    return {
-      vibe: 'educacao_futuro',
-      vibeLabel: 'Aprendizado, Afeto & Futuro',
-      vibeDescription: 'Formação sólida, acolhimento pedagógico e estímulo ao potencial e curiosidade de cada aluno.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#0E1326',
-        cardBg: '#161E38',
-        innerCardBg: '#202B4F',
-        primaryAccent: '#6366F1',
-        secondaryAccent: '#F59E0B',
-        textColor: '#EEF2FF',
-        textMuted: '#A5B4FC',
-        borderColor: '#2A3866',
-        accentBadgeBg: 'rgba(99, 102, 241, 0.18)',
-        accentBadgeText: '#818CF8',
-        buttonBg: '#4F46E5',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Professores dedicados, ambiente seguro e proposta pedagógica que inspira os alunos.',
-      elevationConcept: 'Apresentação da metodologia, fotos do espaço e agendamento de visita escolar no celular.',
-      actionLabel: 'Agendar Visita Pedagógica',
-      actionSubtext: 'Fale com a coordenação no WhatsApp',
-      nicheTag: 'Educação & Aprendizado',
-      interfaceFeature: 'Apresentação da Metodologia & Calendário Escolar',
-      curiosityHook: 'Conheça o espaço por fotos, entenda a proposta pedagógica e tire dúvidas de matrículas em um toque.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 9. Lojas, Boutique, Moda, Calçados & Varejo
-  if (
-    lower.includes('loja') ||
-    lower.includes('boutique') ||
-    lower.includes('roupa') ||
-    lower.includes('moda') ||
-    lower.includes('calçado') ||
-    lower.includes('calcado') ||
-    lower.includes('joalheria') ||
-    lower.includes('ótica') ||
-    lower.includes('otica') ||
-    lower.includes('presentes') ||
-    lower.includes('decoração') ||
-    lower.includes('acessor')
-  ) {
-    return {
-      vibe: 'moda_design',
-      vibeLabel: 'Estilo, Curadoria & Bom Gosto',
-      vibeDescription: 'Peças selecionadas a dedo, atendimento consultivo e coleções que valorizam o seu estilo.',
-      typographyStyle: 'serif',
-      theme: {
-        boardBg: '#151318',
-        cardBg: '#201D24',
-        innerCardBg: '#2D2833',
-        primaryAccent: '#FB7185',
-        secondaryAccent: '#F43F5E',
-        textColor: '#FAF5F8',
-        textMuted: '#D4C4D1',
-        borderColor: '#3D3445',
-        accentBadgeBg: 'rgba(251, 113, 133, 0.18)',
-        accentBadgeText: '#FDA4AF',
-        buttonBg: '#E11D48',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Coleções atualizadas, produtos de qualidade e atendimento próximo e simpático.',
-      elevationConcept: 'Catálogo de novidades no celular e reserva de peças no WhatsApp.',
-      actionLabel: 'Ver Catálogo & Novidades',
-      actionSubtext: 'Consulte tamanhos e reserve peças',
-      nicheTag: 'Moda & Varejo Exclusivo',
-      interfaceFeature: 'Catálogo Visual com Fotos Reais & Encomenda Fácil',
-      curiosityHook: 'Lançamentos da semana, disponibilidade de tamanhos e compra guiada direto no WhatsApp da loja.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 10. Supermercados, Empórios & Hortifruti
-  if (
-    lower.includes('supermercado') ||
-    lower.includes('mercado') ||
-    lower.includes('empório') ||
-    lower.includes('emporio') ||
-    lower.includes('hortifruti') ||
-    lower.includes('mercearia') ||
-    lower.includes('distribuidora') ||
-    lower.includes('açougue') ||
-    lower.includes('acougue')
-  ) {
-    return {
-      vibe: 'frescor_variedade',
-      vibeLabel: 'Frescor, Variedade & Economia',
-      vibeDescription: 'Produtos selecionados diariamente, açougue com cortes nobres e hortifruti fresco para sua casa.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#0A1813',
-        cardBg: '#10241D',
-        innerCardBg: '#173329',
-        primaryAccent: '#10B981',
-        secondaryAccent: '#F59E0B',
-        textColor: '#ECFDF5',
-        textMuted: '#A7F3D0',
-        borderColor: '#1F4738',
-        accentBadgeBg: 'rgba(16, 185, 129, 0.18)',
-        accentBadgeText: '#34D399',
-        buttonBg: '#059669',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Variedade nas prateleiras, hortifruti fresquinho e preços competitivos na região.',
-      elevationConcept: 'Encarte digital de ofertas e canal de pedidos no WhatsApp.',
-      actionLabel: 'Ver Ofertas da Semana',
-      actionSubtext: 'Economize e peça pelo WhatsApp',
-      nicheTag: 'Supermercado & Alimentos',
-      interfaceFeature: 'Encarte de Ofertas Semanal & Pedidos de Feira',
-      curiosityHook: 'Tabloide atualizado em tempo real, avisos de promoções e atendimento prático para listas de compras.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 11. Pizzarias, Cantinas & Trattorias
-  if (
-    lower.includes('pizz') ||
-    lower.includes('cantina') ||
-    lower.includes('italiana') ||
-    lower.includes('trattoria') ||
-    reviewsText.includes('forno') ||
-    reviewsText.includes('massa')
-  ) {
+  // 2. PIZZARIAS, CANTINAS & TRATTORIAS
+  if (has('pizz', 'cantina', 'trattoria', 'massa artesanal', 'forno a lenha')) {
     return {
       vibe: 'rustico',
       vibeLabel: 'Forno a Lenha & Tradição Familiar',
-      vibeDescription: 'Calor do forno a lenha, massas de fermentação artesanal e mesas para reunir a família.',
+      vibeDescription: 'Calor do forno a lenha, massas de fermentação artesanal e sabores autênticos.',
       typographyStyle: 'serif',
       theme: {
-        boardBg: '#16110F',
-        cardBg: '#211A16',
-        innerCardBg: '#2C221D',
+        boardBg: '#140E0C',
+        cardBg: '#1E1613',
+        innerCardBg: '#2A1F1B',
         primaryAccent: '#E05A38',
         secondaryAccent: '#F59E0B',
         textColor: '#FFF7ED',
         textMuted: '#D5C4B5',
-        borderColor: '#423229',
+        borderColor: '#3D2C24',
         accentBadgeBg: 'rgba(224, 90, 56, 0.18)',
         accentBadgeText: '#FB923C',
         buttonBg: '#E05A38',
-        buttonText: '#16110F',
+        buttonText: '#140E0C',
       },
-      highlightedRealAsset: 'Clientes elogiam com entusiasmo a massa leve, o sabor autêntico e o ambiente acolhedor.',
-      elevationConcept: 'Cardápio interativo no celular, fotografia dos pratos valorizada e canal direto de pedidos.',
-      actionLabel: 'Pedir pelo WhatsApp',
-      actionSubtext: 'Cardápio completo sem taxas de aplicativo',
+      highlightedRealAsset: 'Massa leve, forno a lenha tradicional e clientes fiéis.',
+      elevationConcept: 'Cardápio interativo e canal direto de pedidos sem comissões.',
+      actionLabel: 'Ver Cardápio & Pedir',
+      actionSubtext: 'Pedidos diretos sem taxa de app',
       nicheTag: 'Gastronomia & Pizzaria',
-      interfaceFeature: 'Cardápio Digital com Sabores & Fotos Reais',
-      curiosityHook: 'Cardápio com fotos reais dos pratos, escolha de bordas e sabores e envio do pedido formatado no WhatsApp da equipe.',
+      interfaceFeature: 'Cardápio Visual com Sabores & Fotos Reais',
+      curiosityHook: 'Cardápio digital com seleção de bordas, sabores especiais e envio do pedido formatado no WhatsApp.',
       fallbackPhotos: [
         'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
@@ -578,180 +133,34 @@ export function resolveVisualDNA(lead: Lead): EnrichedVisualDNA {
     };
   }
 
-  // 12. Hamburguerias, Bares & Pubs
-  if (
-    lower.includes('hamburg') ||
-    lower.includes('burger') ||
-    lower.includes('pub') ||
-    lower.includes('bar') ||
-    lower.includes('chopp') ||
-    lower.includes('cervejaria') ||
-    lower.includes('petisc') ||
-    lower.includes('espeto')
-  ) {
-    return {
-      vibe: 'urbano_artesanal',
-      vibeLabel: 'Burgers Artesanais & Clima Descontraído',
-      vibeDescription: 'Blend suculento grelhado no ponto certo, cerveja gelada e o ponto de encontro perfeito com os amigos.',
-      typographyStyle: 'sans',
-      theme: {
-        boardBg: '#121214',
-        cardBg: '#1A1A1E',
-        innerCardBg: '#24242A',
-        primaryAccent: '#F97316',
-        secondaryAccent: '#EAB308',
-        textColor: '#FAFAFA',
-        textMuted: '#A1A1AA',
-        borderColor: '#33333C',
-        accentBadgeBg: 'rgba(249, 115, 22, 0.18)',
-        accentBadgeText: '#FB923C',
-        buttonBg: '#EA580C',
-        buttonText: '#FFFFFF',
-      },
-      highlightedRealAsset: 'Hambúrguer suculento, porções generosas e ambiente descontraído.',
-      elevationConcept: 'Cardápio com combos em destaque e pedido direto no WhatsApp da cozinha.',
-      actionLabel: 'Ver Cardápio & Fazer Pedido',
-      actionSubtext: 'Chega quentinho na sua casa',
-      nicheTag: 'Burger & Bebidas',
-      interfaceFeature: 'Monte seu Burger & Combos Especiais',
-      curiosityHook: 'Cardápio interativo onde o cliente monta o lanche e envia o pedido já calculado direto para o balcão.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 13. Restaurantes, Frutos do Mar & Culinária Geral
-  if (
-    lower.includes('restaurante') ||
-    lower.includes('peix') ||
-    lower.includes('frutos do mar') ||
-    lower.includes('baiana') ||
-    lower.includes('moqueca') ||
-    lower.includes('bistrô') ||
-    lower.includes('bistro') ||
-    lower.includes('sushi') ||
-    lower.includes('japones') ||
-    lower.includes('culinária')
-  ) {
-    return {
-      vibe: 'gastronomia_autoral',
-      vibeLabel: 'Alta Gastronomia & Sabor Regional',
-      vibeDescription: 'Pratos preparados com ingredientes nobres, apresentação impecável e uma experiência memorável à mesa.',
-      typographyStyle: 'serif',
-      theme: {
-        boardBg: '#151113',
-        cardBg: '#211A1E',
-        innerCardBg: '#2E232A',
-        primaryAccent: '#F59E0B',
-        secondaryAccent: '#E11D48',
-        textColor: '#FFFBEB',
-        textMuted: '#CBC0B6',
-        borderColor: '#42333B',
-        accentBadgeBg: 'rgba(245, 158, 11, 0.18)',
-        accentBadgeText: '#FBBF24',
-        buttonBg: '#D97706',
-        buttonText: '#151113',
-      },
-      highlightedRealAsset: 'Tempero inigualável, pratos generosos e atendimento de excelência.',
-      elevationConcept: 'Apresentação refinada dos pratos, carta de bebidas e reservas de mesa no WhatsApp.',
-      actionLabel: 'Reservar Mesa / Pedidos',
-      actionSubtext: 'Atendimento direto com o maitre',
-      nicheTag: 'Gastronomia & Restaurante',
-      interfaceFeature: 'Carta Gastronômica & Reserva de Mesas',
-      curiosityHook: 'Apresentação editorial dos pratos principais, sugestões do chef e canal direto para reservas e pedidos.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 14. Cafeterias, Confeitarias & Padarias
-  if (
-    lower.includes('padaria') ||
-    lower.includes('confeitaria') ||
-    lower.includes('café') ||
-    lower.includes('cafe') ||
-    lower.includes('panificadora') ||
-    lower.includes('doceria') ||
-    lower.includes('bolo') ||
-    lower.includes('torta')
-  ) {
-    return {
-      vibe: 'artesanal_acolhedor',
-      vibeLabel: 'Fornadas Frescas & Café Especial',
-      vibeDescription: 'Aroma de pão saindo do forno, doces tradicionais e o ponto de encontro acolhedor da vizinhança.',
-      typographyStyle: 'serif',
-      theme: {
-        boardBg: '#171310',
-        cardBg: '#221C17',
-        innerCardBg: '#2E251E',
-        primaryAccent: '#D97706',
-        secondaryAccent: '#B45309',
-        textColor: '#FEF3C7',
-        textMuted: '#D5C4B5',
-        borderColor: '#42342B',
-        accentBadgeBg: 'rgba(217, 119, 6, 0.18)',
-        accentBadgeText: '#FBBF24',
-        buttonBg: '#D97706',
-        buttonText: '#171310',
-      },
-      highlightedRealAsset: 'Clientela fiel que valoriza os produtos frescos e o atendimento carinhoso de balcão.',
-      elevationConcept: 'Catálogo de encomendas de doces e salgados e aviso de fornadas no WhatsApp.',
-      actionLabel: 'Ver Cardápio de Delícias',
-      actionSubtext: 'Encomendas e pedidos no balcão',
-      nicheTag: 'Café & Confeitaria Artesanal',
-      interfaceFeature: 'Catálogo de Encomendas & Fornadas Quentes',
-      curiosityHook: 'Cardápio fotográfico com bolos, doces e salgados, com agendamento simples de encomendas para festas.',
-      fallbackPhotos: [
-        'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80',
-      ],
-    };
-  }
-
-  // 15. Pousadas, Hotéis, Resorts & Hospedagem
-  if (
-    lower.includes('pousada') ||
-    lower.includes('hotel') ||
-    lower.includes('resort') ||
-    lower.includes('hosped') ||
-    lower.includes('chalé') ||
-    lower.includes('chale') ||
-    lower.includes('hostel') ||
-    lower.includes('temporada')
-  ) {
+  // 3. POUSADAS, HOTÉIS, RESORTS & HOSPEDAGEM
+  if (has('pousada', 'hotel', 'resort', 'hospedagem', 'chale', 'chalé', 'suite', 'suíte')) {
     return {
       vibe: 'solar_praiano',
-      vibeLabel: 'Refúgio Solar, Conforto & Beira-Mar',
-      vibeDescription: 'Brisa leve, natureza e acolhimento inesquecível para quem busca descanso e momentos únicos.',
-      typographyStyle: 'sans',
+      vibeLabel: 'Aconchego, Conforto & Bem-Estar',
+      vibeDescription: 'Acomodações acolhedoras, café da manhã colonial e tranquilidade para relaxar.',
+      typographyStyle: 'serif',
       theme: {
-        boardBg: '#0C1824',
-        cardBg: '#122234',
-        innerCardBg: '#1A3048',
+        boardBg: '#09151F',
+        cardBg: '#0E1F2E',
+        innerCardBg: '#152C3E',
         primaryAccent: '#0284C7',
-        secondaryAccent: '#14B8A6',
-        textColor: '#F0FDF4',
+        secondaryAccent: '#F59E0B',
+        textColor: '#F0F9FF',
         textMuted: '#94A3B8',
-        borderColor: '#1E3C5C',
+        borderColor: '#1C3B53',
         accentBadgeBg: 'rgba(2, 132, 199, 0.18)',
         accentBadgeText: '#38BDF8',
         buttonBg: '#0284C7',
         buttonText: '#FFFFFF',
       },
-      highlightedRealAsset: 'Avaliações destacando o descanso, o carinho da equipe e a localização privilegiada.',
-      elevationConcept: 'Apresentação imersiva das suítes e canal direto de reservas sem cobrança de taxas de terceiros.',
-      actionLabel: 'Reservar Direto Sem Taxas',
-      actionSubtext: 'Melhor tarifa garantida no WhatsApp',
-      nicheTag: 'Hotelaria & Pousadas',
-      interfaceFeature: 'Galeria de Acomodações & Reservas Diretas',
-      curiosityHook: 'Apresentação detalhada de cada suíte, fotos da área de lazer e cotação de diárias direto no WhatsApp.',
+      highlightedRealAsset: 'Acomodações acolhedoras e atendimento elogiado por quem se hospeda.',
+      elevationConcept: 'Apresentação refinada das suítes e canal de reserva direta no WhatsApp.',
+      actionLabel: 'Reservar Suíte no WhatsApp',
+      actionSubtext: 'Melhor tarifa garantida sem taxas',
+      nicheTag: 'Hospedagem & Conforto',
+      interfaceFeature: 'Galeria das Suítes & Reservas Diretas',
+      curiosityHook: 'Tour fotográfico de cada quarto, café da manhã e consulta de disponibilidade em 1 toque.',
       fallbackPhotos: [
         'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
@@ -760,77 +169,324 @@ export function resolveVisualDNA(lead: Lead): EnrichedVisualDNA {
     };
   }
 
-  // 16. Serviços Profissionais, Consultorias & Escritórios
-  if (
-    lower.includes('advoca') ||
-    lower.includes('advogad') ||
-    lower.includes('contabil') ||
-    lower.includes('contador') ||
-    lower.includes('consultor') ||
-    lower.includes('despachante') ||
-    lower.includes('cartório')
-  ) {
+  // 4. RESTAURANTES, HAMBURGUERIAS, BARES & GASTRONOMIA
+  if (has('restaurante', 'hamburg', 'burger', 'bar', 'churrascaria', 'culinaria', 'culinária', 'gastronomia', 'espeto', 'peixe', 'frutos do mar')) {
     return {
-      vibe: 'corporativo_confianca',
-      vibeLabel: 'Assessoria Estratégica & Credibilidade',
-      vibeDescription: 'Rigor técnico, segurança jurídica e soluções sob medida para proteger e acelerar seus projetos.',
-      typographyStyle: 'serif',
+      vibe: 'gastronomia_autoral',
+      vibeLabel: 'Sabor Autêntico & Experiência Marcante',
+      vibeDescription: 'Ingredientes frescos selecionados, preparo artesanal e ambiente acolhedor.',
+      typographyStyle: 'sans',
       theme: {
-        boardBg: '#0D131D',
-        cardBg: '#141D2C',
-        innerCardBg: '#1C293E',
-        primaryAccent: '#3B82F6',
-        secondaryAccent: '#D4AF37',
-        textColor: '#F1F5F9',
-        textMuted: '#94A3B8',
-        borderColor: '#253751',
-        accentBadgeBg: 'rgba(59, 130, 246, 0.18)',
-        accentBadgeText: '#60A5FA',
-        buttonBg: '#2563EB',
+        boardBg: '#121115',
+        cardBg: '#1C1921',
+        innerCardBg: '#27232E',
+        primaryAccent: '#F97316',
+        secondaryAccent: '#FBBF24',
+        textColor: '#FAFAF9',
+        textMuted: '#A8A29E',
+        borderColor: '#393342',
+        accentBadgeBg: 'rgba(249, 115, 22, 0.18)',
+        accentBadgeText: '#FB923C',
+        buttonBg: '#EA580C',
         buttonText: '#FFFFFF',
       },
-      highlightedRealAsset: 'Profissionais experientes, clareza na comunicação e pontualidade nos compromissos.',
-      elevationConcept: 'Posicionamento de autoridade digital e canal direto para triagem de clientes.',
-      actionLabel: 'Falar com Especialista',
-      actionSubtext: 'Atendimento corporativo e seguro',
-      nicheTag: 'Serviços Especializados',
-      interfaceFeature: 'Áreas de Atuação & Agendamento de Reunião',
-      curiosityHook: 'Apresentação da banca e áreas de atuação, cases de sucesso e canal seguro para análise preliminar.',
+      highlightedRealAsset: 'Pratos saborosos, ambiente aconchegante e equipe atenciosa.',
+      elevationConcept: 'Cardápio digital visual com fotos apetitosas e pedidos diretos no WhatsApp.',
+      actionLabel: 'Ver Cardápio & Reservar Mesa',
+      actionSubtext: 'Atendimento direto com a casa',
+      nicheTag: 'Gastronomia & Restaurante',
+      interfaceFeature: 'Cardápio Digital & Reservas de Mesas',
+      curiosityHook: 'Cardápio interativo com fotos reais dos pratos mais elogiados e canal direto de reservas.',
       fallbackPhotos: [
-        'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80',
       ],
     };
   }
 
-  // 17. Default Adaptativo Universal
+  // 5. SAÚDE, ODONTOLOGIA & CLÍNICAS MÉDICAS
+  if (has('odonto', 'dent', 'clinica', 'clínica', 'saude', 'saúde', 'medic', 'médic', 'consultorio', 'consultório', 'fisioterapi', 'psicolog', 'oftalm', 'dermatol')) {
+    return {
+      vibe: 'clinico_humano',
+      vibeLabel: 'Cuidado Humano & Confiança Médica',
+      vibeDescription: 'Acolhimento humanizado, procedimentos de alta precisão e segurança para toda a família.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#08131E',
+        cardBg: '#0D1E2D',
+        innerCardBg: '#142A3D',
+        primaryAccent: '#0EA5E9',
+        secondaryAccent: '#10B981',
+        textColor: '#F0F9FF',
+        textMuted: '#94A3B8',
+        borderColor: '#1C3A54',
+        accentBadgeBg: 'rgba(14, 165, 233, 0.16)',
+        accentBadgeText: '#38BDF8',
+        buttonBg: '#0284C7',
+        buttonText: '#FFFFFF',
+      },
+      highlightedRealAsset: 'Ambiente impecável, profissionais experientes e atendimento acolhedor.',
+      elevationConcept: 'Apresentação clara dos tratamentos e agendamento de consultas via WhatsApp.',
+      actionLabel: 'Agendar Consulta no WhatsApp',
+      actionSubtext: 'Atendimento direto com a recepção',
+      nicheTag: 'Saúde & Odontologia',
+      interfaceFeature: 'Apresentação de Especialidades & Agendamento',
+      curiosityHook: 'Apresentação humanizada dos tratamentos, dúvidas frequentes e canal seguro de agendamento.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 6. OFICINAS MECÂNICAS, AUTO CENTERS & FUNILARIA
+  if (has('oficina', 'mecanic', 'mecânica', 'mecanica', 'auto center', 'autocenter', 'pneu', 'funilaria', 'martelinho', 'troca de oleo', 'troca de óleo')) {
+    return {
+      vibe: 'tecnico_confiavel',
+      vibeLabel: 'Tecnologia Automotiva & Confiança',
+      vibeDescription: 'Diagnóstico transparente, equipe experiente e agilidade com o seu veículo.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#0F1218',
+        cardBg: '#161B24',
+        innerCardBg: '#1E2532',
+        primaryAccent: '#F97316',
+        secondaryAccent: '#38BDF8',
+        textColor: '#F8FAFC',
+        textMuted: '#94A3B8',
+        borderColor: '#2A3446',
+        accentBadgeBg: 'rgba(249, 115, 22, 0.18)',
+        accentBadgeText: '#FB923C',
+        buttonBg: '#F97316',
+        buttonText: '#0F1218',
+      },
+      highlightedRealAsset: 'Honestidade nos orçamentos, peças de procedência e pontualidade na entrega.',
+      elevationConcept: 'Apresentação clara dos serviços prestados e canal de agendamento de revisão pelo WhatsApp.',
+      actionLabel: 'Agendar Revisão no WhatsApp',
+      actionSubtext: 'Orçamento rápido com a equipe',
+      nicheTag: 'Serviços Automotivos & Mecânica',
+      interfaceFeature: 'Tabela de Serviços & Agendamento Rápido',
+      curiosityHook: 'Apresentação dos serviços automotivos, fotos da oficina e solicitação rápida de orçamento.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 7. SALÕES DE BELEZA, ESTÉTICA & BARBEARIAS
+  if (has('salao', 'salão', 'barbearia', 'barber', 'beleza', 'estetica', 'estética', 'manicure', 'unha', 'sobrancelha', 'cabelo', 'corte')) {
+    return {
+      vibe: 'estilo_autocuidado',
+      vibeLabel: 'Estilo, Cuidado & Bem-Estar',
+      vibeDescription: 'Técnica refinada, ambiente aconchegante e valorização do seu estilo pessoal.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#131016',
+        cardBg: '#1C1721',
+        innerCardBg: '#26202D',
+        primaryAccent: '#EC4899',
+        secondaryAccent: '#F59E0B',
+        textColor: '#FAF5FF',
+        textMuted: '#C4B5FD',
+        borderColor: '#382D42',
+        accentBadgeBg: 'rgba(236, 72, 153, 0.18)',
+        accentBadgeText: '#F472B6',
+        buttonBg: '#EC4899',
+        buttonText: '#FFFFFF',
+      },
+      highlightedRealAsset: 'Profissionais dedicadas, ambiente caprichado e resultados impecáveis.',
+      elevationConcept: 'Catálogo de procedimentos e agendamento descomplicado de horários no WhatsApp.',
+      actionLabel: 'Agendar Horário no WhatsApp',
+      actionSubtext: 'Atendimento direto com a equipe',
+      nicheTag: 'Beleza, Cuidado & Estética',
+      interfaceFeature: 'Menu de Procedimentos & Agendamento',
+      curiosityHook: 'Galeria com resultados reais, catálogo de procedimentos e confirmação de horário sem filas.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 8. ACADEMIAS, CROSSFIT, PILATES & FITNESS (Verificação estrita por palavras inteiras)
+  if (
+    has('academia', 'fitness', 'crossfit', 'pilates', 'musculacao', 'musculação', 'centro de treinamento') ||
+    /\b(lutas?|boxe|treino)\b/i.test(fullText)
+  ) {
+    return {
+      vibe: 'energia_performance',
+      vibeLabel: 'Energia, Foco & Resultados Reais',
+      vibeDescription: 'Ambiente motivador, equipamentos de primeira linha e acompanhamento focado nos seus objetivos.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#0D1117',
+        cardBg: '#151C26',
+        innerCardBg: '#1D2736',
+        primaryAccent: '#84CC16',
+        secondaryAccent: '#EAB308',
+        textColor: '#F8FAFC',
+        textMuted: '#94A3B8',
+        borderColor: '#2A374A',
+        accentBadgeBg: 'rgba(132, 204, 22, 0.16)',
+        accentBadgeText: '#A3E635',
+        buttonBg: '#84CC16',
+        buttonText: '#0F172A',
+      },
+      highlightedRealAsset: 'Equipamentos modernos, professores atenciosos e clima inspirador.',
+      elevationConcept: 'Grade de modalidades no celular e canal direto no WhatsApp para agendar visita.',
+      actionLabel: 'Falar com a Recepção no WhatsApp',
+      actionSubtext: 'Conheça nossos planos e horários',
+      nicheTag: 'Fitness & Saúde Ativa',
+      interfaceFeature: 'Modalidades & Grade de Horários no Celular',
+      curiosityHook: 'Apresentação dos espaços de treino, modalidades oferecidas e canal direto com a recepção.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 9. PET SHOPS & CLÍNICAS VETERINÁRIAS
+  if (has('pet', 'veterin', 'banho e tosa', 'tosa', 'racao', 'ração', 'animal')) {
+    return {
+      vibe: 'afetivo_pet',
+      vibeLabel: 'Carinho, Cuidado & Saúde Animal',
+      vibeDescription: 'Acolhimento dedicado, cuidado com bem-estar dos pets e tranquilidade para os tutores.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#0B1418',
+        cardBg: '#121F26',
+        innerCardBg: '#192C36',
+        primaryAccent: '#10B981',
+        secondaryAccent: '#F59E0B',
+        textColor: '#F0FDF4',
+        textMuted: '#94A3B8',
+        borderColor: '#213D4B',
+        accentBadgeBg: 'rgba(16, 185, 129, 0.18)',
+        accentBadgeText: '#34D399',
+        buttonBg: '#10B981',
+        buttonText: '#0B1418',
+      },
+      highlightedRealAsset: 'Higiene rigorosa, paciência com os animais e dedicação da equipe.',
+      elevationConcept: 'Apresentação dos serviços de banho, tosa e cuidados com agendamento ágil no WhatsApp.',
+      actionLabel: 'Agendar Horário do Pet no WhatsApp',
+      actionSubtext: 'Atendimento com carinho e agilidade',
+      nicheTag: 'Pet Shop & Cuidados Animais',
+      interfaceFeature: 'Serviços para Pets & Agendamento de Horários',
+      curiosityHook: 'Galeria dos pets atendidos, tabela de cuidados e confirmação rápida de horários no WhatsApp.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 10. PADARIAS, CONFEITARIAS & CAFÉS
+  if (has('padaria', 'confeitaria', 'café', 'cafe', 'panificadora', 'bolos', 'doceria')) {
+    return {
+      vibe: 'artesanal_acolhedor',
+      vibeLabel: 'Fornadas Frescas & Café Aconchegante',
+      vibeDescription: 'Pão quentinho saindo do forno, doces artesanais e o sabor inconfundível que acolhe.',
+      typographyStyle: 'serif',
+      theme: {
+        boardBg: '#16120E',
+        cardBg: '#211B15',
+        innerCardBg: '#2D241C',
+        primaryAccent: '#D97706',
+        secondaryAccent: '#B45309',
+        textColor: '#FEF3C7',
+        textMuted: '#D4C3B3',
+        borderColor: '#403328',
+        accentBadgeBg: 'rgba(217, 119, 6, 0.18)',
+        accentBadgeText: '#FBBF24',
+        buttonBg: '#D97706',
+        buttonText: '#16120E',
+      },
+      highlightedRealAsset: 'Variedade nas fornadas, produtos frescos todos os dias e atendimento acolhedor.',
+      elevationConcept: 'Catálogo de encomendas de bolos, tortas e salgados com pedidos pelo WhatsApp.',
+      actionLabel: 'Ver Cardápio & Encomendar',
+      actionSubtext: 'Pedidos diretos com a produção',
+      nicheTag: 'Panificação & Confeitaria Artesanal',
+      interfaceFeature: 'Catálogo de Fornadas & Encomendas no WhatsApp',
+      curiosityHook: 'Apresentação das receitas da casa, opções para encomendas de festas e contato facilitado no WhatsApp.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 11. MERCADOS, SUPERMERCADOS, EMPÓRIOS & AÇOUGUES
+  if (has('mercado', 'supermercado', 'empório', 'emporio', 'açougue', 'acougue', 'hortifruti', 'mercearia', 'carne')) {
+    return {
+      vibe: 'frescor_variedade',
+      vibeLabel: 'Frescor, Variedade & Economia',
+      vibeDescription: 'Itens selecionados diariamente, cortes de procedência e variedade para abastecer a sua casa.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#091510',
+        cardBg: '#0F2119',
+        innerCardBg: '#163024',
+        primaryAccent: '#10B981',
+        secondaryAccent: '#F59E0B',
+        textColor: '#ECFDF5',
+        textMuted: '#A7F3D0',
+        borderColor: '#1D4233',
+        accentBadgeBg: 'rgba(16, 185, 129, 0.18)',
+        accentBadgeText: '#34D399',
+        buttonBg: '#059669',
+        buttonText: '#FFFFFF',
+      },
+      highlightedRealAsset: 'Prateleiras bem abastecidas, produtos frescos e bom atendimento no bairro.',
+      elevationConcept: 'Encarte digital de novidades e canal direto para pedidos de entrega no WhatsApp.',
+      actionLabel: 'Ver Produtos & Fazer Pedido',
+      actionSubtext: 'Atendimento direto com a loja',
+      nicheTag: 'Mercado, Carnes & Alimentos',
+      interfaceFeature: 'Produtos em Destaque & Pedidos Express no WhatsApp',
+      curiosityHook: 'Vitrine digital com os principais itens da semana e canal rápido para envio de pedidos no WhatsApp.',
+      fallbackPhotos: [
+        'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=800&q=80',
+      ],
+    };
+  }
+
+  // 12. DEFAULT ADAPTATIVO UNIVERSAL (Para qualquer outro comércio local pesquisado)
   return {
-    vibe: 'artesanal',
+    vibe: 'comercio_confianca',
     vibeLabel: 'Qualidade & Atendimento de Confiança',
-    vibeDescription: 'Comércio que construiu sua história com seriedade e carinho pelos clientes locais.',
+    vibeDescription: `A tradição, o capricho e a seriedade com que a ${name} atende seus clientes.`,
     typographyStyle: 'sans',
     theme: {
-      boardBg: '#0F131A',
-      cardBg: '#171D27',
-      innerCardBg: '#212A38',
-      primaryAccent: '#3B82F6',
-      secondaryAccent: '#6366F1',
+      boardBg: '#0B111A',
+      cardBg: '#111A26',
+      innerCardBg: '#182434',
+      primaryAccent: '#38BDF8',
+      secondaryAccent: '#10B981',
       textColor: '#F8FAFC',
       textMuted: '#94A3B8',
-      borderColor: '#2A3649',
-      accentBadgeBg: 'rgba(59, 130, 246, 0.18)',
-      accentBadgeText: '#60A5FA',
-      buttonBg: '#3B82F6',
+      borderColor: '#223247',
+      accentBadgeBg: 'rgba(56, 189, 248, 0.16)',
+      accentBadgeText: '#7DD3FC',
+      buttonBg: '#0284C7',
       buttonText: '#FFFFFF',
     },
-    highlightedRealAsset: 'Reconhecimento comprovado pelos clientes da cidade.',
-    elevationConcept: 'Presença mobile própria, fotos tratadas e canal direto no WhatsApp.',
+    highlightedRealAsset: 'Atendimento elogiado pelos clientes e compromisso com a qualidade.',
+    elevationConcept: 'Apresentação mobile autêntica com fotos reais e botão direto no WhatsApp da equipe.',
     actionLabel: 'Falar no WhatsApp',
     actionSubtext: 'Atendimento direto com a equipe',
-    nicheTag: lead.category || 'Comércio Local',
-    interfaceFeature: 'Apresentação Completa & Contato Rápido',
-    curiosityHook: 'Estrutura pensada para valorizar sua história, facilitar a localização do comércio e conectar com novos clientes.',
+    nicheTag: category || 'Comércio Local',
+    interfaceFeature: 'Apresentação Institucional & Contato Rápido',
+    curiosityHook: 'Estrutura desenvolvida para valorizar a marca, facilitar a localização do negócio e gerar contatos imediatos.',
     fallbackPhotos: [
       'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
@@ -839,68 +495,50 @@ export function resolveVisualDNA(lead: Lead): EnrichedVisualDNA {
   };
 }
 
+/**
+ * ProposalImageCard: Peça Visual Única, Limpa e sem Divisões Excessivas.
+ * Formato Editorial Imersivo: O dono do comércio bate o olho e reconhece o negócio dele imediatamente.
+ */
 export const ProposalImageCard = React.forwardRef<HTMLDivElement, Props>(
   ({ lead, id = 'proposal-concept-board' }, ref) => {
     const city = lead.city || 'Porto Seguro';
     const dna = resolveVisualDNA(lead);
     const { theme } = dna;
 
-    // Fotografias reais do estabelecimento (com proxy seguro de CORS) ou fotografia editorial contextual de alto padrão
-    const rawHero = lead.photos && lead.photos.length > 0 ? lead.photos[0] : '';
-    const rawSec = lead.photos && lead.photos.length > 1 ? lead.photos[1] : '';
-    const rawTer = lead.photos && lead.photos.length > 2 ? lead.photos[2] : '';
+    // Foto real ou foto editorial contextual autêntica
+    const rawPhoto = lead.photos && lead.photos.length > 0 ? lead.photos[0] : '';
+    const safeHeroPhoto = resolveSafePhotoUrl(rawPhoto) || dna.fallbackPhotos[0];
 
-    const heroImage = resolveSafePhotoUrl(rawHero) || dna.fallbackPhotos[0];
-    const secondaryPhoto = resolveSafePhotoUrl(rawSec) || dna.fallbackPhotos[1];
-    const tertiaryPhoto = resolveSafePhotoUrl(rawTer) || dna.fallbackPhotos[2];
-
-    // Headline autêntica baseada na identidade real
+    // Headline autêntica baseada na categoria
     const headline =
       lead.developerPitch?.visualConcept?.headline ||
-      (lead as any).pitch?.visualConcept?.headline ||
-      (dna.vibe === 'rustico'
+      (dna.vibe === 'bebidas_delivery'
+        ? 'Bebidas trincando de geladas direto no seu endereço.'
+        : dna.vibe === 'rustico'
         ? 'Massa artesanal, forno a lenha e a tradição que reúne famílias.'
         : dna.vibe === 'solar_praiano'
-        ? 'Seu refúgio de tranquilidade, conforto e bem-estar em Porto Seguro.'
+        ? 'Seu refúgio de tranquilidade, conforto e bem-estar.'
         : dna.vibe === 'artesanal_acolhedor'
         ? 'Pão quentinho, receitas artesanais e carinho em cada detalhe.'
         : dna.vibe === 'clinico_humano'
-        ? 'Cuidado humanizado, tecnologia e bem-estar para toda a sua família.'
-        : dna.vibe === 'energia_performance'
-        ? 'Treinos de alta intensidade, equipamentos modernos e resultados reais.'
-        : dna.vibe === 'beleza_sofisticada'
-        ? 'Técnica refinada, produtos nobres e o seu momento de beleza.'
-        : dna.vibe === 'barber_craft'
-        ? 'Cortes precisos, barba alinhada e tradição no atendimento masculino.'
-        : dna.vibe === 'cuidado_pet'
-        ? 'Amor, proteção e o melhor cuidado para seu pet.'
-        : dna.vibe === 'precisao_automotiva'
-        ? 'Diagnóstico transparente, peças de procedência e confiança mecânica.'
-        : dna.vibe === 'imobiliaria_premium'
-        ? 'Os melhores imóveis e assessoria exclusiva para seu novo projeto de vida.'
-        : dna.vibe === 'moda_design'
-        ? 'Coleções exclusivas, peças selecionadas e bom gosto em cada detalhe.'
-        : dna.vibe === 'gastronomia_autoral'
-        ? 'Ingredientes selecionados, sabor autêntico e momentos memoráveis à mesa.'
-        : dna.vibe === 'urbano_artesanal'
-        ? 'Blend artesanal suculento, cerveja gelada e ambiente entre amigos.'
-        : `A experiência autêntica e a tradição de atendimento da ${lead.name}.`);
-
-    // Slug limpo para simulação de domínio próprio
-    const cleanDomain = (lead.name || 'empresa')
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]/g, '')
-      .slice(0, 18);
+        ? 'Cuidado humanizado, tecnologia e bem-estar para você e sua família.'
+        : dna.vibe === 'tecnico_confiavel'
+        ? 'Precisão técnica, transparência e confiança com o seu veículo.'
+        : dna.vibe === 'estilo_autocuidado'
+        ? 'Técnica refinada, produtos nobres e o seu momento de cuidado.'
+        : dna.vibe === 'afetivo_pet'
+        ? 'O carinho e a dedicação que o seu melhor amigo merece.'
+        : dna.vibe === 'frescor_variedade'
+        ? 'Frescor, cortes selecionados e economia para o seu dia a dia.'
+        : `A qualidade e a tradição de atendimento da ${lead.name}.`);
 
     return (
       <div
         ref={ref}
         id={id}
-        className="w-[1000px] p-9 rounded-[36px] shadow-[0_25px_80px_rgba(0,0,0,0.92)] relative overflow-hidden"
+        className="w-[920px] p-8 rounded-[36px] shadow-[0_30px_90px_rgba(0,0,0,0.95)] relative overflow-hidden"
         style={{
-          minHeight: '1240px',
+          minHeight: '1150px',
           backgroundColor: theme.boardBg,
           color: theme.textColor,
           borderColor: theme.borderColor,
@@ -911,26 +549,26 @@ export const ProposalImageCard = React.forwardRef<HTMLDivElement, Props>(
               : 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
         }}
       >
-        {/* Iluminação ambiente orgânica adaptada à paleta da empresa */}
+        {/* Iluminação ambiente suave calibrada com a cor da marca */}
         <div
-          className="absolute -top-32 -right-32 w-[580px] h-[580px] rounded-full blur-[170px] pointer-events-none opacity-25"
+          className="absolute -top-36 -right-36 w-[500px] h-[500px] rounded-full blur-[160px] pointer-events-none opacity-20"
           style={{ backgroundColor: theme.primaryAccent }}
         />
         <div
-          className="absolute -bottom-32 -left-32 w-[580px] h-[580px] rounded-full blur-[170px] pointer-events-none opacity-20"
+          className="absolute -bottom-36 -left-36 w-[500px] h-[500px] rounded-full blur-[160px] pointer-events-none opacity-15"
           style={{ backgroundColor: theme.secondaryAccent }}
         />
 
         {/* ============================================================ */}
-        {/* 1. CABEÇALHO EDITORIAL (Contexto Discreto: 15% do Espaço)    */}
+        {/* 1. CABEÇALHO ELEGANTE & DIRETO                               */}
         {/* ============================================================ */}
         <header
-          className="pb-5 mb-7 relative z-10 flex items-start justify-between border-b"
-          style={{ borderColor: `${theme.borderColor}90` }}
+          className="pb-5 mb-6 relative z-10 flex items-center justify-between border-b"
+          style={{ borderColor: `${theme.borderColor}80` }}
         >
-          <div className="space-y-1.5 max-w-2xl">
+          <div>
             <div
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider mb-2 border"
               style={{
                 backgroundColor: theme.accentBadgeBg,
                 color: theme.accentBadgeText,
@@ -938,489 +576,246 @@ export const ProposalImageCard = React.forwardRef<HTMLDivElement, Props>(
               }}
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Conceito Visual Exclusivo • {dna.vibeLabel}</span>
+              <span>Conceito Visual Exclusivo</span>
             </div>
-
-            <h1 className="text-3xl font-black tracking-tight leading-tight" style={{ color: theme.textColor }}>
-              A nova experiência digital da{' '}
-              <span
-                className="underline underline-offset-4"
-                style={{
-                  color: theme.primaryAccent,
-                  textDecorationColor: `${theme.primaryAccent}50`,
-                }}
-              >
-                {lead.name}
-              </span>
+            <h1 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight" style={{ color: theme.textColor }}>
+              Como a presença digital da{' '}
+              <span style={{ color: theme.primaryAccent }}>{lead.name}</span>{' '}
+              se destaca no celular
             </h1>
-
-            <p className="text-xs leading-relaxed font-medium" style={{ color: theme.textMuted }}>
-              Estudo visual desenhado para destacar a sua excelência no celular e transformar pesquisas locais no Google em contatos diretos no WhatsApp da sua equipe.
-            </p>
           </div>
 
           <div className="text-right shrink-0">
-            <span
-              className="text-xs font-mono font-bold uppercase block tracking-wider"
-              style={{ color: theme.textMuted }}
-            >
-              {city} • Bahia
+            <span className="text-xs font-mono font-bold uppercase block tracking-wider" style={{ color: theme.textMuted }}>
+              {city} • BA
             </span>
             <span
-              className="text-[11px] font-bold px-3 py-1 rounded-xl border inline-flex items-center gap-1.5 mt-1.5 shadow-xs"
+              className="text-[11px] font-extrabold px-3 py-1 rounded-xl border inline-block mt-1 shadow-xs"
               style={{
                 backgroundColor: theme.cardBg,
                 color: theme.primaryAccent,
-                borderColor: `${theme.primaryAccent}45`,
+                borderColor: `${theme.primaryAccent}40`,
               }}
             >
-              <Eye className="w-3.5 h-3.5" />
-              <span>Prévia Sob Medida</span>
+              Demonstração Autoral
             </span>
           </div>
         </header>
 
         {/* ============================================================ */}
-        {/* 2. O GRANDE PROTAGONISTA VISUAL (75-80% do Espaço Total)     */}
-        {/*    Mockup Mobile Expansivo (Esq) + Visão Editorial (Dir)     */}
+        {/* 2. O GRANDE PROTAGONISTA VISUAL (PÁGINA ÚNICA E SEM DIVISÕES) */}
         {/* ============================================================ */}
-        <div className="grid grid-cols-12 gap-7 relative z-10 mb-7 items-start">
-          {/* ---------------------------------------------------------- */}
-          {/* COLUNA ESQUERDA (7 colunas): SMARTPHONE EXPANSIVO          */}
-          {/* ---------------------------------------------------------- */}
-          <div className="col-span-7 space-y-3">
-            <div className="flex items-center justify-between text-xs px-1" style={{ color: theme.textMuted }}>
-              <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-[11px]" style={{ color: theme.primaryAccent }}>
-                <Smartphone className="w-3.5 h-3.5" />
-                <span>O Seu Site em Tela de Celular</span>
-              </div>
-              <span className="text-[11px] font-medium">Design fluido & carregamento instantâneo</span>
+        <div className="relative z-10 mb-6">
+          {/* Mockup do Smartphone Central com o Conceito do Site */}
+          <div
+            className="max-w-[540px] mx-auto rounded-[36px] p-3 shadow-2xl border-2 relative"
+            style={{
+              backgroundColor: '#0A0D14',
+              borderColor: theme.borderColor,
+              boxShadow: `0 25px 70px -15px rgba(0,0,0,0.85), 0 0 35px -5px ${theme.primaryAccent}25`,
+            }}
+          >
+            {/* Dynamic Island */}
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 w-28 h-4 bg-black rounded-full z-30 flex items-center justify-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-[#1A1E29]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/80" />
             </div>
 
-            {/* Chassis do Smartphone */}
+            {/* Tela Interna */}
             <div
-              className="rounded-[40px] p-2.5 shadow-2xl border-2 relative"
+              className="rounded-[28px] overflow-hidden border relative"
               style={{
-                backgroundColor: '#090B10',
-                borderColor: `${theme.borderColor}`,
-                boxShadow: `0 20px 60px -10px rgba(0,0,0,0.8), 0 0 35px -5px ${theme.primaryAccent}20`,
+                backgroundColor: theme.cardBg,
+                borderColor: '#1C2333',
               }}
             >
-              {/* Dynamic Island / Notch Superior */}
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 w-28 h-4 bg-black rounded-full z-30 flex items-center justify-center gap-2">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#1A1D24]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/80" />
+              {/* Status Bar */}
+              <div className="pt-2 px-5 pb-1 flex items-center justify-between text-[10px] font-bold text-slate-400 bg-black/40">
+                <span>09:41</span>
+                <div className="flex items-center gap-1.5 text-[9px] tracking-wider">
+                  <span>5G</span>
+                  <div className="w-4 h-2 rounded-xs border border-slate-400 p-0.5">
+                    <div className="w-full h-full bg-slate-300 rounded-2xs" />
+                  </div>
+                </div>
               </div>
 
-              {/* Tela Interna do Smartphone */}
+              {/* Barra de Navegação do Estabelecimento */}
               <div
-                className="rounded-[32px] overflow-hidden border relative"
+                className="px-4 py-3 border-b flex items-center justify-between"
                 style={{
-                  backgroundColor: theme.cardBg,
-                  borderColor: '#1E2330',
+                  backgroundColor: theme.innerCardBg,
+                  borderColor: `${theme.borderColor}80`,
                 }}
               >
-                {/* Status Bar */}
-                <div className="pt-2 px-5 pb-1 flex items-center justify-between text-[10px] font-bold text-slate-400 bg-black/40">
-                  <span>09:41</span>
-                  <div className="flex items-center gap-1.5 text-[9px] tracking-wider">
-                    <span>5G</span>
-                    <div className="w-4 h-2 rounded-xs border border-slate-400 p-0.5">
-                      <div className="w-full h-full bg-slate-300 rounded-2xs" />
-                    </div>
+                <div className="flex items-center gap-2.5">
+                  <div
+                    className="w-8 h-8 rounded-xl flex items-center justify-center font-black text-sm shadow-xs"
+                    style={{
+                      backgroundColor: theme.primaryAccent,
+                      color: theme.buttonText,
+                    }}
+                  >
+                    {lead.name.charAt(0)}
+                  </div>
+                  <div>
+                    <span className="font-extrabold text-xs block leading-tight truncate max-w-[240px]" style={{ color: theme.textColor }}>
+                      {lead.name}
+                    </span>
+                    <span className="text-[10px] block opacity-80" style={{ color: theme.textMuted }}>
+                      {dna.nicheTag}
+                    </span>
                   </div>
                 </div>
 
-                {/* Barra de Navegação Superior do App/Site */}
                 <div
-                  className="px-4 py-2.5 border-b flex items-center justify-between"
+                  className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold border"
                   style={{
-                    backgroundColor: theme.innerCardBg,
-                    borderColor: `${theme.borderColor}80`,
+                    backgroundColor: `${theme.primaryAccent}15`,
+                    color: theme.primaryAccent,
+                    borderColor: `${theme.primaryAccent}30`,
                   }}
                 >
-                  <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>WhatsApp 1-Clique</span>
+                </div>
+              </div>
+
+              {/* Hero Section do Site no Celular */}
+              <div className="relative h-72 sm:h-80 overflow-hidden flex flex-col justify-end p-5">
+                <img
+                  src={safeHeroPhoto}
+                  alt={lead.name}
+                  crossOrigin="anonymous"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: `linear-gradient(to top, ${theme.cardBg} 0%, ${theme.cardBg}E6 45%, ${theme.cardBg}50 80%, transparent 100%)`,
+                  }}
+                />
+
+                <div className="relative z-10 space-y-2.5">
+                  <div
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide border backdrop-blur-xs"
+                    style={{
+                      backgroundColor: 'rgba(0,0,0,0.7)',
+                      color: theme.primaryAccent,
+                      borderColor: `${theme.primaryAccent}40`,
+                    }}
+                  >
+                    <MapPin className="w-2.5 h-2.5" />
+                    <span>{city} • Atendimento Local</span>
+                  </div>
+
+                  <h2
+                    className="text-xl sm:text-2xl font-black leading-tight tracking-tight drop-shadow-sm"
+                    style={{ color: theme.textColor }}
+                  >
+                    {headline}
+                  </h2>
+
+                  <p className="text-xs line-clamp-2 leading-relaxed font-normal" style={{ color: theme.textMuted }}>
+                    {dna.vibeDescription}
+                  </p>
+
+                  {/* Botão de Conversão Principal */}
+                  <div className="pt-2 flex items-center justify-between">
                     <div
-                      className="w-7 h-7 rounded-lg flex items-center justify-center font-black text-xs shadow-xs"
+                      className="px-5 py-2.5 rounded-xl font-black text-xs flex items-center gap-2 shadow-lg"
                       style={{
-                        backgroundColor: theme.primaryAccent,
+                        backgroundColor: theme.buttonBg,
                         color: theme.buttonText,
                       }}
                     >
-                      {lead.name.charAt(0)}
+                      <MessageCircle className="w-3.5 h-3.5 fill-current" />
+                      <span>{dna.actionLabel}</span>
                     </div>
-                    <div>
-                      <span className="font-extrabold text-xs block leading-tight" style={{ color: theme.textColor }}>
-                        {lead.name}
-                      </span>
-                      <span className="text-[10px] block opacity-70" style={{ color: theme.textMuted }}>
-                        {dna.nicheTag}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div
-                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold border"
-                    style={{
-                      backgroundColor: `${theme.primaryAccent}15`,
-                      color: theme.primaryAccent,
-                      borderColor: `${theme.primaryAccent}30`,
-                    }}
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    <span>WhatsApp Ativo</span>
-                  </div>
-                </div>
-
-                {/* Hero Section do Site no Celular com Foto Real */}
-                <div className="relative h-64 overflow-hidden flex flex-col justify-end p-5">
-                  <img
-                    src={heroImage}
-                    alt={lead.name}
-                    crossOrigin="anonymous"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                  />
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      background: `linear-gradient(to top, ${theme.cardBg} 0%, ${theme.cardBg}CC 55%, transparent 100%)`,
-                    }}
-                  />
-
-                  <div className="relative z-10 space-y-2">
-                    <div
-                      className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide border backdrop-blur-xs"
-                      style={{
-                        backgroundColor: 'rgba(0,0,0,0.65)',
-                        color: theme.primaryAccent,
-                        borderColor: `${theme.primaryAccent}40`,
-                      }}
-                    >
-                      <MapPin className="w-2.5 h-2.5" />
-                      <span>{city} • BA</span>
-                    </div>
-
-                    <h2
-                      className="text-xl font-black leading-tight tracking-tight drop-shadow-sm"
-                      style={{ color: theme.textColor }}
-                    >
-                      {headline}
-                    </h2>
-
-                    <p className="text-[11px] line-clamp-2 leading-relaxed font-normal" style={{ color: theme.textMuted }}>
-                      {dna.vibeDescription}
-                    </p>
-
-                    {/* Botão de Ação Direta Hero no Celular */}
-                    <div
-                      className="pt-1 flex items-center justify-between"
-                    >
-                      <div
-                        className="px-4 py-2 rounded-xl font-black text-xs flex items-center gap-2 shadow-lg"
-                        style={{
-                          backgroundColor: theme.buttonBg,
-                          color: theme.buttonText,
-                        }}
-                      >
-                        <MessageCircle className="w-3.5 h-3.5 fill-current" />
-                        <span>{dna.actionLabel}</span>
-                      </div>
-                      <span className="text-[10px] font-semibold" style={{ color: theme.textMuted }}>
-                        {dna.actionSubtext}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Seção de Fotos e Destaques Reais do Negócio */}
-                <div
-                  className="p-4 border-t space-y-3"
-                  style={{
-                    backgroundColor: theme.innerCardBg,
-                    borderColor: `${theme.borderColor}80`,
-                  }}
-                >
-                  <div className="flex items-center justify-between text-[11px]">
-                    <span className="font-extrabold uppercase tracking-wider" style={{ color: theme.primaryAccent }}>
-                      Destaques & Experiência
-                    </span>
-                    <span className="text-[10px]" style={{ color: theme.textMuted }}>
-                      {lead.name}
+                    <span className="text-[10px] font-semibold" style={{ color: theme.textMuted }}>
+                      {dna.actionSubtext}
                     </span>
                   </div>
-
-                  {/* Grade de 2 Fotos Tratadas com Badges */}
-                  <div className="grid grid-cols-2 gap-2.5">
-                    <div
-                      className="rounded-xl overflow-hidden h-28 border relative group"
-                      style={{ borderColor: theme.borderColor }}
-                    >
-                      <img
-                        src={secondaryPhoto}
-                        alt="Espaço e produtos reais"
-                        crossOrigin="anonymous"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
-                      <div className="absolute bottom-1.5 left-2 right-2">
-                        <span className="text-[9px] font-black uppercase text-amber-300 block tracking-wide">
-                          Ambiente Real
-                        </span>
-                        <span className="text-[10px] font-bold text-white leading-tight block truncate">
-                          Qualidade & Tradição
-                        </span>
-                      </div>
-                    </div>
-
-                    <div
-                      className="rounded-xl overflow-hidden h-28 border relative group"
-                      style={{ borderColor: theme.borderColor }}
-                    >
-                      <img
-                        src={tertiaryPhoto}
-                        alt="Detalhes e atendimento"
-                        crossOrigin="anonymous"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
-                      <div className="absolute bottom-1.5 left-2 right-2">
-                        <span className="text-[9px] font-black uppercase text-cyan-300 block tracking-wide">
-                          Atendimento
-                        </span>
-                        <span className="text-[10px] font-bold text-white leading-tight block truncate">
-                          Experiência do Cliente
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Barra de Acesso Rápido no Rodapé do Celular */}
-                  <div
-                    className="pt-2.5 border-t grid grid-cols-3 gap-1 text-center"
-                    style={{ borderColor: `${theme.borderColor}60` }}
-                  >
-                    <div className="p-1.5 rounded-lg bg-black/25 border border-white/5">
-                      <span className="block text-[9px] font-bold uppercase opacity-70">Estrutura</span>
-                      <span className="text-[10px] font-extrabold block truncate" style={{ color: theme.textColor }}>
-                        Espaço Próprio
-                      </span>
-                    </div>
-                    <div className="p-1.5 rounded-lg bg-black/25 border border-white/5">
-                      <span className="block text-[9px] font-bold uppercase opacity-70">Contato</span>
-                      <span className="text-[10px] font-extrabold block truncate" style={{ color: theme.primaryAccent }}>
-                        WhatsApp 1-Clique
-                      </span>
-                    </div>
-                    <div className="p-1.5 rounded-lg bg-black/25 border border-white/5">
-                      <span className="block text-[9px] font-bold uppercase opacity-70">Localização</span>
-                      <span className="text-[10px] font-extrabold block truncate" style={{ color: theme.textColor }}>
-                        {city}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Home Indicator Bar */}
-                <div className="py-2 flex justify-center bg-black/50">
-                  <div className="w-28 h-1 bg-slate-600 rounded-full" />
                 </div>
               </div>
-            </div>
-          </div>
 
-          {/* ---------------------------------------------------------- */}
-          {/* COLUNA DIREITA (5 colunas): DETALHE EDITORIAL & TEASER     */}
-          {/* ---------------------------------------------------------- */}
-          <div className="col-span-5 space-y-4">
-            {/* Bloco 1: Visão Widescreen / Navegador Desktop */}
-            <div
-              className="rounded-2xl p-4 border space-y-3 shadow-lg"
-              style={{
-                backgroundColor: theme.cardBg,
-                borderColor: theme.borderColor,
-              }}
-            >
-              <div className="flex items-center justify-between">
-                <span
-                  className="text-[11px] uppercase tracking-widest font-extrabold flex items-center gap-1.5"
-                  style={{ color: theme.primaryAccent }}
-                >
-                  <Globe className="w-3.5 h-3.5" />
-                  Experiência Multiplataforma
-                </span>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-white/5 border border-white/10" style={{ color: theme.textMuted }}>
-                  Desktop & Celular
-                </span>
-              </div>
-
-              {/* Simulação de Navegador Web */}
+              {/* Destaques Rápidos da Operação */}
               <div
-                className="rounded-xl overflow-hidden border"
+                className="p-4 border-t grid grid-cols-3 gap-2 text-center"
                 style={{
                   backgroundColor: theme.innerCardBg,
-                  borderColor: theme.borderColor,
+                  borderColor: `${theme.borderColor}80`,
                 }}
               >
-                {/* Barra do Navegador com Dots */}
-                <div className="px-3 py-1.5 border-b flex items-center justify-between text-[10px] bg-black/30" style={{ borderColor: `${theme.borderColor}70` }}>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80 inline-block" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
-                  </div>
-                  <div className="flex items-center gap-1 px-3 py-0.5 rounded-md bg-black/50 border border-white/10 font-mono text-[9px] text-slate-300">
-                    <Lock className="w-2.5 h-2.5 text-emerald-400" />
-                    <span>{cleanDomain}.com.br</span>
-                  </div>
-                  <div className="w-8" />
-                </div>
-
-                {/* Banner Panorâmico Widescreen */}
-                <div className="h-28 relative overflow-hidden">
-                  <img
-                    src={tertiaryPhoto}
-                    alt="Visão ampla do comércio"
-                    crossOrigin="anonymous"
-                    className="w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-                  <div className="absolute inset-0 p-3 flex flex-col justify-end">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
-                      ⚡ Carregamento Ultrarrápido
-                    </span>
-                    <span className="text-xs font-black text-white leading-tight">
-                      Apresentação profissional que converte visitantes em clientes
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-2 text-[11px] pt-1">
-                <div className="flex items-center gap-1.5 p-2 rounded-lg bg-black/20 border border-white/5">
-                  <Zap className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                  <span className="font-semibold text-[10px]" style={{ color: theme.textColor }}>
-                    Abertura Instantânea
+                <div className="p-2 rounded-xl bg-black/25 border border-white/5">
+                  <span className="block text-[9px] font-bold uppercase opacity-70">Estrutura</span>
+                  <span className="text-[11px] font-extrabold block truncate" style={{ color: theme.textColor }}>
+                    Espaço Próprio
                   </span>
                 </div>
-                <div className="flex items-center gap-1.5 p-2 rounded-lg bg-black/20 border border-white/5">
-                  <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                  <span className="font-semibold text-[10px]" style={{ color: theme.textColor }}>
-                    Sem Taxas ou Comissões
+                <div className="p-2 rounded-xl bg-black/25 border border-white/5">
+                  <span className="block text-[9px] font-bold uppercase opacity-70">Atendimento</span>
+                  <span className="text-[11px] font-extrabold block truncate" style={{ color: theme.primaryAccent }}>
+                    Direto no Zap
                   </span>
                 </div>
-              </div>
-            </div>
-
-            {/* Bloco 2: O Visual DNA Autêntico da Marca */}
-            <div
-              className="rounded-2xl p-4 border space-y-3 shadow-lg"
-              style={{
-                backgroundColor: theme.cardBg,
-                borderColor: theme.borderColor,
-              }}
-            >
-              <span
-                className="text-[11px] uppercase tracking-widest font-extrabold flex items-center gap-1.5"
-                style={{ color: theme.secondaryAccent }}
-              >
-                <Layers className="w-3.5 h-3.5" />
-                Identidade Visual Harmônica
-              </span>
-
-              <div className="flex items-center gap-3 p-3 rounded-xl border bg-black/20" style={{ borderColor: theme.borderColor }}>
-                {/* Color Swatches */}
-                <div className="flex items-center gap-1.5 shrink-0">
-                  <div
-                    className="w-6 h-6 rounded-full border border-white/20 shadow-xs"
-                    style={{ backgroundColor: theme.primaryAccent }}
-                    title="Cor Primária"
-                  />
-                  <div
-                    className="w-6 h-6 rounded-full border border-white/20 shadow-xs"
-                    style={{ backgroundColor: theme.secondaryAccent }}
-                    title="Cor Secundária"
-                  />
-                  <div
-                    className="w-6 h-6 rounded-full border border-white/20 shadow-xs"
-                    style={{ backgroundColor: theme.cardBg }}
-                    title="Fundo Harmônico"
-                  />
-                </div>
-
-                <div className="text-xs">
-                  <span className="font-bold block" style={{ color: theme.textColor }}>
-                    {dna.vibeLabel}
-                  </span>
-                  <span className="text-[10px]" style={{ color: theme.textMuted }}>
-                    {dna.typographyStyle === 'serif' ? 'Tipografia Editorial Elegante' : 'Tipografia Moderna Sans-Serif'}
+                <div className="p-2 rounded-xl bg-black/25 border border-white/5">
+                  <span className="block text-[9px] font-bold uppercase opacity-70">Localização</span>
+                  <span className="text-[11px] font-extrabold block truncate" style={{ color: theme.textColor }}>
+                    {city}
                   </span>
                 </div>
               </div>
 
-              <p className="text-[11px] leading-relaxed" style={{ color: theme.textMuted }}>
-                Cada cor e elemento foram calibrados a partir das características autênticas da {lead.name} para transmitir autoridade e confiança.
-              </p>
-            </div>
-
-            {/* Bloco 3: O TEASER DE CURIOSIDADE & DESEJO ("O que mais preparamos?") */}
-            <div
-              className="rounded-2xl p-4 border space-y-2.5 relative overflow-hidden shadow-xl"
-              style={{
-                backgroundColor: theme.innerCardBg,
-                borderColor: `${theme.primaryAccent}45`,
-              }}
-            >
-              <div
-                className="absolute -right-8 -bottom-8 w-28 h-28 rounded-full blur-2xl pointer-events-none opacity-25"
-                style={{ backgroundColor: theme.primaryAccent }}
-              />
-
-              <div className="flex items-center gap-2">
-                <div
-                  className="w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs"
-                  style={{
-                    backgroundColor: `${theme.primaryAccent}25`,
-                    color: theme.primaryAccent,
-                  }}
-                >
-                  <Sparkles className="w-4 h-4" />
-                </div>
-                <div>
-                  <h3 className="text-xs font-black uppercase tracking-wider" style={{ color: theme.textColor }}>
-                    O que mais preparamos para vocês?
-                  </h3>
-                  <span className="text-[10px] font-semibold" style={{ color: theme.primaryAccent }}>
-                    Esta imagem é apenas a primeira demonstração
-                  </span>
-                </div>
-              </div>
-
-              <p className="text-[11px] leading-relaxed" style={{ color: theme.textColor }}>
-                {dna.curiosityHook}
-              </p>
-
-              <div
-                className="pt-2 border-t flex items-center justify-between text-[10px] font-bold"
-                style={{ borderColor: `${theme.borderColor}90` }}
-              >
-                <span style={{ color: theme.textMuted }}>
-                  Estrutura 100% pronta para ativar
-                </span>
-                <span className="flex items-center gap-1 font-extrabold" style={{ color: theme.primaryAccent }}>
-                  <span>Converse com o José</span>
-                  <ArrowRight className="w-3 h-3" />
-                </span>
+              {/* Home Indicator */}
+              <div className="py-2 flex justify-center bg-black/50">
+                <div className="w-24 h-1 bg-slate-600 rounded-full" />
               </div>
             </div>
           </div>
         </div>
 
         {/* ============================================================ */}
-        {/* 3. RODAPÉ DE HUMANIZAÇÃO DISCRETA (10% do Espaço)            */}
+        {/* 3. TEASER DE CURIOSIDADE & IDENTIDADE (BLOCO LIMPO E ÚNICO)   */}
+        {/* ============================================================ */}
+        <div
+          className="rounded-2xl p-5 border relative overflow-hidden mb-5 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+          style={{
+            backgroundColor: theme.cardBg,
+            borderColor: `${theme.primaryAccent}35`,
+          }}
+        >
+          <div className="space-y-1 max-w-xl">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4" style={{ color: theme.primaryAccent }} />
+              <span className="text-xs font-black uppercase tracking-wider" style={{ color: theme.textColor }}>
+                Esta imagem é apenas a primeira demonstração visual
+              </span>
+            </div>
+            <p className="text-xs leading-relaxed" style={{ color: theme.textMuted }}>
+              {dna.curiosityHook}
+            </p>
+          </div>
+
+          <div
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs shrink-0 border"
+            style={{
+              backgroundColor: theme.innerCardBg,
+              color: theme.primaryAccent,
+              borderColor: `${theme.primaryAccent}40`,
+            }}
+          >
+            <span>Converse com o José</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </div>
+        </div>
+
+        {/* ============================================================ */}
+        {/* 4. RODAPÉ DE HUMANIZAÇÃO DISCRETA                             */}
         {/* ============================================================ */}
         <footer
           className="pt-4 flex items-center justify-between relative z-10 border-t"
-          style={{ borderColor: `${theme.borderColor}80` }}
+          style={{ borderColor: `${theme.borderColor}70` }}
         >
           <div className="flex items-center gap-3">
             <div
@@ -1439,19 +834,15 @@ export const ProposalImageCard = React.forwardRef<HTMLDivElement, Props>(
                 </span>
                 <span style={{ color: theme.textMuted }}>•</span>
                 <span style={{ color: theme.textMuted }}>Porto Seguro, BA</span>
-                <span style={{ color: theme.textMuted }}>•</span>
-                <span className="font-semibold text-[11px]" style={{ color: theme.primaryAccent }}>
-                  Estudo Autoral Exclusivo
-                </span>
               </div>
               <p className="text-[10px]" style={{ color: theme.textMuted }}>
-                Demonstração visual criada com respeito à trajetória da {lead.name} • Sem qualquer custo ou compromisso.
+                Demonstração criada com respeito à trajetória da {lead.name} • Sem qualquer custo ou compromisso.
               </p>
             </div>
           </div>
 
           <div
-            className="flex items-center gap-2 px-4 py-2 rounded-xl font-bold text-xs shrink-0 border shadow-xs"
+            className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl font-bold text-xs shrink-0 border shadow-xs"
             style={{
               backgroundColor: theme.cardBg,
               color: theme.primaryAccent,
@@ -1459,7 +850,7 @@ export const ProposalImageCard = React.forwardRef<HTMLDivElement, Props>(
             }}
           >
             <MessageCircle className="w-3.5 h-3.5" />
-            <span>WhatsApp Direto: (21) 97285-0211</span>
+            <span>WhatsApp: (21) 97285-0211</span>
           </div>
         </footer>
       </div>

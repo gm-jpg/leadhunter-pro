@@ -14,7 +14,14 @@ export function UtilityShowcase({ lead, developerDirectLink }: Props) {
   const [selectedCategory, setSelectedCategory] = useState('Bebidas Geladas');
   const [customNotes, setCustomNotes] = useState('');
 
-  const isDistributor = lead.category.toLowerCase().includes('distribuidora') || lead.category.toLowerCase().includes('bebida');
+  const catAndName = `${lead.category || ''} ${lead.name || ''}`.toLowerCase();
+  const isDistributor =
+    catAndName.includes('distribuidora') ||
+    catAndName.includes('bebida') ||
+    catAndName.includes('adega') ||
+    catAndName.includes('deposito') ||
+    catAndName.includes('depósito') ||
+    catAndName.includes('cerveja');
 
   const categories = isDistributor
     ? [
@@ -150,8 +157,10 @@ export function UtilityShowcase({ lead, developerDirectLink }: Props) {
             <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 shadow-2xl">
               <img
                 src={
-                  isDistributor
-                    ? 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=800&q=80'
+                  (lead.photos && lead.photos.length > 0 && lead.photos[0])
+                    ? lead.photos[0]
+                    : isDistributor
+                    ? 'https://images.unsplash.com/photo-1518176258769-f227c798150e?auto=format&fit=crop&w=800&q=80'
                     : 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80'
                 }
                 alt={lead.name}

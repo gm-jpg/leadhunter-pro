@@ -411,6 +411,108 @@ function resolveUniversalNicheConfig(
   const lowerCat = (category + ' ' + name).toLowerCase();
   const reviewsText = reviews.map((r) => r.text).join(' ').toLowerCase();
 
+  // 0. Distribuidoras de Bebidas, Adegas, Depósitos de Bebidas & Conveniências
+  if (
+    lowerCat.includes('bebida') ||
+    lowerCat.includes('adega') ||
+    lowerCat.includes('distribuidora') ||
+    lowerCat.includes('depósito de bebida') ||
+    lowerCat.includes('deposito de bebida') ||
+    lowerCat.includes('cerveja') ||
+    lowerCat.includes('chopp') ||
+    lowerCat.includes('gelo') ||
+    lowerCat.includes('conveniência') ||
+    lowerCat.includes('conveniencia')
+  ) {
+    return {
+      vibe: 'bebidas_delivery',
+      vibeLabel: 'Bebidas Geladas & Atendimento Rápido',
+      vibeDescription: 'Bebidas trincando de geladas, combos completos para churrasco e entrega rápida.',
+      typographyStyle: 'sans',
+      theme: {
+        boardBg: '#09101A',
+        cardBg: '#0F1A28',
+        innerCardBg: '#162438',
+        primaryAccent: '#06B6D4',
+        secondaryAccent: '#10B981',
+        textColor: '#F0F9FF',
+        textMuted: '#94A3B8',
+        borderColor: '#1E324D',
+        accentBadgeBg: 'rgba(6, 182, 212, 0.16)',
+        accentBadgeText: '#38BDF8',
+        buttonBg: '#06B6D4',
+        buttonText: '#09101A',
+      },
+      headline: `Bebidas trincando de geladas direto no seu endereço.`,
+      subheadline: `Catálogo visual de cervejas, destilados, gelo e carvão com pedidos diretos pelo WhatsApp em ${city}.`,
+      highlightedRealAsset: `Clientes elogiam a temperatura das bebidas, a rapidez na entrega e o preço justo de balcão.`,
+      elevationConcept: `Catálogo de produtos no celular e canal direto no WhatsApp para pedidos sem taxas de aplicativo.`,
+      actionLabel: 'Pedir Bebidas Geladas no WhatsApp',
+      keyBenefits: [
+        'Catálogo visual com marcas de cervejas, energéticos, vinhos e destilados',
+        'Pedidos ágeis direto no WhatsApp sem pagar comissões de aplicativos',
+        'Opções de combos com gelo e carvão para agilizar o churrasco e festas',
+        'Entrega expressa e atendimento humanizado para clientes de ' + city,
+      ],
+      features: [
+        {
+          title: 'Catálogo de Bebidas Geladas',
+          description: 'Apresentação clara das marcas, tamanhos de fardos e preços de balcão.',
+          icon: 'Beer',
+        },
+        {
+          title: 'Pedido com 1 Toque no WhatsApp',
+          description: 'O cliente escolhe as bebidas e envia a lista formatada direto para o WhatsApp.',
+          icon: 'MessageSquare',
+        },
+        {
+          title: 'Combos para Churrasco & Festas',
+          description: 'Gelo em escama/cubo, carvão, copos e descartáveis entregues juntos.',
+          icon: 'Sparkles',
+        },
+      ],
+      chatbotSample: {
+        customerQuestion: `Olá! Vocês entregam cerveja gelada e saco de gelo agora?`,
+        botReply: `Olá! Entregamos sim! 🍻 Nossas bebidas saem trincando de geladas aqui da ${name}. Qual o seu endereço e o que gostaria de pedir?`,
+      },
+      suggestedServices: [
+        {
+          title: 'Página Mobile & Catálogo de Bebidas',
+          description: 'Vitrine digital rápida para quem pesquisa depósito de bebidas no Google Maps.',
+          deliverable: 'Página One-Page com catálogo e botão de pedido no WhatsApp.',
+        },
+        {
+          title: 'Curadoria Visual das Marcas & Produtos',
+          description: 'Fotos profissionais de garrafas, cervejas geladas e combos.',
+          deliverable: 'Galeria visual tratada em alta definição.',
+        },
+        {
+          title: 'Canal de Delivery Direto no WhatsApp',
+          description: 'Fluxo para o cliente enviar o pedido completo com endereço de entrega.',
+          deliverable: 'Integração pronta para o WhatsApp da equipe.',
+        },
+      ],
+      profileGaps: [
+        {
+          badge: '🍺 Pedidos Manuais & Demora',
+          title: 'Falta de Catálogo Digital de Bebidas no Celular',
+          description: `Nos fins de semana, clientes que buscam bebidas rápidas encontram apenas o telefone no Google e precisam ficar perguntando marcas e preços uma a uma.`,
+          impactOnSales: `Perda de vendas para concorrentes com cardápio digital mais ágil.`,
+          intuitiveAutomationSolution: `Catálogo digital de bebidas com envio do pedido pronto no WhatsApp.`,
+        },
+      ],
+      tailoredSolutions: [
+        {
+          pillar: 'Website & Conversão',
+          deficiencyFound: 'Ausência de catálogo de bebidas e delivery direto no celular.',
+          solutionTitle: 'Catálogo Visual & Delivery Expresso de Bebidas',
+          deliverable: 'Página veloz no smartphone com produtos e pedidos em 1 clique.',
+          revenueImpact: 'Crescimento nas vendas diretas sem intermediários.',
+        },
+      ],
+    };
+  }
+
   // 1. Oficinas Mecânicas, Auto Centers, Funilaria & Estética Automotiva
   if (
     lowerCat.includes('mecanic') ||
@@ -730,7 +832,7 @@ function resolveUniversalNicheConfig(
     lowerCat.includes('treino') ||
     lowerCat.includes('musculacao') ||
     lowerCat.includes('musculação') ||
-    lowerCat.includes('luta') ||
+    /\b(lutas?|boxe)\b/i.test(lowerCat) ||
     lowerCat.includes('artes marciais')
   ) {
     return {
