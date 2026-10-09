@@ -144,7 +144,7 @@ export default function PublicProposalPage() {
       });
   }, [leadId]);
 
-  const devWhatsApp = process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP || '5521972850211';
+  const devWhatsApp = process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP || '5573999313401';
 
   if (loading || !lead) {
     return (

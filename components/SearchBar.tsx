@@ -12,6 +12,7 @@ import {
   Phone,
   Star,
   ShieldCheck,
+  Target,
 } from 'lucide-react';
 
 export interface SearchFilters {
@@ -23,6 +24,7 @@ export interface SearchFilters {
   onlyMobile: boolean;
   hideContacted?: boolean;
   minRating: number;
+  minOpportunityScore?: number;
 }
 
 interface Props {
@@ -48,6 +50,7 @@ export function SearchBar({ onSearch, isLoading }: Props) {
   const [onlyMobile, setOnlyMobile] = useState(true);
   const [hideContacted, setHideContacted] = useState(false);
   const [minRating, setMinRating] = useState(4.0);
+  const [minOpportunityScore, setMinOpportunityScore] = useState(0);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,6 +64,7 @@ export function SearchBar({ onSearch, isLoading }: Props) {
       onlyMobile,
       hideContacted,
       minRating,
+      minOpportunityScore,
     });
   };
 
@@ -242,15 +246,31 @@ export function SearchBar({ onSearch, isLoading }: Props) {
 
             <div className="flex items-center gap-2">
               <Star className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-              <span className="text-xs font-bold text-slate-700">Nota mínima Google:</span>
+              <span className="text-xs font-bold text-slate-700">Nota mínima:</span>
               <select
                 value={minRating}
                 onChange={(e) => setMinRating(parseFloat(e.target.value))}
                 className="px-2 py-1 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-800 focus:ring-2 focus:ring-violet-500"
               >
-                <option value={0}>Qualquer nota</option>
-                <option value={4.0}>4.0 ou mais ★</option>
-                <option value={4.5}>4.5 ou mais ★ (Estelar)</option>
+                <option value={0}>Todas</option>
+                <option value={4.0}>4.0+ ★</option>
+                <option value={4.5}>4.5+ ★</option>
+              </select>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Target className="w-3.5 h-3.5 text-violet-600 shrink-0" />
+              <span className="text-xs font-bold text-slate-700">% Oportunidade:</span>
+              <select
+                value={minOpportunityScore}
+                onChange={(e) => setMinOpportunityScore(parseInt(e.target.value))}
+                className="px-2 py-1 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-800 focus:ring-2 focus:ring-violet-500"
+              >
+                <option value={0}>Todos (0% a 100%)</option>
+                <option value={60}>≥ 60% (Boa oportunidade)</option>
+                <option value={70}>≥ 70% (Alta prioridade)</option>
+                <option value={85}>≥ 85% (Ouro / Muito Quente)</option>
+                <option value={95}>≥ 95% (Crítico / Sem site)</option>
               </select>
             </div>
           </div>

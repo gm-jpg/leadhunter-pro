@@ -15,6 +15,7 @@ export async function POST(req: NextRequest) {
       onlyMobile = false,
       hideContacted = false,
       minRating = 0,
+      minOpportunityScore = 0,
       googleApiKey = '',
     } = await req.json();
 
@@ -173,6 +174,7 @@ export async function POST(req: NextRequest) {
     if (onlyMobile) filteredLeads = filteredLeads.filter((l) => l.isMobile);
     if (hideContacted) filteredLeads = filteredLeads.filter((l) => !l.isContacted);
     if (minRating > 0) filteredLeads = filteredLeads.filter((l) => l.rating >= minRating);
+    if (minOpportunityScore > 0) filteredLeads = filteredLeads.filter((l) => l.opportunityScore >= minOpportunityScore);
 
     return NextResponse.json({
       leads: filteredLeads,

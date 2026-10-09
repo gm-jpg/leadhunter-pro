@@ -32,7 +32,7 @@ export function WhatsAppModal({ lead, myPhone, onClose, onContactSaved, onOpenIm
   const defaultMyPhone =
     myPhone ||
     process.env.NEXT_PUBLIC_DEVELOPER_WHATSAPP ||
-    '5521972850211';
+    '5573999313401';
 
   const [message, setMessage] = useState(lead.developerPitch.whatsappMessage);
   const [copied, setCopied] = useState(false);
@@ -242,7 +242,7 @@ export function WhatsAppModal({ lead, myPhone, onClose, onContactSaved, onOpenIm
                   setClientPhone(e.target.value);
                 }
               }}
-              placeholder="Ex: (21) 97285-0211"
+              placeholder="Ex: (73) 99931-3401"
               className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 font-mono text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white shadow-inner"
             />
           </div>

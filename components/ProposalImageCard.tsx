@@ -850,7 +850,7 @@ export const ProposalImageCard = React.forwardRef<HTMLDivElement, Props>(
             }}
           >
             <MessageCircle className="w-3.5 h-3.5" />
-            <span>WhatsApp: (21) 97285-0211</span>
+            <span>WhatsApp: (73) 99931-3401</span>
           </div>
         </footer>
       </div>

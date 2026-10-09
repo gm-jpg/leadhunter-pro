@@ -192,11 +192,47 @@ export function LeadCard({
           )}
         </div>
 
+        {/* Website / Instagram Atual logo abaixo do WhatsApp para referência rápida */}
+        {lead.website && (
+          <div className="flex items-center gap-1.5 py-1.5 px-3 bg-slate-50 border border-slate-200/80 rounded-xl text-xs mb-2 shadow-xs">
+            <Globe className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+            <span className="text-slate-500 font-bold shrink-0">Link / Site Atual:</span>
+            <a
+              href={lead.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-violet-700 hover:text-violet-900 hover:underline truncate flex items-center gap-1 ml-auto font-bold"
+              title={lead.website}
+            >
+              <span className="truncate max-w-[190px]">{lead.website.replace(/^https?:\/\/(www\.)?/, '')}</span>
+              <ExternalLink className="w-3 h-3 shrink-0" />
+            </a>
+          </div>
+        )}
+
         {/* Aviso se já foi enviado */}
         {lead.sentAt && (
           <div className="mt-2 text-[11px] font-semibold text-blue-600 flex items-center gap-1">
             <Clock className="w-3 h-3" />
             <span>Enviado via WhatsApp em {lead.sentAt}</span>
+          </div>
+        )}
+
+        {/* Automação & Approach Proposto */}
+        {lead.developerPitch && (
+          <div className="mt-3 p-3 bg-gradient-to-r from-violet-50 via-indigo-50/60 to-purple-50 rounded-2xl border border-violet-200/80 shadow-xs">
+            <div className="text-[11px] font-black text-violet-900 flex items-center gap-1.5 mb-1 uppercase tracking-wide">
+              <Sparkles className="w-3.5 h-3.5 text-violet-600" />
+              <span>Automação & Approach Proposto:</span>
+            </div>
+            <p className="text-xs text-slate-800 font-bold leading-snug">
+              {lead.developerPitch.audit?.tailoredSolutions?.[0]?.solutionTitle || lead.developerPitch.summaryReason}
+            </p>
+            {lead.developerPitch.audit?.tailoredSolutions?.[0]?.deliverable && (
+              <p className="text-[11px] text-slate-500 font-medium mt-0.5">
+                ↳ Entrega: {lead.developerPitch.audit.tailoredSolutions[0].deliverable}
+              </p>
+            )}
           </div>
         )}
       </div>

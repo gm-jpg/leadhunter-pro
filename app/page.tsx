@@ -23,19 +23,28 @@ import {
   CheckCircle2,
   Send,
   ShieldCheck,
+  Target,
+  Filter,
+  ArrowDownUp,
+  Search,
 } from 'lucide-react';
 
+import initialPortoSeguroLeads from '@/lib/porto-seguro-20.json';
+
 export default function DashboardPage() {
-  const [leads, setLeads] = useState<Lead[]>([]);
+  const [leads, setLeads] = useState<Lead[]>(initialPortoSeguroLeads as Lead[]);
   const [isSearching, setIsSearching] = useState(false);
   const [generatingLeadId, setGeneratingLeadId] = useState<string | null>(null);
   const [activeFilter, setActiveFilter] = useState<
     'all' | 'high_opportunity' | 'ready' | 'contacted' | 'already_contacted' | 'negotiating_closed'
   >('all');
+  const [minOppScoreFilter, setMinOppScoreFilter] = useState<number>(0);
+  const [searchFilterText, setSearchFilterText] = useState<string>('');
+  const [sortByScore, setSortByScore] = useState<boolean>(true);
 
   // Perfil do Desenvolvedor & Chaves de Busca (Salvo no navegador)
   const [developerName, setDeveloperName] = useState('José | LeadHunter Brasil');
-  const [developerPhone, setDeveloperPhone] = useState('5521972850211');
+  const [developerPhone, setDeveloperPhone] = useState('5573999313401');
   const [googleApiKey, setGoogleApiKey] = useState('AIzaSyBSWVYMG8hi2iK1M5uViY3dhIwmKYo-MF0');
   const [geminiApiKey, setGeminiApiKey] = useState('');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -53,10 +62,18 @@ export default function DashboardPage() {
       const cachedLeads = localStorage.getItem('lead_hunter_leads');
       if (cachedLeads) {
         try {
-          setLeads(JSON.parse(cachedLeads));
+          const parsed = JSON.parse(cachedLeads);
+          if (parsed && Array.isArray(parsed) && parsed.length > 0) {
+            setLeads(parsed);
+          } else {
+            setLeads(initialPortoSeguroLeads as Lead[]);
+          }
         } catch (e) {
           console.error(e);
+          setLeads(initialPortoSeguroLeads as Lead[]);
         }
+      } else {
+        setLeads(initialPortoSeguroLeads as Lead[]);
       }
 
       const cachedProfile = localStorage.getItem('lead_hunter_profile');
@@ -211,16 +228,34 @@ export default function DashboardPage() {
 
   // Filtros de pipeline otimizados com useMemo (Zero overhead de re-renderização)
   const filteredLeads = React.useMemo(() => {
-    return leads.filter((lead) => {
-      if (activeFilter === 'high_opportunity') return lead.opportunityScore >= 70 || !lead.website;
-      if (activeFilter === 'ready') return Boolean(lead.developerPitch);
-      if (activeFilter === 'contacted') return lead.status === 'contatado';
-      if (activeFilter === 'already_contacted') return lead.isContacted;
-      if (activeFilter === 'negotiating_closed')
-        return lead.status === 'negociando' || lead.status === 'fechado';
+    let list = leads.filter((lead) => {
+      if (activeFilter === 'high_opportunity' && lead.opportunityScore < 70 && lead.website) return false;
+      if (activeFilter === 'ready' && !lead.developerPitch) return false;
+      if (activeFilter === 'contacted' && lead.status !== 'contatado') return false;
+      if (activeFilter === 'already_contacted' && !lead.isContacted) return false;
+      if (activeFilter === 'negotiating_closed' && lead.status !== 'negociando' && lead.status !== 'fechado') return false;
+
+      // Filtro por % mínima de oportunidade
+      if (minOppScoreFilter > 0 && (lead.opportunityScore || 0) < minOppScoreFilter) return false;
+
+      // Filtro de texto rápido (nome, categoria, bairro)
+      if (searchFilterText.trim()) {
+        const q = searchFilterText.toLowerCase();
+        const matchName = lead.name.toLowerCase().includes(q);
+        const matchCategory = lead.category?.toLowerCase().includes(q);
+        const matchNeighborhood = lead.neighborhood?.toLowerCase().includes(q);
+        if (!matchName && !matchCategory && !matchNeighborhood) return false;
+      }
+
       return true;
     });
-  }, [leads, activeFilter]);
+
+    if (sortByScore) {
+      list = [...list].sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0));
+    }
+
+    return list;
+  }, [leads, activeFilter, minOppScoreFilter, searchFilterText, sortByScore]);
 
   // Métricas do funil em passagem única O(N)
   const {
@@ -397,6 +432,73 @@ export default function DashboardPage() {
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Limpar</span>
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Barra de Filtro de % de Oportunidade e Busca Rápida */}
+        {totalLeads > 0 && (
+          <div className="mb-6 bg-white/95 backdrop-blur-md rounded-2xl border border-slate-200/80 p-3 sm:p-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 shadow-xs">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-black text-slate-700 flex items-center gap-1.5 shrink-0">
+                <Target className="w-4 h-4 text-violet-600" />
+                % Oportunidade:
+              </span>
+              {[
+                { label: 'Todas', score: 0 },
+                { label: '≥ 70%', score: 70 },
+                { label: '≥ 85% (Ouro)', score: 85 },
+                { label: '≥ 95% (Crítico)', score: 95 },
+              ].map((item) => (
+                <button
+                  key={item.score}
+                  type="button"
+                  onClick={() => setMinOppScoreFilter(item.score)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all ${
+                    minOppScoreFilter === item.score
+                      ? 'bg-violet-600 text-white shadow-sm shadow-violet-200'
+                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2 flex-1 md:max-w-md">
+              <div className="relative flex-1">
+                <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  type="text"
+                  value={searchFilterText}
+                  onChange={(e) => setSearchFilterText(e.target.value)}
+                  placeholder="Filtrar por nome, nicho ou bairro..."
+                  className="w-full pl-9 pr-7 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:bg-white transition-all placeholder:text-slate-400"
+                />
+                {searchFilterText && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchFilterText('')}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 hover:text-slate-600 font-bold"
+                  >
+                    ×
+                  </button>
+                )}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setSortByScore(!sortByScore)}
+                className={`px-3 py-2 rounded-xl text-xs font-black flex items-center gap-1.5 border transition-all shrink-0 ${
+                  sortByScore
+                    ? 'bg-violet-50 text-violet-700 border-violet-200'
+                    : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100'
+                }`}
+                title="Ordenar por maior pontuação de oportunidade"
+              >
+                <ArrowDownUp className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Maior %</span>
               </button>
             </div>
           </div>

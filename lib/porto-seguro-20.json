@@ -1,0 +1,3127 @@
+[
+  {
+    "id": "ChIJT_S7yHKVNgcRMYX8rULJhxQ",
+    "placeId": "ChIJT_S7yHKVNgcRMYX8rULJhxQ",
+    "name": "Pizza do Paulista - Pizzaria , Restaurante, Café",
+    "category": "Pizzaria",
+    "segment": "Pizzarias & Forno a Lenha",
+    "address": "Av. do Coqueiral, 310 - Lj 1 e 2 - Taperapuan, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99926-9222",
+    "whatsapp": "5573999269222",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=1479372290838529329&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.instagram.com/paulistafoods?igsh=NG9udWg3cDhyMzZ6",
+    "rating": 4.6,
+    "userRatingsTotal": 129,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJT_S7yHKVNgcRMYX8rULJhxQ%2Fphotos%2FAVoNoXScD7UESeYdbY7i3f5qt5VX9KTmgJPqDxXciFz-E008A6O-xnreGceCuUZjuCsl6i36CUUs-4bsDQ0qAAR9LGGw5Wh8yffDz81e9VGJBIiUu9_OHyARuUsazGCv0qiQPw6_7JEE9vnCzf_DH0_IRBg5jg5Sn9NPmwwrpt9nfsQjgU-iR4oEKj7uSkR9gmOdTLqwQvynAEEbZ64ApPlyOGChcawmCgkEdWGSntyLZutgEM-aTa_q90dJN5xCu69KM1WoN91gxz5BDdWnEYv3uOEEdcPiYrUU95qsUeok_6qpGBaNOHc32vK014mpBB5i436kmYF1v5xc7IUklypiztnuhBHtTBLX6NYJbxuBWnQevdAPKulwDk2UlfXSfBd2jOxjy3q3D9Mxw0qzcxpHpV3MkYogvLOyeTeB55Jn8Kdh_J3J7vovk04_zoHZ3Q",
+      "/api/place-photo?name=places%2FChIJT_S7yHKVNgcRMYX8rULJhxQ%2Fphotos%2FAVoNoXQgmGYtPtZ8PtmLCA9gAkWT92Ls3nvYQW0cZssQoVXJ84bEMew6Wigpo1OR4PGP_ax8HJvbLs5nzUic6KgbR_8HJAt7Ab5Mj_tV_2mxgzhzVPI-dFEvick8VB6nRimFBKtd6N6aro9I0C1MQZCxD8wBzDXXlDiwR6t7CskwCttAmcA2hfDU3Cm_BaenQPQmhiyr5Ee-ROqgCZ77sqd7nRP6tBM4PA8JnH2zG1sFFqkdq6WZpeiRLpIy1ACH_R75b5v82zHrddzoGYf9ND6Ue2JAt46HsJFgFwWdHh2yrGFpIL9KtJZZiBwoBcX0DSCwsBvmy9yGEOxYzIfiTK9wU8S6oKrIN3BVx8ngec6uhVPTk3p4JfdRPa65ba4mOMXdru0fYRCO1khzModi3F9sGSPKW7nulY5ViccPmhmMDZQ4s4U5db9jyUYLaDzMcX1y",
+      "/api/place-photo?name=places%2FChIJT_S7yHKVNgcRMYX8rULJhxQ%2Fphotos%2FAVoNoXTPzRMVC6lF0dzP90fIvv0hRw-iBxbiSPuD8lk9BZ_YX8LiGnXduoPNd5Pe2HGl9she19HojFGi3C4IdDGTKBXVLfcV32nE8hS6hZKun2T3tvZDc4d56J_870RQmLEF5kKufpXyt9bC53JsEPiyaUt27bH_0r_HWkuHujM8rbozCvfz-__Qd3jmRcqX3TX-3YbIq51BwOkj4Lq1OlAFtjwesXAmIrLuDKUyTmu7iuuntQu6zlNE-XDyjdysoUElD_Yg1PTILuGWnJNIOFQS3M5lDXZ1QJJ2Sd4AVrEFAvyOlFImRMNj3wt2mi0Ngnd3POP6C8lttG-hyAKDdoLYXgGxf_7BApyPgAkzw6YITzX911F5qjQNgHmC70V8LrNB5-UKppyFj7XPlor9eZgDRsF9nmzw91ZNxYlOxKNYgNFlYw1g23mDoxjayBeUvhwO"
+    ],
+    "reviews": [
+      {
+        "author": "Abigail Cordeiro",
+        "rating": 5,
+        "text": "Se você procura uma pizzaria boa na região de Porto Seguro, recomendo a pizzaria Pizza do Paulista, a pizza é uma delícia, excelente, com ingredientes de qualidade, o valor varia de acordo com o sabor escolhido, o cardápio contém outras opções como porções, lanches, pratos executivos e pratos à la carte.\nFomos muito bem atendidos, o ambiente é tranquilo, limpo, organizado, aconchegante e familiar.\nSuper recomendo.",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Tainá Renata",
+        "rating": 5,
+        "text": "Lugar bem agradável, peguei pizza individual de frango com catupiry e estava bem gostosa. Recomendo\nAtendimento bom, pedido feito pelo tablet.\nPreço da pizza 48 reais + 10%",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Monica Oliveira Carvalho",
+        "rating": 5,
+        "text": "Comemos uma pizza e estava espetacular.\nA garçonete não estava em um bom dia rsrs.\nA parte interna do restaurante é meio feia, sem manutenção... Mas ainda assim recomendo a pizza de la.",
+        "relativeTime": "um mês atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:47.267Z",
+    "developerPitch": {
+      "leadName": "Pizza do Paulista - Pizzaria , Restaurante, Café",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.6★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Pizza do Paulista - Pizzaria , Restaurante, Café* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.6★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Pizza do Paulista - Pizzaria , Restaurante, Café* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Pizza do Paulista - Pizzaria , Restaurante, Café possui excelente avaliação no Google Maps em Porto Seguro (4.6★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Massa artesanal, forno a lenha e o sabor que reúne famílias.",
+        "subheadline": "Cardápio visual de pizzas com pedidos diretos pelo WhatsApp em Porto Seguro.",
+        "primaryColor": "#DC2626",
+        "secondaryColor": "#F59E0B",
+        "badge": "Forno a Lenha & Tradição",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Pizza do Paulista - Pizzaria , Restaurante, Café.",
+          "botReply": "Olá! Que alegria atender você na Pizza do Paulista - Pizzaria , Restaurante, Café! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "rustico",
+          "vibeLabel": "Forno a Lenha & Tradição",
+          "vibeDescription": "A essência, capricho e qualidade da Pizza do Paulista - Pizzaria , Restaurante, Café em Porto Seguro.",
+          "typographyStyle": "serif",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#DC2626",
+            "secondaryAccent": "#F59E0B",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#DC262625",
+            "accentBadgeText": "#DC2626",
+            "buttonBg": "#DC2626",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJsSQ3traWNgcRLM39aHPvWz8",
+    "placeId": "ChIJsSQ3traWNgcRLM39aHPvWz8",
+    "name": "Sambuca Pizzeria",
+    "category": "Pizzaria",
+    "segment": "Pizzarias & Forno a Lenha",
+    "address": "Praça dos Pataxós, 216 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99934-7004",
+    "whatsapp": "5573999347004",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=4565505926231870764&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.instagram.com/sambucapizzaria/",
+    "rating": 4.7,
+    "userRatingsTotal": 733,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJsSQ3traWNgcRLM39aHPvWz8%2Fphotos%2FAVoNoXRFqWfrmcRZAp_iU4VvojD_t4PcK32EJ2LnOU2hyrgcTAyf2cyre_F36LYDJCpWTr9fXerSliBXmW1WPQ_FfLIhCFxM08VDNbXqGPc-c0GOOKYw0_41bHBLarGIEhFfg1nZCreKnddhZO44swJ_cjTUjICvxHyfh3-XyNHHwPU7Vv-hN0m3oSOksUEOJY9FohTMrMuNBq7o7L7lIiu-UQP6-1SQmKmgXLa6h6g4ordPgyLCLJkzfucvQSrEDu0sv5_TW3UV7DMoTD4HPOVoTZtbTI8OcdIbew3_WaT70PSXwzHVq1ZjDF9YryEEH4r01shVI7qh2V4C6-WxIgaffoij_NIFQUe5ql8YPJFDLelkN_kQM29A23GE00zU6Dc_UvRKKPdpHcnmcHZl5VqK_8OH9MIQJWh8MrUhQsFgOXLHQHY",
+      "/api/place-photo?name=places%2FChIJsSQ3traWNgcRLM39aHPvWz8%2Fphotos%2FAVoNoXRavmwpAadT8xwb568QgcWrOYKR1Af8ZwlofHE_fDWx86fr2vCDmI7gbV0YxwfdMw6c4d4mP2av5co2L5q6-tQYuvEUbG4fEr1KG0Afa1x_u_Bi-cAOmy_YdulskX8nKeeSGoJsUt4tmPpmwc860o--ZILgPXfxVCGAJlQCQ0LLT8me6dBgAUTXbYHPMdARC9IQ3dVGK3MaBZ5KX3KJvStJRBD_Wnq5X64ky9vGCdgK05LW-6mkuPKvSOwKh6guKiNqmMCPalG4tyM8X7t2F3eKlJwtqWXuXdoV-6kohciO5HiDIt6OJZrLX5bgTXRW_hvGclZJcAs_XAS_Dfku3tTYocdo0Ap_-VbhRXo9jECD5amblVqV8es0RJUV_s6KEh-IqhC1pfrY9riuzSXPdigeArcX6fFuJU9scKx8AyLN9PartYklE8UtAZIfMw",
+      "/api/place-photo?name=places%2FChIJsSQ3traWNgcRLM39aHPvWz8%2Fphotos%2FAVoNoXSa0edgoYNw1BCS0TOrxCZQ0PxypbgIMR2QQowd2XIN_VbBgfGF--IDGF5Day3CmcuaO9mTRjatV2JrY2JdChtR-boAjgIjRco4IonWyZXPsko8c3sCyD-TDDes1dk_GAPhqe38CP4p8KgziVuL3ZYjgj-408DV2MJ5nbE2YzmPBwXbNJS3K7p8Qxrm_WKj2zvLD5TnzRtjtrA9XLSLjXBLn_8MahIqxlB8Thgpkyr_pplXIX3-hHlX55ftzno4kfQ26LT6AMTfeZd0ROPmLfmV-gNCsm_sSXTAhLML4I1UJo4H0g83hyq7xKpJqC03MUOnfMJeVgzdtUMZjyH3uOWV-tWhljvX7onS9kpcutgUtEuHyP4RniMI-6QCLnRu3xtEYOqZEZgh2Zqn1wIAdW4VCJtFurt57ON5mpl5cbA6Lw"
+    ],
+    "reviews": [
+      {
+        "author": "Pedro Coelho",
+        "rating": 5,
+        "text": "A experiência na Sambuca Pizzaria foi simplesmente perfeita! Ambiente agradável, atendimento excelente e pizzas maravilhosas. A massa é muito saborosa, ingredientes de ótima qualidade e tudo chegou no ponto certo.\n\nA pizza portuguesa merece um destaque especial: uma das melhores que já comi! Muito bem recheada, equilibrada e extremamente saborosa. Dá para perceber o cuidado e capricho em cada detalhe.\n\nTudo estava impecável, desde o atendimento até a qualidade dos pratos. Com certeza voltarei mais vezes e recomendo muito para quem estiver procurando uma pizzaria de alto nível em Porto Seguro!",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Vania Angelo Pereira",
+        "rating": 3,
+        "text": "O lugar é lindo, fica próximo à fila da balsa. O atendimento foi bom e a pizza é cara d+ para o que foi entregue. Pouco recheio e particularmente a massa me lembrou sabor de bolacha/biscoito água e sal. Se tivesse mais recheio, talvez o sabor da massa tivesse passado batido. Tem oportunidade de melhorar...",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Juliany Martins",
+        "rating": 5,
+        "text": "Adoramos o restaurante! Fui com meu marido e filho, 2 anos, tem cadeirão e deram até um copo do Mickey para o suco dele, o que foi um sucesso! A pizza estava ótima e o ambiente é muito agradável.",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:47.275Z",
+    "developerPitch": {
+      "leadName": "Sambuca Pizzeria",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.7★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Sambuca Pizzeria* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.7★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Sambuca Pizzeria* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Sambuca Pizzeria possui excelente avaliação no Google Maps em Porto Seguro (4.7★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Massa artesanal, forno a lenha e o sabor que reúne famílias.",
+        "subheadline": "Cardápio visual de pizzas com pedidos diretos pelo WhatsApp em Porto Seguro.",
+        "primaryColor": "#DC2626",
+        "secondaryColor": "#F59E0B",
+        "badge": "Forno a Lenha & Tradição",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Sambuca Pizzeria.",
+          "botReply": "Olá! Que alegria atender você na Sambuca Pizzeria! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "rustico",
+          "vibeLabel": "Forno a Lenha & Tradição",
+          "vibeDescription": "A essência, capricho e qualidade da Sambuca Pizzeria em Porto Seguro.",
+          "typographyStyle": "serif",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#DC2626",
+            "secondaryAccent": "#F59E0B",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#DC262625",
+            "accentBadgeText": "#DC2626",
+            "buttonBg": "#DC2626",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJbTL7VLKRNgcR_bVg2zFEAeY",
+    "placeId": "ChIJbTL7VLKRNgcR_bVg2zFEAeY",
+    "name": "Oh My Beer Hamburgueria",
+    "category": "Hamburgueria",
+    "segment": "Hamburguerias & Street Food",
+    "address": "Manoel Alves dos Santos, 90 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99150-0618",
+    "whatsapp": "5573991500618",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=16573603084624770557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.instagram.com/ohmybeer_hamburgueria",
+    "rating": 4.9,
+    "userRatingsTotal": 378,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJbTL7VLKRNgcR_bVg2zFEAeY%2Fphotos%2FAVoNoXRAuf3MMfFI4Y-IMJ4qweMaW0YmwHNLnWvhpuOSAR3w88PyZZnywyAVReUCXpPQeqzLFbl6fSqceP-tR-BX1sASco8l3FBE8gG_jQTAxOV7LaW7MVXYy1ukb4rsGpr6qxL-RNtmmZ-pDRoYZMDNcDvBJmJNFT0ilJj640_pfdnFNsRZw99CK3HwlryF58fboAjvGPMrQGMtwHfDunFPY0M8wtg_IrEraKeHcxD38W8FQ9Nn7Gk-3xdgbPY3QkegYDRHGoRog8TC3DV4NESSQRr7GnZZIGWAc5XXyfVkhjMkOePSPc0_U65mhpYIJHcCS_lrbYLxYmo4YK0yq7bcdJ42rnAo2AdyeTVpVHx50FGk6uSRarLa_wPJYIC9UjJxxfqJTk6cbuOGZWQq1fex2mV8h48sAscxuMW5LekYOFYpnQ",
+      "/api/place-photo?name=places%2FChIJbTL7VLKRNgcR_bVg2zFEAeY%2Fphotos%2FAVoNoXQaB4lnXIkQD0wSE1jjar2d8KVlYquL1jkHG--1B6Yev2ZS6OTUoyPF5KrrdIbK3PUy454PHcQ3U-2r5gWMRdtBQSipZjMN3PrYLOX6ByLx2cm2ye3pBdSUPpLHnx5YojVUc5GFfFWewLHtn2xgfqTEv5lF_aWv4I44mhzJ5pUR7_RWun3VdBHfIR3jXPVGz-c0dBez9MHTylDrd0nV2nlDcm41MZF7IikYAEZiM4XqSmNzErMWi1DyQ00Mh7f9Lhd_lNCWwVNJlND4mII4lUP6g2oA04Y7P_JdR3mq16bs-t4eb7YyUtF6yldOmfhz6hoyD16IEHI8J0eMULd9wNFgWHZwIz2pMbV8mgefF5ZyJLFuGxFKyFMlNAYALP0OmHE2KQA3l02BZWiPTzEnUKez4A",
+      "/api/place-photo?name=places%2FChIJbTL7VLKRNgcR_bVg2zFEAeY%2Fphotos%2FAVoNoXQFccsfH_oLMFRSrmFhjQehx0H7TKpuUXwcK8MJnmd3Olfi_G43hO_AAfmZxbYW5sQwZxLZIx_yO8VuFJxzPXUrHIe8S6RyzX_FymISYDjom-oMHBUbYepiEOiC8GJubEhrHf6iLjMFCav78sGGt5XWnV4lgQeNyZAXwnwpYVWPQbQ-wnBallJ22K1C5w26aIOXuByoHMNpWiy_i_ECAURlAi6PzmcWZmoW9mSC7xfzWPg1_a8CNkEbOTezJcx4LXfOSdkVQ0FSMVGyTnyegZbD7Qc8QbsCqSJKOZfs5tkCNMWPapMkzgFQdF2fABmy83K3AJ1zS2IY7dsq0upOjGNVtwnfbPd9PGzIEjhN1sbgajK6W-ZW9iuua7OybJk6plvmMSgmeEp0D704I0K-ojpDOojrFMHv_mu1GdW6AqSH"
+    ],
+    "reviews": [
+      {
+        "author": "Geovana Rocha",
+        "rating": 5,
+        "text": "Oh my Beer, uma experiência mais que gostosa em arraial d'ajuda. Um lugar aconchegante, com ótima comida e atendentes extremamente solícitos e educados. A batata com cheddar e bacon saiu em 10 minutos e o hambúrguer cerca de 20 minutos mesmo com o salão ligeiramente cheio. O hambúrguer é muito bem servido, com ingredientes frescos, a carne com um ponto muito bom. Toda equipe está de parabéns, irei voltar com certeza!",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Kátia Martins",
+        "rating": 5,
+        "text": "Com certeza o melhor hambúrguer artesanal do Arraial d'ajuda.\nCarne suculenta e no ponto certo, molho delicioso, e as batatas fritas bem temperadas.\nA trilha sonora do bar é um espetáculo a parte, por favor não troquem.\nEquipe educada e sempre atenta ao cliente.",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Rafael Henrique",
+        "rating": 5,
+        "text": "Estou agora na hamburgueria e posso dizer com todas as letras, não é bom, é simplesmente maravilhoso!\nHambúrguer sensacional, batata gostosa e bem temperada. A porção de bolinhos de carne então, nunca comi algo tão bom assim!!\nQue vier em Arraial d’juda precisa provar !\nJoão e sua equipe, muito respeitosa, atenciosa, trataram minha família muitíssimo bem.\nViemos de São Paulo e sairemos com certeza, muito satisfeitos !!!",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:47.972Z",
+    "developerPitch": {
+      "leadName": "Oh My Beer Hamburgueria",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.9★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Oh My Beer Hamburgueria* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.9★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Oh My Beer Hamburgueria* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Oh My Beer Hamburgueria possui excelente avaliação no Google Maps em Porto Seguro (4.9★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "A tradição, o capricho e a qualidade da Oh My Beer Hamburgueria no celular.",
+        "subheadline": "Presença mobile sob medida para valorizar sua marca e atender seus clientes no WhatsApp.",
+        "primaryColor": "#0284C7",
+        "secondaryColor": "#10B981",
+        "badge": "Destaque em Porto Seguro",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Oh My Beer Hamburgueria.",
+          "botReply": "Olá! Que alegria atender você na Oh My Beer Hamburgueria! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "comercio_local",
+          "vibeLabel": "Destaque em Porto Seguro",
+          "vibeDescription": "A essência, capricho e qualidade da Oh My Beer Hamburgueria em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#0284C7",
+            "secondaryAccent": "#10B981",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#0284C725",
+            "accentBadgeText": "#0284C7",
+            "buttonBg": "#0284C7",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJswdPxXOXNgcRPTslgf3uIRQ",
+    "placeId": "ChIJswdPxXOXNgcRPTslgf3uIRQ",
+    "name": "San Diego Burguer",
+    "category": "Hamburgueria",
+    "segment": "Hamburguerias & Street Food",
+    "address": "R. Assis Chateaubriand, 56 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99157-3731",
+    "whatsapp": "5573991573731",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=1450703327550847805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": null,
+    "rating": 4.8,
+    "userRatingsTotal": 344,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJswdPxXOXNgcRPTslgf3uIRQ%2Fphotos%2FAVoNoXQpXQnnmUVVfLyPYuPcWu23SYgqrdD2YyohQiOEKqz6W23jLO-qrgZ1KRFWrY2utp-Xt8wYu5zEQ2dOUbOXqhZs-KfTlqrg1RV3VqH8i-Fe7auZRpkmYdxJ-8D14Nmu21_6AVXO0IBi2EChCS_bzn2JAY9iGSMngFxFsn4y3Q_cVz6hTO22vIws-yjukE0EhYN3OFEkg-9DuRZZopMKa9J2FRz3tRhYXTY18ZfBJNgRiPj3T6xgzRPPc8Gs0tB0LrAoeUjGnl3FlmZqwojzEEGO5n5VGxWxgC9tC1g9H-DwAWOBbRPvcqso-Mkz6Dz_J2mbU_FdL9Ex3p_ODOjF9HOMJ_mYFTxc7M2hSme8m8oKirmnUdQE-qw1q20RE9GtW5AAnjFhvg1xeOenABKt9Nfs6fgjE0QOvQYGKcP6svrD4o6lUvT5UfGF7N_sSy-t",
+      "/api/place-photo?name=places%2FChIJswdPxXOXNgcRPTslgf3uIRQ%2Fphotos%2FAVoNoXTx-Cer3Jolx1DvGiQ92v2o1k0OGy9c-EBdEO__5O4oYtWcFVMy96fLl6eFH5TdZalQ5rRbtrRLQyey52ZvrjDqBtsg_36pzaF87C-T24ltBcl1AbJmp7oul4-3dVqOB0sO6wpuNiWHaDVpxqX2z8Ms1kXOSZw1YYuy9QWerFiidmffKv1SpnxXGzPDHjsENu6tXnuQ_zteZiaLBj79CEDk0y-vI-wm_rgQyRG6pMdLgZdSnWS3gw9Jj8bK74uyLwOc4bBZy1Ljhp4gpcpI0TK7Q--9lSK6qto0y8zT6-lTGzKAKrcLHItZ7CTxyfyqCoC_X6KdzOd4UL6LiMRDKUNk3lofr3QgwiXaPChdUU62RRu3_cZgzUtQcEMm3rtcNpGFq98mdWWbS37DtQafPzR2ScaUYoDZyAuBZpjTmFc8Gy5E",
+      "/api/place-photo?name=places%2FChIJswdPxXOXNgcRPTslgf3uIRQ%2Fphotos%2FAVoNoXQKuSgJkP03Z9QJ-OsowLqGw8dGnL7gRkHMGhYBu6PGisxvgScMVpA9GpB68STNPImdVzO7W8sYxl-sGtcnJgeA-8kTcKY1JLDyq7Jfn7a30NcVO1AwvaWLhBZBzqj8HCw1igkwZNbAycfS0EOMFf737LNE2DtyCWH5CMF-fFfaEHaf9YNUh1L8oqlJ3_Cpk0fnvV86-xJ_hUmBl3YzTCXVlGsfk8_DZOBXyiRccHZz3KRD4mzOAKbgWr6S0z5Y7WVwDYOwD19J8Ff0xQELqazpX49kv9Tw1rjYgz9bGu66GUVGFhIQUt4Z9bYUys3ryRFGHFuIHJ29PhLjKjdW4-DdLpl0WbdtDEwxseVJdHWPIGyX9-2dXC6Vlxs7B4Mn8JLcmoVRj3AUplySAxpXSmgWQnO9Qjbi6bIJsGPB0YPMzv3E8XqfwfKbc3le_tMV"
+    ],
+    "reviews": [
+      {
+        "author": "Pâmela Gonçalves",
+        "rating": 5,
+        "text": "Fomos ao San Diego Hambúrgueria no dia 12/08 e tivemos uma experiência excelente!\n\nFomos muito bem atendidos por uma garçonete argentina, mas toda a equipe merece elogios pelo atendimento, que foi muito atencioso e cordial.\n\nA casa é muito bonita, com uma decoração jovem, moderna e superagradável.\n\nPedimos o combo, que inclui hambúrguer, batata temperada e refrigerante ou suco. O hambúrguer estava no ponto perfeito, com bacon de qualidade, pão macio e ingredientes muito saborosos. A batatinha estava bem crocante e deliciosa. A qualidade do hambúrguer realmente me surpreendeu, além de ser muito bem servido.\n\nO combo saiu por aproximadamente R$ 65,00 e, pelo tamanho e pela qualidade, vale muito a pena!\n\nExcelente qualidade, preço justo e ótimo atendimento. Recomendo! 🍔👏🏻",
+        "relativeTime": "um mês atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Cláudia Santos",
+        "rating": 4,
+        "text": "Gostoso, mas um pouco oleoso além do ponto.\nBatatas sequinhas e saborosas.\nSanduíche bem servido e rápido preparo.\nBoa experiência.\nAtendimento nota 11.\nA Natila ou Natyla faz a diferença no atendimento, atenção, explicação e simpatia.",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Rodrigo Godim",
+        "rating": 5,
+        "text": "Comida excelentíssima! Sem comentários.\nO atendente Pedro foi muito gentil e cordial.\nOs lanches estavam no ponto certo e as batatas sequinhas.\nE ainda ganhamos um mimo!!",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 95,
+    "opportunityFactors": [
+      "Sem website oficial cadastrado",
+      "Oportunidade de catálogo direto no WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:47.972Z",
+    "developerPitch": {
+      "leadName": "San Diego Burguer",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.8★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *San Diego Burguer* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.8★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *San Diego Burguer* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A San Diego Burguer possui excelente avaliação no Google Maps em Porto Seguro (4.8★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "A tradição, o capricho e a qualidade da San Diego Burguer no celular.",
+        "subheadline": "Presença mobile sob medida para valorizar sua marca e atender seus clientes no WhatsApp.",
+        "primaryColor": "#0284C7",
+        "secondaryColor": "#10B981",
+        "badge": "Destaque em Porto Seguro",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a San Diego Burguer.",
+          "botReply": "Olá! Que alegria atender você na San Diego Burguer! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "comercio_local",
+          "vibeLabel": "Destaque em Porto Seguro",
+          "vibeDescription": "A essência, capricho e qualidade da San Diego Burguer em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#0284C7",
+            "secondaryAccent": "#10B981",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#0284C725",
+            "accentBadgeText": "#0284C7",
+            "buttonBg": "#0284C7",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJTQStE42XNgcR3MHa_tDsaHs",
+    "placeId": "ChIJTQStE42XNgcR3MHa_tDsaHs",
+    "name": "Equipe Mônica Reis - Salão de beleza",
+    "category": "Salão de Beleza",
+    "segment": "Salões de Beleza & Hair Studios",
+    "address": "Av. 22 de Abril, 339 - Shopping Blue 22, Térreo Sala 07 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99978-5185",
+    "whatsapp": "5573999785185",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=8892617846616146396&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": null,
+    "rating": 4.9,
+    "userRatingsTotal": 315,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJTQStE42XNgcR3MHa_tDsaHs%2Fphotos%2FAa-ngMaeCHcwK_W6RRDpb-S3C9w1LEc5TYIlk0vBI9ttHYm33MM9dWgH49jyYhNgJjGGbbQ--I8eD-fN0vLk8c2vW6HiKQaBIYyJ2ouWPZQinAcfxRvubBSbpSjnllhZyb7qALKZY3DGwjfbl-MrrrtnUAnvcFl4_lIgG-oQHS0RcCVBj50OYk2FDLMQk-Oc27mLm7CgK-fRvL3ytTwKgV2AXCBN2lfQDMg-zfxkoHGwCOY8NXcpfyMFErvJA9iCUD38jrb6w7fFxwqq2PH9jeHfvHCvFUv2DwN7oge5mXGSQ_j3kQ_ks-pQ8Gf5T1VZCijjXsH5A55BHhML-8AXJmvIzzfy2xG4lgOLOruvc7GJpBQZQhKABr1WSGU4s3OvhVBOuDsi08uVAIeyHau4ox6gTvMo2eXJbGU",
+      "/api/place-photo?name=places%2FChIJTQStE42XNgcR3MHa_tDsaHs%2Fphotos%2FAa-ngMamQaDLHZf1O0AHT87WWKZy8Qt6chwF3sdzejq8BM8r7ccuh2OD3meCb3HltwrBNn5VaUHntCSJYrkuYDWhJvqzOleN85ZUzOVOny5L_tal5J1jyWTsZFLNGZWYbvtxgRtd6S2XE2ZeifVX19m7jl3As8P_elh8GYqAL_LZSBVv9TEe4PeTGZFaPMXuvK7-VqB2n7YK187YRsEI0WBcPrd8n-Vnmxifd0SZuk69Rz3C2otf7jqRhR0r4FRTikrajPUB_H1odKlc32LuTB8vOXmRa23gX-SbCCWr9HSDeTkXYjwLYDQpwOrgj9PJobDSGe14aUdZTejo-GQHhlonqcKIa1WDl6hbe_EUxSmq4cQRzbj7HP7G0bO3mH220DdevyExLO6JaB-0XPUP0X1S5l6tczg28ygU1pnwXHlPqftGjA",
+      "/api/place-photo?name=places%2FChIJTQStE42XNgcR3MHa_tDsaHs%2Fphotos%2FAa-ngMYgWUwnlCw6vYYDlu7thKfE-SVsLnag_HcbH347aUu0MIayz1QzNs6Dv5mcojtaxhCTQ_ztue5pXSR6xtBDqmyDFcjJ7a7u_kLZJFJHUXyFnCVbXM7AkT1p92PIZGKsPNVO6_5aw2mbOLhIxCi_-MUW4PHHcRDgmix5Xj45Q7csAST7pPF2ehu-h7UL0pbzBgz9-jmE2Z4jIjOl5auWOXAB4nu56xeh0hnDznuHL3qYvHQvOel0Xb2tv89dfX8atXxT19R2o9wxPItnQCmZMsv_LoPZ4TcQ1fgccIMqB-qUioVSmRTovMVc7JFI-ZVS4sr_d_vMtOeFXqRGijgwZyvep-CO8NTfxGpfxX0C94drCTHNW4XzAkgIZtEOLhP4Im3IgInDSwBbrp-N9_bedpuLTP64EElWCjRH3s4qrbYopQ"
+    ],
+    "reviews": [
+      {
+        "author": "Juh Queiroz",
+        "rating": 5,
+        "text": "Atendimento maravilhoso, ambiente harmonioso e são muito atenciosos os funcionários.\nE Nail designer Eduarda, sempre deixando minhas unhas impecáveis.",
+        "relativeTime": "um mês atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Silvana Fernandes",
+        "rating": 5,
+        "text": "Esmaltação em gel impecável! Brilho lindo, acabamento perfeito e unhas lindas por muito mais tempo. Super recomendo! 💅",
+        "relativeTime": "6 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Sara Olimpia",
+        "rating": 5,
+        "text": "Fui muito bem atendida. Salão de alto nível.  Equipe de manicures atenciosa e bem equipada. Obrigada Talia e Elisangela.",
+        "relativeTime": "5 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 95,
+    "opportunityFactors": [
+      "Sem website oficial cadastrado",
+      "Oportunidade de catálogo direto no WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:48.637Z",
+    "developerPitch": {
+      "leadName": "Equipe Mônica Reis - Salão de beleza",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.9★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Equipe Mônica Reis - Salão de beleza* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.9★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Equipe Mônica Reis - Salão de beleza* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Equipe Mônica Reis - Salão de beleza possui excelente avaliação no Google Maps em Porto Seguro (4.9★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "O luxo do cuidado delicado. A arte de se sentir única.",
+        "subheadline": "Rituais de lavagem relaxante, cronograma capilar e visagismo em Porto Seguro.",
+        "primaryColor": "#F4B4B4",
+        "secondaryColor": "#C5A880",
+        "badge": "Ateliê de Beleza & Spa Capilar",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Equipe Mônica Reis - Salão de beleza.",
+          "botReply": "Olá! Que alegria atender você na Equipe Mônica Reis - Salão de beleza! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "estilo_autocuidado",
+          "vibeLabel": "Ateliê de Beleza & Spa Capilar",
+          "vibeDescription": "A essência, capricho e qualidade da Equipe Mônica Reis - Salão de beleza em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#F4B4B4",
+            "secondaryAccent": "#C5A880",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#F4B4B425",
+            "accentBadgeText": "#F4B4B4",
+            "buttonBg": "#F4B4B4",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJO-xSgWiXNgcRA8PVbv1Gelw",
+    "placeId": "ChIJO-xSgWiXNgcRA8PVbv1Gelw",
+    "name": "Laura Rocha Studio | Mega Hair Porto Seguro",
+    "category": "Salão de Beleza",
+    "segment": "Salões de Beleza & Hair Studios",
+    "address": "Rua dos Periquitos, 191 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 98227-7515",
+    "whatsapp": "5573982277515",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=6663716652948243203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "http://www.laurarochastudiodebeleza.com/",
+    "rating": 4.8,
+    "userRatingsTotal": 73,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJO-xSgWiXNgcRA8PVbv1Gelw%2Fphotos%2FAa-ngMYgZ8Fi8NlZUbT4prbYy83EUnmjZlg4AIK_fbXFwHioqTzLeiVmwY1mZQoGg-vDD9c_FcPu_ECq__EpJxLpEJ0kSkYAamLkkjKPbd0YsIjbJE8oaMdKOfJDdBja2GEmAAR2k8AgLAxms-dmwJDqzfh39jZ3lWnIM50USKEYH1hmi01Tuzlw1TmobjBXQAqMPJCY0OQZZFMH_619_n-PAKu8KOg-V-Ne1DBuC90ZO1aq_AsDdxtdEk43gpGbWwJp_G5p-IZj-XV-Dwf_TkvXRxwqIrI30mg-z_l4wffCEUA766gFEZXjL36__raMu-WIYxhM43Oi1p8bIuBax8LKkP-Uzt4rNCa1t8uuBPeMxKMMaGWwt16E9GLNmAU4Bj8GWgELYILIhguPfeNaxMvj3yEOh2fMFD8Bvc4RTStLR87nTGLjPsFYGEra2o2cMpdR",
+      "/api/place-photo?name=places%2FChIJO-xSgWiXNgcRA8PVbv1Gelw%2Fphotos%2FAa-ngMbNRwkQtF-CsQKYbpiscxDZ82XPTX9aPkselSFvArh7sKkDI-o1FfIaJ2cANehJQwhLwGQ7WzpFzZvufYzoHL0mZvwDkOAB16w5Jd6kx2bkBF3IGwVNszMFciPYCnyMIGwh3eTSVP109cnieZtySr886mlXW_ZS5s_FAJIQjNNGkigw7o_0ao-T3Vojf17jLtFehFU7do95ShUMct0a69QJ15G3xm1D-1vIKgrh-Euf4DF3wCpX1xfS9orTnLnLwgrzxF8NfZNbVMN8E0PTUzSlv4kui9DQ_7Z3cSaaDZ6KNrqsMqvbvklysq2agGFwUQwfWzR5SuwTHQxvkIAiipLPWGYClizn6tme6wkxXT80dzFcDGKSRzACBcGT1vdjlq6fC2r0brLZI9FMjbHX8AVQyQ8gPz8SlQlD99Bek1R3b7QScc7lQ6N0y8YeSRmo",
+      "/api/place-photo?name=places%2FChIJO-xSgWiXNgcRA8PVbv1Gelw%2Fphotos%2FAa-ngMaWiUeSzuoDRsZBzpZLPZECXVfI16IPTtlfORc2oLACXWisecg7uld881tNCiOiUxvRLNWz_XV4naALWuwOG6f0I6EIUFzIGsBPBj0gEWNIq0-fY-c4v5FXDoAzpW_KV2LOwV4O9watCcZLnChGLzeZw2uAyEjgUnLICf2iGK_8l7y1x0Uy1qYUK13ZO9p5L2rsmXEzROMKp0Kuz3TmXsKo5wb28qBmGmOQz-yT-wxZnqASdVhDRfb1mw32R7bgmUP1wIxcq_4V0LvmVpTXR98jn6WVWav5ndO_aO9TCs5swzELBDky1VmMEd0gY3K9r4XkHKUXsgGR2gaO9o7QlC-4XlwC090oZt2Er_HB4_6flk-HiqM4a3JXsVOnvGcQ0Qq-SWOd7v6cs07rfJaYHhuAb_XKOZkLfBrcc-nz8FKoy3IKbuJEOjTDjsMrFobW"
+    ],
+    "reviews": [
+      {
+        "author": "Gabriela Campos",
+        "rating": 1,
+        "text": "Não recomendo o estabelecimento. Minha experiência foi péssima e, depois do que aconteceu com o meu cabelo durante o atendimento, perdi completamente a confiança no trabalho do salão. Tentei resolver a situação, mas não fiquei satisfeita com a forma como foi conduzida. Além de toda a situação envolvendo o cabelo, considero que houve falta de profissionalismo na maneira como o problema foi conduzido. Durante a tentativa de resolver a situação, me senti desrespeitada e maltratada como cliente, quando esperava justamente transparência e uma solução adequada.\nDepois de tudo o que aconteceu, perdi completamente a confiança no estabelecimento e no serviço prestado. Por isso, não voltaria e não recomendo. PÉSSIMA EXPERIÊNCIA",
+        "relativeTime": "3 semanas atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Eduarda",
+        "rating": 5,
+        "text": "Eu fui pra colocar mega hair e fui super bem atendida, recebi muito além do valor que paguei. Atendimento fantástico e experiência incrível! Com certeza irei voltar sempre…",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "DARLINA SANTOS",
+        "rating": 5,
+        "text": "Nota máxima pelo respeito ao cliente e praticidade digital! A facilidade da avaliação online me economizou tempo e custo. Atendimento humano, acolhedor e super pontual desde o primeiro contato! Já estou super ansiosa para ir fazer meu procedimento presencialmente!",
+        "relativeTime": "um mês atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:48.637Z",
+    "developerPitch": {
+      "leadName": "Laura Rocha Studio | Mega Hair Porto Seguro",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.8★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Laura Rocha Studio | Mega Hair Porto Seguro* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.8★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Laura Rocha Studio | Mega Hair Porto Seguro* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Laura Rocha Studio | Mega Hair Porto Seguro possui excelente avaliação no Google Maps em Porto Seguro (4.8★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "O luxo do cuidado delicado. A arte de se sentir única.",
+        "subheadline": "Rituais de lavagem relaxante, cronograma capilar e visagismo em Porto Seguro.",
+        "primaryColor": "#F4B4B4",
+        "secondaryColor": "#C5A880",
+        "badge": "Ateliê de Beleza & Spa Capilar",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Laura Rocha Studio | Mega Hair Porto Seguro.",
+          "botReply": "Olá! Que alegria atender você na Laura Rocha Studio | Mega Hair Porto Seguro! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "estilo_autocuidado",
+          "vibeLabel": "Ateliê de Beleza & Spa Capilar",
+          "vibeDescription": "A essência, capricho e qualidade da Laura Rocha Studio | Mega Hair Porto Seguro em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#F4B4B4",
+            "secondaryAccent": "#C5A880",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#F4B4B425",
+            "accentBadgeText": "#F4B4B4",
+            "buttonBg": "#F4B4B4",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJGbY-l22XNgcRH4p2kTe4DCg",
+    "placeId": "ChIJGbY-l22XNgcRH4p2kTe4DCg",
+    "name": "Nood Barber Club",
+    "category": "Barbearia",
+    "segment": "Barbearias & Barbearias Conceito",
+    "address": "Zirone Center ao lado da Unimed - Av. dos Navegantes, 700 - Lj 4 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 98147-1766",
+    "whatsapp": "5573981471766",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=2885884010040822303&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://noodbarberclub.com.br/",
+    "rating": 5,
+    "userRatingsTotal": 806,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJGbY-l22XNgcRH4p2kTe4DCg%2Fphotos%2FAVoNoXS5qBHxLfndcMMgDYcZJEf5DW-8Qx7zfmeoQtszBz2AIx1uh9uNRUpG5M2E-n44twnzuY84OUF2o1gXS8MelUlYFu1gNfvhfxb3w3-tir1VKEtBWyQ7TbiKIzVskwFTj1VtKJphsQ5KjTNCP2ofs1ULtkUdwJiZU-nv_q6mi_aDKZ4ZW65FF0poHsizu_6xUu0Wk8y9b_eVrSes_eLlgCZ8jVGhtK5bLqLIBe4aSPhTg3jqQy6tEn4EHCS9ZvZvr1Ln6LiQippCi4fX2zmI9AURxmYrr0NjPanDr83REVqkeKOxtLklFCVhbANgLTKyOrH4ZD3v2XT5MgunoJx6n8EfUMRv347JbysZ2zinU9aw30OtlbgFjcXofr8KIwAowiECOhcrYZk4LuOS0lswpvzoWIuOzE_Yqhgdd9mv7S9TvqayuQkZhXPgpwnnVUc1",
+      "/api/place-photo?name=places%2FChIJGbY-l22XNgcRH4p2kTe4DCg%2Fphotos%2FAVoNoXRRVPJtwl9PjVsWx3fNauo_KO4NlS1QKY3nKvpE82xPBkii964ga2OimOxBn_wgpmpymHc_cpCRpC-7Jyu4y0VYiXMiBf3i6fdqFsTE8O4FXyyanifmTU7yPQ_Oa6rygM0DvLTyP78rHEZhY5PHhHanq5VBUzVuL3Q8D-nE8mYRD2k3p6MaQxKlQxYs9qZihtNUgKYs-jmtKXp6gN2iJeCFnGJxCuo9tnxHkSh2oTTWA06yj7SDzx0q9IdNC6Tm2Cb-cxHPedmou6T791cGWXIQa8rERtiBpbGae34n3UiZt13BpZg966Zcoh6EVPB3oh7NL70Vk-A_lZxL0EC2MG8GnX-8vmnYjo5m3iusukY0Bk-YEpSZnh_TElBHf6zkOxCK8sc8OmuaWPpFyx3CtUHjs1tQpMCxk_8pUtpXVgsgHd6z4QhVlzJUr5g-1SN5",
+      "/api/place-photo?name=places%2FChIJGbY-l22XNgcRH4p2kTe4DCg%2Fphotos%2FAVoNoXRNjlalEdJX7ebzW06ELbNV2UVzS0Ae-ZflL3pKmJ33kiOICHlqO85ZIBOTer05zdvy7C286weZ1YSmBbSqJFrYdkbYgWcXDwyUYsVCGfy06bot9qCU5UYIJNOhlW5V8R5gdKMALVAxMDWwj1c3L1peeONDwDR2dxWkF2OPfqFnzN7BUc_TITq7SAQFnVKhSs7PxvV3JjAds8aILBBar3h7cdBnb4O0MSukydsmMoDrcFxmv0ZUgXpcWk76lZiXU6la2f0zS6Y03OTSkY0XGUaye-7YhV-ivhhiIIgzMpAJWy9gKDXfcaLrRnd5c6Uc1t5M7IJC4d22hwJ-Jwx7XA57juXeBertSikyRs_VpmjSQbEii_4f5vs3QFvXWixT780awkbPfkoiFfhZajTl4amSIIliWZ0fnsG3snesnXop_bUPWO0L5eMxaJMUfd5q"
+    ],
+    "reviews": [
+      {
+        "author": "Ítalo Antunes de Menezes",
+        "rating": 5,
+        "text": "Barbearia nota 10. Ambiente agradável, atendimento sem igual e profissionalismo em primeiro lugar. Não abro mão de cortar meu cabelo e o cabelo dos meus filhos aqui.",
+        "relativeTime": "7 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Francisco Foresti",
+        "rating": 5,
+        "text": "O lugar e muito confortável e acolhedor junto com os atendentes o que tem meu respeito e Josua além de ser um ótimo profissional e com ele sempre me deixa  mais bonito",
+        "relativeTime": "3 semanas atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Thayrine Muzy Pezé",
+        "rating": 5,
+        "text": "Sempre levo meu garotinho de 3 anos pra cortar o cabelo com o Gil na Nood, desde o primeiro corte. Profissionais nota 10, extremamente simpáticos, pacientes e atenciosos, fora que o corte é impecável. Ambiente limpo e bonito. Meu filho se adaptou mto bem. Super recomendo!",
+        "relativeTime": "um mês atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:49.505Z",
+    "developerPitch": {
+      "leadName": "Nood Barber Club",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (5.0★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Nood Barber Club* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (5.0★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Nood Barber Club* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Nood Barber Club possui excelente avaliação no Google Maps em Porto Seguro (5.0★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Degradê na régua, alinhamento de barba e o ritual da navalha.",
+        "subheadline": "Agendamento descomplicado de horários pelo WhatsApp em 1 clique.",
+        "primaryColor": "#FF4D17",
+        "secondaryColor": "#111111",
+        "badge": "Precisão & Tradição Masculina",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Nood Barber Club.",
+          "botReply": "Olá! Que alegria atender você na Nood Barber Club! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "tecnico_confiavel",
+          "vibeLabel": "Precisão & Tradição Masculina",
+          "vibeDescription": "A essência, capricho e qualidade da Nood Barber Club em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#FF4D17",
+            "secondaryAccent": "#111111",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#FF4D1725",
+            "accentBadgeText": "#FF4D17",
+            "buttonBg": "#FF4D17",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJ1dflQACXNgcRRXW14FXgDRk",
+    "placeId": "ChIJ1dflQACXNgcRRXW14FXgDRk",
+    "name": "ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA",
+    "category": "Barbearia",
+    "segment": "Barbearias & Barbearias Conceito",
+    "address": "R. do Golfo, 100 - Porto Seguro, BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 7400-8109",
+    "whatsapp": "557374008109",
+    "isMobile": false,
+    "googleMapsUrl": "https://maps.google.com/?cid=1805345685092267333&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.instagram.com/royalbarber073?igsh=c2dreXFxY293ODE2",
+    "rating": 4.9,
+    "userRatingsTotal": 66,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJ1dflQACXNgcRRXW14FXgDRk%2Fphotos%2FAVoNoXSqACrg3jzNNpoY1aSh3vGW-J4bbHGWFuT8eJpTLZCf3Rs46RTWEwMNIF0064q0GFTQC3_tnA1zg93VDY9ww2p5pid4qXiAadSs3kyf_uVqCSJHFKxUA7mRbCVMb8zbjMTJuTSqS5O1XA7MjjQB7Chs6pPvHRAX2ZHtMa1b5x5LR53CUUhJ7n0qPuHMYHxIeUlIaYYJPdMvqh8M0n551Gq-RIxvHQP0MUet8D0bMPyT2XJjGCzCFjgcU1YBY1YJM0uIidcm-7Ja_QMx8ooxTwO5t2V1Bz0g6p_b98U9KkjKn5ww6dCV5XBygqLKDcN14bZDakl7Ivnu_jGUX_8zrrZukSHqodqFXrNaWXIV5WLVMz2l80d-X7AWeIjEQUBJ4cHNnJ2RN-OtAAJJNDThduqS_vQjkXUXpCpB5cRKUA7WWA",
+      "/api/place-photo?name=places%2FChIJ1dflQACXNgcRRXW14FXgDRk%2Fphotos%2FAVoNoXRlqZA92uw5a2hXqt6bQ-GMjymv02LRaA2oYzSzWiMNlNKVCVNp-mAEEkljeykYfPRmtLnujxp7oM8a7awjiqw8IsDDgBW1isXTrbl4Cg7zNBQ7NmCVj0B5bI-WkD6E4QAulPYqySnqh93R2gfrDme4WbB5zbSm-9jtm4cQ5wHt_84gDaxVylDGbwWXi0_8se7mbjhUy9znQWsXPcEIAd_R1ybV4lxMmEyWGNeOHKL81mZ5olVb-OkxMKB-3u1GS1QDUgY0h8pmliwqjBzH76RLoa7_oF3c5nIbPxLBhZFR-fGmqPMvurD6uc3YPsMJzk8E4gQ-tH2dYy89M0HbhnyPeWgcTtLrNIeezPglvxIqIjvbznJVfulJC2dqy2GY_ptsAJ5qNTUXk0ZQh8nOcNwZYD3O60Z93slGVpe14BVaKA",
+      "/api/place-photo?name=places%2FChIJ1dflQACXNgcRRXW14FXgDRk%2Fphotos%2FAVoNoXS23hGYt0muHOQqYIFvyYC-YiBraVf1wxucveWkaXmPhvgk4OJmheyFiXRDdpq5yDXBeqaAD2vlTdC4YotxNF0a5DoP9hA36ixg7iuDwBpQ-Mn-5fq9Yl6xMrbTBcDS3xs4Ryx8BaR6AWKsZYA4YQLbYjpvgFrnNCwqXxjOU-PLj5H2mVT3S01vqsx1upZGe9Ssbi10KVuI_9IRiq6r44uMwwH1H4eWpiy0vbcuea3GQaX6ZItPFWjI5KfykDiW3kgJ6-miI6iiLDmViIDJGUn_6jox8MZatMdVb6KaIDjzU4525hqos8QJppN1rGfeutkAVwZEDhNBr1pOJETENNDKGKKdPF6lAD_VJeG7_nP8BvM48ZyeIODSmFHAY2LrShkvHE4O7-7e0LR3rYOliia3jRe8UHzOmBql5Qv3ZVnSVA"
+    ],
+    "reviews": [
+      {
+        "author": "Eulalia Yannick Bekkers",
+        "rating": 5,
+        "text": "Excelente salão pra corte de meninos, o Isaac é super gentil e profissional! Super recomendo! Meu filho de 11 anos adorou.",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Celle Sarpa",
+        "rating": 5,
+        "text": "Atendimento excelente.  Ambiente agradável,  música excelente. O corte ficou perfeito.",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Carlos Tobias Pires Souto",
+        "rating": 5,
+        "text": "Serviço excelente! Raspei a cabeça e alinhei a barba! Recomendo",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:49.505Z",
+    "developerPitch": {
+      "leadName": "ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.9★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.9★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA possui excelente avaliação no Google Maps em Porto Seguro (4.9★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Degradê na régua, alinhamento de barba e o ritual da navalha.",
+        "subheadline": "Agendamento descomplicado de horários pelo WhatsApp em 1 clique.",
+        "primaryColor": "#FF4D17",
+        "secondaryColor": "#111111",
+        "badge": "Precisão & Tradição Masculina",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA.",
+          "botReply": "Olá! Que alegria atender você na ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "tecnico_confiavel",
+          "vibeLabel": "Precisão & Tradição Masculina",
+          "vibeDescription": "A essência, capricho e qualidade da ROYAL BARBER Barbearia cabeleireiro Porto Seguro BA em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#FF4D17",
+            "secondaryAccent": "#111111",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#FF4D1725",
+            "accentBadgeText": "#FF4D17",
+            "buttonBg": "#FF4D17",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJk4THNxeVNgcRIywGRY4h4oU",
+    "placeId": "ChIJk4THNxeVNgcRIywGRY4h4oU",
+    "name": "Porto Vet Clínica Veterinária",
+    "category": "Veterinário",
+    "segment": "Clínicas Veterinárias & Pet",
+    "address": "Av. Bahia, 980 - Porto Seguro, BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99922-4555",
+    "whatsapp": "5573999224555",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=9647310246708128803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://portovetclinicaveterinaria.com/",
+    "rating": 5,
+    "userRatingsTotal": 143,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJk4THNxeVNgcRIywGRY4h4oU%2Fphotos%2FAa-ngMZVV4UfAyADc-3yCIpB2dzg-m94nmGwA_NR3MFfiwV6N4T7ynoz3RVehJyPXXwk2q0VYicobhZWq3fu0Awy58EkV8N715Cdxp1-Z6Bay1xdtNiuZP1aQj-u9pgDZtsLMkMU_1S-c5D1rn9CLq72uXdAE4LLKda2jyaeRy5oOWgzaaOxC6IooqDq_8sI3jR3CY-LoTS_-iUP14wgPjip5BXvbpLqAl4hvrL_lW1cBWD2oTZhx98wyDXlwzfCHxOSfRHQLgO_7hl4detbT7ceoUGUmEj70N21vPF5it9PEzGJJ-O9HncMNv4WCEIB8jx30dGuNPkh869N2ZBYN6LCk-QG2H7RqKoFGwq30wvEV42chweMgHN1tC31a4MCYpZnc-mi-s4ZiehQOwwip7uMygdxs6zGUc4GeRFfLdXAJoT3Cg",
+      "/api/place-photo?name=places%2FChIJk4THNxeVNgcRIywGRY4h4oU%2Fphotos%2FAa-ngMa4UyyCbPRrp_aMjl2GjksvGGBIiRSNPcvyekElp82SjEJlY5BRuEhh7WrO-i-MgL3pWgwSoed0T0J1E2sXWg6KO6JA7L9tp88mQuODbnhaWN6pCH1SCMNVOngM_lUAeQcqDvs09zUXRePQvSn56f5NkH4pESnUiscRJKr7UnBrAtCxyoZr2krhlMkHjJvVkREwioyZl-B6JhhCcqC7UnvyZWKS4xZB7W7P_32sl7S7p5IYJ6VIQsbxp_NU-d9vLtLbH7ogv3om1Q0kexUDW4LOqXJpDvlgNiB5P0JL6HdKmB259TNv_nF9Zz4NZkXwVQUqe6PpN5TNU9uJSo3Cdx79pdOmsa3y0YwojkXruMazmhGJdfzlXEtrFqkZHNY3h_JS97m4Nm3uneePQkEkHd4Uw_f4gLw",
+      "/api/place-photo?name=places%2FChIJk4THNxeVNgcRIywGRY4h4oU%2Fphotos%2FAa-ngMaSMQ_frwKFjSNPubfAvhcJuhDJ09ya5OW1RghC5SZefI9lmoIp-Bghj-gfjaAJXAeGvXzFzICjONNAyev5XiQkOaAwmIaylka9pf8XvN3qBf_XOw_NorQkhzEoGuP9nq_flvL8WaaysQUXoi3CDy8OcTD083AtwA-L2lhx6_9c-6HYtSKK_5RE_YCkXj67hbbWyTnJ3iLNDpmv5kFsIKGBPzrrpYx8JG9fznrl3xQPI8fWma2Fg3vhhkXQ7UwHvCLuRWyJcsMsGm2G301EqgfiAWrmv0kin0pIDqBh4Nvv_qS1X6MZH9Hhu49leOGN5l2wR6S9T7SykHC5iVz6D8wslhWkuWLwZlpaYnuZA-Iw460daUXvTWYMfaoSUM1IQK3ezlhkLm2OINryDlUHv8UMURA"
+    ],
+    "reviews": [
+      {
+        "author": "Elaine Brandao",
+        "rating": 5,
+        "text": "Clínica sensacional!\nMeu pet é um Pug idosinho, ficou bem doente urinando com sangue, levei para ser atendido urgentemente, sou muita grata a Dra Bruna, e super indico para quem tem pets!\nA Dra Bruna é super qualificada, uma excelente profissional!\nMinha sorte foi ter escolhido a clínica certa  para cuidarem do Breno ,meu cãopanheirinho que já tem 14 aninhos de vida.",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "DUAS EM PORTO SEGURO BA",
+        "rating": 5,
+        "text": "Levo o Abel pra vacinar com a Dra Bruna há 3 anos. Atendimento rápido, lugar higienizado, bons produtos, qualidade 👏🏽 e eles mandam mensagem todo ano me lembrando a data da vacina, isso salva 😍 gratidão amores!!!",
+        "relativeTime": "3 semanas atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Maria Silveira",
+        "rating": 5,
+        "text": "Muito bom o atendimento, são bem atenciosos, minha gatinha está bem graças a Deus.",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:50.117Z",
+    "developerPitch": {
+      "leadName": "Porto Vet Clínica Veterinária",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (5.0★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Porto Vet Clínica Veterinária* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (5.0★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Porto Vet Clínica Veterinária* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Porto Vet Clínica Veterinária possui excelente avaliação no Google Maps em Porto Seguro (5.0★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Medicina de precisão e o cuidado mais feliz para o seu melhor amigo.",
+        "subheadline": "Atendimento humanizado, consultas preventivas e plantão em Porto Seguro.",
+        "primaryColor": "#1E40AF",
+        "secondaryColor": "#10B981",
+        "badge": "Medicina Veterinária com Alma",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Porto Vet Clínica Veterinária.",
+          "botReply": "Olá! Que alegria atender você na Porto Vet Clínica Veterinária! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "afetivo_pet",
+          "vibeLabel": "Medicina Veterinária com Alma",
+          "vibeDescription": "A essência, capricho e qualidade da Porto Vet Clínica Veterinária em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#1E40AF",
+            "secondaryAccent": "#10B981",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#1E40AF25",
+            "accentBadgeText": "#1E40AF",
+            "buttonBg": "#1E40AF",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJQ-_6UXOXNgcRbFlz_EqSgtU",
+    "placeId": "ChIJQ-_6UXOXNgcRbFlz_EqSgtU",
+    "name": "Hospital Veterinário 24h Melhor Amigo",
+    "category": "Veterinário",
+    "segment": "Clínicas Veterinárias & Pet",
+    "address": "Av. Pero Vaz de Caminha, 487 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 3288-5242",
+    "whatsapp": "557332885242",
+    "isMobile": false,
+    "googleMapsUrl": "https://maps.google.com/?cid=15385020127811688812&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": null,
+    "rating": 4.5,
+    "userRatingsTotal": 83,
+    "photosCount": 9,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJQ-_6UXOXNgcRbFlz_EqSgtU%2Fphotos%2FAa-ngMZIpjnsrGEufRr63dbzdYSjJpuXvWDJud3HhzcKMxMx7DynFzqukrt_6O3L7RLZWVJdICUbspeJc0K0wiIRo9FLB8E4oDfa43UnChDXE1Bv9zCUIGfWKREgN4XtU39oBSFEwjy0_6mXfkJuDESQRPSdmDAJ7dD4kWxbTMVLGSlh5s2LGEKfLwHzPIZQ9AAejwMp4JtS7c3TLQ2YKBiRgQpXpN6C2yiluGnWf_URhcMn_kvgSwulmA00TtfZAO_YtU6Im9zQNY87qhzXVaaTRnOSIsKCxRmvTofPJifzpmjZkGEguI_ReEEPYYF0glKDP2Qs5rJn8PRLyezUmtUBQ7GhENsPHBaOuIQUYctoHMPzt7nPhrcgQFvYmrcwz0gUUfyLIlk9U9HDiW3zAvN4F_QZ3GE5Kr15bOCFobug4bDvXw",
+      "/api/place-photo?name=places%2FChIJQ-_6UXOXNgcRbFlz_EqSgtU%2Fphotos%2FAa-ngMbbyDRi5oYJSvGeTbDJP4SWVIq-bYLFP123bLauw6QgweXbx0MBuGUdBeuMR1EYI9hFMIS2tHoozhf9N6Oo7sY5eQK41WlOOcW2ft7DTMcVLQzppXjBEc-TNi_TqoRzLCDkBpYCyCSh6hUz1HR8vjeCoMCFfCOM7HkgA3bVSSHZ0paXiVXDhKyo9LW6QyUmLKMHH8cTq-hqJHzqpdHp-npjIvK48JfI2xxrkl6gwmgku6QfR2rjnOojG-2VILRRGjIfvL1d9momJy-Uu8duq6ZQXKbxD7pwoGK1GcMaW4vRuzzUMOPzat2rDAslyeVVcf1fQLNnZ4CRqBD9371puSvhwOc6_o8adSKJ3cb9IkyN4m3IhWqB06nwbZfBNoI5pPd3wQ83LQWjGuaG38M6TuK2Ktvrc6jXzd2cRUmn2HTq",
+      "/api/place-photo?name=places%2FChIJQ-_6UXOXNgcRbFlz_EqSgtU%2Fphotos%2FAa-ngMZA_ADd8PiV-nf_AtkEDYcbJ8Fa2GBjKXa3wzO_A9hkF3TKZRqinlePcyEyZ7M8sgBuGX8RYXW2Nonvuy0mzXvtnBYx0bdcNbPjd3BHf22heFfEe7Q3TnWJ5aCQBb-7yx-OKyYjzuYW-SAL64dJezp-US1T9XrV9c4W-t6WqModeLvzBnybbNzRvF6loRLvTK2MElIy08C_RrRvc1-5XuDFLYRk-qxe0i7J7q4z6stcf3WXDBHMeNO183LZMDX1XWcgzao2JXfQjQyoKGwN13nsafHluDw4k7RAquSN5qBGbv_x4BtxBIZ2bV9WYHCWDxMo8LoDOPyD_Pmlw4hLG4Op2yGet6qWRaf1xiffs--u7wsymay7qI97U2as8K78lCYY1yLWwRk4D5usgG0mTnUhebyPrCTq0n7RIp3MwVjE0Q"
+    ],
+    "reviews": [
+      {
+        "author": "Milena",
+        "rating": 5,
+        "text": "Sou muito chata quando se trata da saúde dos meus pets mas depois que encontrei essa clínica nunca mais tive que me preocupar. É excelente! Principalmente se você precisar de cirurgias… Eu já frequento há 10 anos e o dr Thiago sempre nos ajudou a resolver todos os problemas que meus animais tiveram. Uma das minhas gatas precisou tirar um olho por conta de um tumor e foi excelente. Além disso a castração só confio nessa clínica, já aconteceu 3 vezes de eu indicar a clinica para amigas que não me ouviram, levaram em outra clínica e tiveram uma experiência ruim nas outras. Então digo sempre que o Hospital Melhor amigo não decepciona.",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Tatiane Rodrigues segura",
+        "rating": 5,
+        "text": "Amo essa clínica desde a recepção (as meninas são maravilhosas 😍) e as veterinárias são nota 1 milhão,muito pacientes,atenciosas,me acalmam e cuidam muito bem da minha Luna😻 recomendo de olhos fechados",
+        "relativeTime": "8 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Mari Brainin",
+        "rating": 5,
+        "text": "Meu gatinho sofreu uma fatura,levamos na emergência nessa clínica,fomos atendidos por dra Hanna,muito zelosa e gentil,tanto com nós tutores como com nosso bichinho,ela é maravilhosa,somente gratidão\nNão conheci o dr Thiago que fez a cirurgia do meu gatinho,mas mesmo assim agradeço por ter cuidado tão bem e ter nos ajudado de maneira grandiosa,peço a Deus que abençoe grandemente\nAcabei não perguntando o nome da última dra que nos atendeu,mas ela nos deu total suporte e esclareceu nos dúvidas,deixo nossa sincera gratidão também\nQue essa profissão seja cada dia mais valorizada,as vezes ter um bichinho custa caro não vou mentir,foi um imprevisto sem tamanho,mas ver eles sofrendo dói muito mais,e dói mais ainda neles,esses profissionais são excelentes e muito humanos",
+        "relativeTime": "7 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 95,
+    "opportunityFactors": [
+      "Sem website oficial cadastrado",
+      "Oportunidade de catálogo direto no WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:50.117Z",
+    "developerPitch": {
+      "leadName": "Hospital Veterinário 24h Melhor Amigo",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.5★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Hospital Veterinário 24h Melhor Amigo* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.5★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Hospital Veterinário 24h Melhor Amigo* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Hospital Veterinário 24h Melhor Amigo possui excelente avaliação no Google Maps em Porto Seguro (4.5★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Medicina de precisão e o cuidado mais feliz para o seu melhor amigo.",
+        "subheadline": "Atendimento humanizado, consultas preventivas e plantão em Porto Seguro.",
+        "primaryColor": "#1E40AF",
+        "secondaryColor": "#10B981",
+        "badge": "Medicina Veterinária com Alma",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Hospital Veterinário 24h Melhor Amigo.",
+          "botReply": "Olá! Que alegria atender você na Hospital Veterinário 24h Melhor Amigo! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "afetivo_pet",
+          "vibeLabel": "Medicina Veterinária com Alma",
+          "vibeDescription": "A essência, capricho e qualidade da Hospital Veterinário 24h Melhor Amigo em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#1E40AF",
+            "secondaryAccent": "#10B981",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#1E40AF25",
+            "accentBadgeText": "#1E40AF",
+            "buttonBg": "#1E40AF",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJkRoUY1SRNgcRIzHUj46AQLo",
+    "placeId": "ChIJkRoUY1SRNgcRIzHUj46AQLo",
+    "name": "MAIS DELICIA",
+    "category": "Padaria",
+    "segment": "Padarias & Cafés Artesanais",
+    "address": "Av. dos Navegantes, 1514 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 3268-1724",
+    "whatsapp": "557332681724",
+    "isMobile": false,
+    "googleMapsUrl": "https://maps.google.com/?cid=13420868239350837539&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "http://www.maisdeliciapadaria.com.br/",
+    "rating": 4.3,
+    "userRatingsTotal": 1348,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJkRoUY1SRNgcRIzHUj46AQLo%2Fphotos%2FAVoNoXTqJN7imOIwC9XPXtmhVbLdlFZsA48P2d71OD9Huqe4oiwMoOiB4Zb3goCu5S7MlFrLXEE8CCXnWmwmcC9rghmrjZV5HFuxbeb3jXZxmj_EcV0KY66ehonVEZguEEiE1hdlEYs8wmkWS1XSrgN_5xZ-BPbCFaIe2vK0hqr6SPOcHTLhDfMINeJQWVkuQCvbHytQdjM7KryzynhbD6R026C8xt1iSfnTuK5FhMRKrj5u_EDIRn7toxrenGKjB9CrNsOZTGkaAq82-ffsCMWkpkyEAuj8BUTtwJaKL9DftZlhG3XvMz3oEcwkfHBLWouvcOMQr1gfgOKLkYZp9uAv63mjW4GC4IO-b52h__mR4NN14H0SRkpISOjdxxQ9vv-1fGDc7Y83UqJvS1ySq5KOUQsBLqoN1MMcDgK-3ZibcLxnXd3g",
+      "/api/place-photo?name=places%2FChIJkRoUY1SRNgcRIzHUj46AQLo%2Fphotos%2FAVoNoXQ1szyX89hMS0gsciVh2hU494sDtXgWo05i0XOOn9YY_34pbyGw5qDiDevNziOOjlKlFymosaq6GTgQFEiuaq_4orqoZCSeiyNwMG8WaWxUYMyAxfoEpdK4xuMi_IFdWbB1SmSOc_ksbyfAdMofCPlTTTq3GbMTgtPvyUzNRr-fSbpdb73O1HMzEuwFh1hZcorkRHlwLnFWKpVLW8otztR5VSP4xWapn3fqBl_Sp6ARVhqLicOopRvKx9thVoQPRpGZi17uFtxm9YgKsGOo-CYCFZkwk_Fzx-9FTPOylb1NZkqF4x9Qk5mblgAXd_3gVPZS3FxBP-zdlpwV4nysbcODeS1N9ivgX51JFRDUBZe4mpCIQwK9WCA4hEqV3pZsH-T-LiL85fgqp70X69yfigcMX1HFnAzabTJ3kldQWuzdww",
+      "/api/place-photo?name=places%2FChIJkRoUY1SRNgcRIzHUj46AQLo%2Fphotos%2FAVoNoXTxoCET4pbkishK_KMyv9R5iWkmY2gsWpUh5I_b1vqb4RphIQNMTbGp_0FqIjecKZXxVF3b7i_4sDFyBFUfwmKYgDKqGU6ihI0y_XoKVkHkGolshPxJ6p5gIO9OxZJDPWkvl7LK8SvrYjlVTVc6UkcFnoMz4CyTopVIyOFuEGKKV99mdT3r2hVQkoW3IodKwVT-i3ML67PvePfxhHBO4Oore5KPxTQ2lwG8qOeuFvcMH4rPi5v0rbDpuJtu8SmQtnLNWDYl5UVTIGkyKUcWHqd17ei3SVplxkuWnRAyPzcDOjlUIem5b9goAHEjLf0pez96kDtkWBBg3nyGZZhogGFZZuFHvWgwqikPwWHf0-Yo4UgLszBg2XF6pxCH5dB-b6xoj33Bpb-BO9tgLbtD4Czi1a3muq-MsBmLXNqUuP9cRw"
+    ],
+    "reviews": [
+      {
+        "author": "Eric Campos",
+        "rating": 1,
+        "text": "A comida é boa, o ambiente é legal. Mas os problemas com o cardápio digital e o sistema são complicadíssimos. Esperei por mais de 1h um pão de queijo e um suco porque o sistema não registrou meu pedido na comanda, vi a padaria esvaziar e ainda o pedido não havia chegado. A padaria coloca um único atendente pra dar conta de tudo, o que torna o serviço péssimo. Não é a primeira vez que passo por isso aqui, mas desta vez será a última. Deixo o ponto positivo pela comida e ambiente, mas a qualidade do serviço e a demora fazem não valer a pena.",
+        "relativeTime": "2 semanas atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Luiza Helena",
+        "rating": 5,
+        "text": "Padaria muito boa, próxima ao aeroporto com ampla qualidade e quantidade e tudo delicioso. Os doces são maravilhosos e o café da manhã também",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Tatianapriscilla22 insta",
+        "rating": 5,
+        "text": "Quero deixar um elogio especial para a funcionária que está em treinamento (Índia). Hoje ela mostrou muita dedicação, simpatia e agilidade no atendimento, conduzindo tudo com muita segurança e fazendo o serviço fluir muito melhor. A padaria tem produtos sempre fresquinhos e de ótima qualidade, mas às vezes o atendimento pode ser um pouco demorado. Hoje, com a ajuda dela, percebi uma grande diferença: tudo aconteceu de forma mais organizada e rápida. Parabéns pelo trabalho e pela iniciativa de investir em pessoas que fazem a diferença no atendimento!”",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:50.870Z",
+    "developerPitch": {
+      "leadName": "MAIS DELICIA",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.3★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *MAIS DELICIA* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.3★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *MAIS DELICIA* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A MAIS DELICIA possui excelente avaliação no Google Maps em Porto Seguro (4.3★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Pão quentinho de fermentação natural para manhãs acolhedoras.",
+        "subheadline": "Catálogo diário de fornadas e encomendas com pedidos no WhatsApp.",
+        "primaryColor": "#9C4A28",
+        "secondaryColor": "#EAA844",
+        "badge": "Fornadas Artesanais & Afeto",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a MAIS DELICIA.",
+          "botReply": "Olá! Que alegria atender você na MAIS DELICIA! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "artesanal_acolhedor",
+          "vibeLabel": "Fornadas Artesanais & Afeto",
+          "vibeDescription": "A essência, capricho e qualidade da MAIS DELICIA em Porto Seguro.",
+          "typographyStyle": "serif",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#9C4A28",
+            "secondaryAccent": "#EAA844",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#9C4A2825",
+            "accentBadgeText": "#9C4A28",
+            "buttonBg": "#9C4A28",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJY4DjOuyTNgcREyqv8k74qlE",
+    "placeId": "ChIJY4DjOuyTNgcREyqv8k74qlE",
+    "name": "Panificadora Pão Francês - BAIANÃO",
+    "category": "Padaria",
+    "segment": "Padarias & Cafés Artesanais",
+    "address": "R. Dezenove de Novembro, 344 - Porto Seguro, BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 3268-5521",
+    "whatsapp": "557332685521",
+    "isMobile": false,
+    "googleMapsUrl": "https://maps.google.com/?cid=5884788881075677715&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.instagram.com/paofrances_2024?igsh=dmt5aTdqNDF6b3Bn",
+    "rating": 4.4,
+    "userRatingsTotal": 891,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJY4DjOuyTNgcREyqv8k74qlE%2Fphotos%2FAVoNoXQLXI93Ewx_ZoEDIr9FVjhkCPb8wmqdgSwGZ3XMRjow3VuObrs9uDdKR9wLzEDSppXUEbplQu6uh8JJvCWRouFwnxTZBuL1abRd99hiLDqnrEYYLcmSr8Zk1cwKUMaz44iWfC1oNf0K5M3d2LHIpiGJJOlM0ztyrh2v9b0C_Jf4ZDU1pmPngCv3p4qkrUpFbw0k9dN4izcX2q78Jeh_UlUxwQdBeU0zVl8GR_RPEww889A8TqfND6vvrKBTuDiG2pH6klyE_qUni6mbT81A6wQZWqdDcrcj6h30vT9vj9X0HXdPhDD964-wZt8D8FvKS_ItGR1gyVVqT7elzYO3wcXZQfZjsYr3NKtjoUBZANdqr4IE6gUAPM6GSHln-pZG2TStk4wNw_b0kmuoGCTgEy7PodvfepY",
+      "/api/place-photo?name=places%2FChIJY4DjOuyTNgcREyqv8k74qlE%2Fphotos%2FAVoNoXRMGrDX0wxVgLb1SojirntM36QzPmCqqmmHZi0--2C2IqRM9odFtUbZVe2oQeWqLOC8BssD2nA6L2ovCEzSDqWgDkFWyy9dD9t5Mu2iD_7XElGND8cjc8uZChimRL4saKdfrIY41XTIDFEbmX87oi_8dPohjQ02VYqsxbhX44CT3AytCJNXKCTqea75zZLm38SVKCsn0QgQN9lcEAcDmMz1FJvZZvWInONTmYuKVgOUldHgkHV2itxFsUOV0dqbKbLrQseCoI33clk0eqpJm8RqBa6WNA5nqtxd7KVRtZorU553XNlWQIpBqrhztMpvStQrH-_7FM1VV-M6j7Qa4BmDEkc0cUHHlTve25sMxAlarcXIm9HrGs3XKE5Vj3zvvj7uMqd6Dlay_YjulDc7kH7-Vs0",
+      "/api/place-photo?name=places%2FChIJY4DjOuyTNgcREyqv8k74qlE%2Fphotos%2FAVoNoXQkR3ut0Roui_aiD8DFs2JANcxvcfdCl8ZHhNH_LP3Yoj4I-Zn3CxUsaH5g7JyOM7dy6IZJhPaCTs6I044Nz7mE13lvZ60l6V6QWxWh0kk6oqpMXMGtlK8faCmW0wy_RRjUTQMN3jzjWKCfpFMnzy84hgr2e7prXIb5HDPaDuGZQVcVBuQCG8U-3MQhkyR1nku0Dbze0mGKmodFIwZ6P_5Ai9tQ8m4KbarCd4kow4uoQRQcM2eEN1z-DAda9XLPrTYXw25yCWP1tJjayx6MQinPAqzxwWgN7avdEV_Qd68cej8jspd3hS3N_7kgR7taXHVainixBW9cGUZ9K4uh8duSDBdpz5-Fr9h0_4-xgMU-Gy5yG7OhTYAx1cgzv4wzmsLzIQ9Zioy66bDR-G2uvwfDSUwlFco"
+    ],
+    "reviews": [
+      {
+        "author": "MARA VASCONCELOS",
+        "rating": 5,
+        "text": "Muito boa ,produtos fresquinhos.",
+        "relativeTime": "um ano atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Allan Bicalho",
+        "rating": 5,
+        "text": "Panificadora de muita tradição em Porto Seguro! Ótimo atendimento e produtos de qualidades!",
+        "relativeTime": "6 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Rc C",
+        "rating": 3,
+        "text": "O pai era ótimo agr tá caindo a qualidade",
+        "relativeTime": "6 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:50.870Z",
+    "developerPitch": {
+      "leadName": "Panificadora Pão Francês - BAIANÃO",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.4★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Panificadora Pão Francês - BAIANÃO* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.4★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Panificadora Pão Francês - BAIANÃO* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Panificadora Pão Francês - BAIANÃO possui excelente avaliação no Google Maps em Porto Seguro (4.4★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Pão quentinho de fermentação natural para manhãs acolhedoras.",
+        "subheadline": "Catálogo diário de fornadas e encomendas com pedidos no WhatsApp.",
+        "primaryColor": "#9C4A28",
+        "secondaryColor": "#EAA844",
+        "badge": "Fornadas Artesanais & Afeto",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Panificadora Pão Francês - BAIANÃO.",
+          "botReply": "Olá! Que alegria atender você na Panificadora Pão Francês - BAIANÃO! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "artesanal_acolhedor",
+          "vibeLabel": "Fornadas Artesanais & Afeto",
+          "vibeDescription": "A essência, capricho e qualidade da Panificadora Pão Francês - BAIANÃO em Porto Seguro.",
+          "typographyStyle": "serif",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#9C4A28",
+            "secondaryAccent": "#EAA844",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#9C4A2825",
+            "accentBadgeText": "#9C4A28",
+            "buttonBg": "#9C4A28",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJn8lvK2qXNgcRB4VN6cYURt8",
+    "placeId": "ChIJn8lvK2qXNgcRB4VN6cYURt8",
+    "name": "Gallo Porto Seguro",
+    "category": "Restaurante",
+    "segment": "Bares & Coquetelaria",
+    "address": "R. Virgílio Damazio, 25 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99832-5891",
+    "whatsapp": "5573998325891",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=16088569563377927431&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.galloportoseguro.com.br/",
+    "rating": 4.7,
+    "userRatingsTotal": 4743,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJn8lvK2qXNgcRB4VN6cYURt8%2Fphotos%2FAa-ngMbnf7LDHn6Ihp6WXY-QV90ik7oRFtmjPEq2NcZTJ9YLL_oaHjHC4dd8PtoQy8NsKlzlLKc5oLkvDfh2M9KYGMC_4yBHU_-tbhSc0_uZOUGi-TAEiSRDNTPCIZe-goxpHoFeIeaKcx3USBhE69qblzhLBrq1bGOMrqwOvHgHApn7pOrXn_XQPnHdihQss_8lp6CQxNZ5yOtP9p7xSzLfab3qkXBh1FgWSM299_4Sx2pBTTEqW2FKDmZI2o5EmnBoyHKR3ugO4d6DlcZYs8RYk-VrMGIAuszMK79inpsY1S5nc7h3eGVZrUVuBl-lXrrqnW2MqRkLb44ioxcbkS-7HK4pH7nQgGeUXjQYsut7tVWWovYFW44p1qXk8CbM0KZpachTQSTMd1vryKse7Qp9aT10nFJH0HTyojQI502F9tOJM8TdH9wtAuy_7dkjK4X4",
+      "/api/place-photo?name=places%2FChIJn8lvK2qXNgcRB4VN6cYURt8%2Fphotos%2FAa-ngMbsUSIk_7mWyG3R8F7O749Pd9qogmArondU4ml2VPzurwmljwm4GDyjOk2QLp7wye4L8UC1ohjorAX_3s3OWUxpZA8Uvldvn5b4WGJFDfLQq7MD68-8ZrGAFRI5vq0E1FW0wL2Ti-i8JV1cXrV6M0whgCaVUPGd6rprkQlglN2V3whAYOGBGS-mJHJ9tJKstDimL0KG0Ustwd7vqjI95XywPF6i4IYPWXNIMgDSOSaWdpEmcuaF5XY9LynOHGoml9PP6CaAqKgYzNbhDJ7JFiqB9XvXVLRDuMOh-Kg4MCafRLU6uoojNZp9Rzv8MNfuOdnG3c1Bn2ZT3CZ_ogt1J9pTCOo4mXbsqN1HLem5S32PmfVMKUBN7Z1M2ieUX8kuMGc0uFS1oPB4G1ScelEeB7H6Ud3cEajdQiSZhhmQp7oD2Q",
+      "/api/place-photo?name=places%2FChIJn8lvK2qXNgcRB4VN6cYURt8%2Fphotos%2FAa-ngMb5W9RXRFewhR2ohHYLnVz0z9K70DWe-vwZdLyjGBdRZLpKXKz-X8OI_iPUMI2g9LNPSiyLF06FsGHCD6Dpwbk13rr6558bIZtqjzp_fP-roYSqifATAWCG3OF1ADsjZpEpxLBekx2fJKIWWeQ0yVFd12OQx85IbFRlgdM5bZ2DMA8m5dKSkZ1u3cbTDvPMUVPugRYPni7GsrEoQm5aKMjcfd9CjMYDs35u5EhH_WoxpJPl-C7wxLWow_HypRMrsH7FLQT6gRI7QZ5ssE-kLiZ0vo4XDuG38Pke_9zh9q0VGwutdQyN3lSMP4KyZq2jv2KimoRXZ3r97st_WN82pY5v82uNbDi1C53NVFtSmV_1jjDaxM2qjuTQuAzHt97wNo1n5XGowZKrvVAk216JKA2E9ixMWihW2BgDymOFWh40wLEBXIZzlmNqmbVq7B84"
+    ],
+    "reviews": [
+      {
+        "author": "Raul",
+        "rating": 5,
+        "text": "Restaurante Gallo\nPossui mesas no calçadão e internamente. O ambiente interno é refrigerado e muito bonito\nBanheiros no fundo aparentam ser limpos\nTem um \"criadouro\" de siri no fundo\nPedi uma isca de badejo e estava bem crocante, acompanhou um molho verde e limão\nNa noite que visitei tinha música ao vivo muito agradável\nA ambientação externa é muito bonita, as árvores são enfeitadas com lâmpadas, criando um cenário exuberante\nVou recomendar sentar em baixo da árvore, caso chuvisque a copa da árvore protege\nO restaurante é famoso pela vista do \"por do sol\", não cheguei a presenciar, contudo as pessoas locais recomendaram ir para ver.\nEm suma, é um lugar bem recomendado e movimentado, fica perto da balsa de Porto seguro. Achei bem bonito\nOs atendentes são bem treinados\nUm bom lugar para experimentar",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Tatiane Paleari",
+        "rating": 5,
+        "text": "Estive no Gallo ontem para assistir ao pôr do sol e tive uma experiência muito boa do começo ao fim. O ambiente é lindo, super agradável e perfeito para aproveitar o final da tarde com calma e uma vista incrível.\n\nPedi drink, que estava muito bom, e dividi uma porção de dadinho de tapioca com melaço de cana, que estava deliciosa e muito bem preparada.\n\nAlém disso, o atendimento merece destaque: toda a equipe foi muito simpática, atenciosa e prestativa durante todo o tempo.\nDá para perceber o cuidado com os clientes e com a experiência oferecida.\nFoi um daqueles lugares que tornam o momento ainda mais especial.\n\nCom certeza voltaria novamente!",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Bea Torres",
+        "rating": 5,
+        "text": "A melhor experiência que eu tive em Porto Seguro! Restaurante LINDO, atendimento impecável, comida fresca (literalmente) e com porções fartas. Vale cada centavo da experiência. Vim com minha filha e marido, ambos amaram! Pontos altos da noite: Lagosta no azeite de ervas e o Pudim de Café de sobremesa.",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:51.540Z",
+    "developerPitch": {
+      "leadName": "Gallo Porto Seguro",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.7★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Gallo Porto Seguro* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.7★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Gallo Porto Seguro* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Gallo Porto Seguro possui excelente avaliação no Google Maps em Porto Seguro (4.7★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Drinks autorais, noites vibrantes e a energia de Porto Seguro.",
+        "subheadline": "Carta visual de drinks e reservas de mesa direto no WhatsApp.",
+        "primaryColor": "#F59E0B",
+        "secondaryColor": "#064E3B",
+        "badge": "Coquetelaria & Experiência Noturna",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Gallo Porto Seguro.",
+          "botReply": "Olá! Que alegria atender você na Gallo Porto Seguro! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "gastronomia_autoral",
+          "vibeLabel": "Coquetelaria & Experiência Noturna",
+          "vibeDescription": "A essência, capricho e qualidade da Gallo Porto Seguro em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#F59E0B",
+            "secondaryAccent": "#064E3B",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#F59E0B25",
+            "accentBadgeText": "#F59E0B",
+            "buttonBg": "#F59E0B",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJHdNlBLKWNgcRs5pwhQqWdzg",
+    "placeId": "ChIJHdNlBLKWNgcRs5pwhQqWdzg",
+    "name": "Sinhôka bar",
+    "category": "Bar",
+    "segment": "Bares & Coquetelaria",
+    "address": "R. do Cajueiro, 232 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 98180-7109",
+    "whatsapp": "5573981807109",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=4068885760285121203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": null,
+    "rating": 4.8,
+    "userRatingsTotal": 32,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJHdNlBLKWNgcRs5pwhQqWdzg%2Fphotos%2FAa-ngMZdjHRD4BA5LpDCfxW4a2OgAoP7w7ny3KCYuj15Pv0h76c8W94bNJFuT1V9WXDMJXT8BqgjD3FTXYYjYRf_S8r0PzBiRiT5p13USs5il_EUVkYu-6z3iWBsQuAj0hHGXiFsCo9rXafU2B2jaQEEDkx-w7aMkHfIURw8yshKE-i5zcuJCPbfPB3vpzwHwhKu45xgHvgCQfoSP1K_E8wFp6iSfgEdY6s78ownPbzFEOOIZEM0bkCxC1hDF8Lh6MQxirB8wsnc8h9QrlN3e8bDM9al4X7oKkoeFhcdkirjlfqLgUzwkYle8Ksw1EDp3CGyqptqiGqQKVPAAVazLyExo8pgMqnNojt19FfRX4tOKfLxzisonf-qplj8DeSRjhroBINub7za90QLmPo8N9Z4jv4hyA",
+      "/api/place-photo?name=places%2FChIJHdNlBLKWNgcRs5pwhQqWdzg%2Fphotos%2FAa-ngMYNCk0AUyzOuo0aJMMx4DKR17X_6aJZcP2JEPm_useEKzeYh--M2dKQtX7ODR4JTtR-qtN2GG3sJrt4iozazQhInAl3RlS_rSAzZsQxjigN667sFGe2fdwWuAkSoWxoUxEiQ5iT0ggWpJToaumcXcIVjAU66fCViOkFv9UzCmOiBr1Wk92l5W5sZQozXOWlfnfO10AhJZbAKRQqXyrPYsyRRP0zjmNRFzjOQ5oP3Dd6NA7K3c1e-lwb4de_xbsPbSG2PoqwYlEMy8HEPbhuk3wk1QiVV93J4xDPmoO8FX7DMAjX_dRJNlkc39YJnezVmaJpBOQf-g3Mg2XGTVTfS8_6MxUQevWyIVrskBfNYqGMkpSpG-PbcpmZuv4B2wwzhrh_V1hXjqmZr4dPSgcYQEUaKQw",
+      "/api/place-photo?name=places%2FChIJHdNlBLKWNgcRs5pwhQqWdzg%2Fphotos%2FAa-ngMYfzwC1ZbD2GOXBgZCIhYrob1YmTm8jj20msiEjwYXn-tY9m-Rj5RyXnbRW1mjtfCrVDaBRnHi8ivW1ZJIWk41C7WI6UgnyNaVlDNo2fxCVqbRHsmRZB0eIswm3iHqnebU7N3awo9tNhdGk8Oeni0wj6lBtiVuOepLGKlmSqxdraqEGPPgXHON0mlVeQauEt5hkbj_UQ--y2XbBIY4pISAr4u-VUbAosPaUfUVhDALqM2-uZf4JPdfMlpPaaMWSi0YHfWrwiw09KvXoCwoPs098Y7Inyk_DXaU-BM874D8LpRSb9yaVIUeGamiX8Q1zKWAaO8iuVFONcjd4P7AQRW1J6qPJQ-ogw_W85xsOGectAH13eArO7qJU8HJnATfWpkZVwBRzKjHDzDl8ar88zWNRre4"
+    ],
+    "reviews": [
+      {
+        "author": "Fernanda Carrera",
+        "rating": 5,
+        "text": "MELHOR lambreta da cidade. Enormes e deliciosas. O melhor atendimento também. Laila e equipe sempre me atendem tão bem que eu já voltei mil vezes e voltarei mais mil. Não tem lugar melhor em Porto Seguro para comer casquinha de siri também. Tudo é maravilhoso e o preço super justo! Recomendo demais!!!",
+        "relativeTime": "4 anos atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Douglas Profe",
+        "rating": 5,
+        "text": "19/12/2017- Show. Preço justo e um comida típica maravilhosa. Raul (proprietário) nos atendeu super bem.",
+        "relativeTime": "8 anos atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "CLAUDIO SILVA",
+        "rating": 5,
+        "text": "Excelente restaurante lugar familiar.\n\nTodo ano que vou em Porto Seguro tenho que ir no Sinhoca.\n\nSinhoca to chegando no dia 25/03 vou fazer uma visita .\n\nAbraços",
+        "relativeTime": "10 anos atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 95,
+    "opportunityFactors": [
+      "Sem website oficial cadastrado",
+      "Oportunidade de catálogo direto no WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:51.540Z",
+    "developerPitch": {
+      "leadName": "Sinhôka bar",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.8★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Sinhôka bar* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.8★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Sinhôka bar* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Sinhôka bar possui excelente avaliação no Google Maps em Porto Seguro (4.8★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Drinks autorais, noites vibrantes e a energia de Porto Seguro.",
+        "subheadline": "Carta visual de drinks e reservas de mesa direto no WhatsApp.",
+        "primaryColor": "#F59E0B",
+        "secondaryColor": "#064E3B",
+        "badge": "Coquetelaria & Experiência Noturna",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Sinhôka bar.",
+          "botReply": "Olá! Que alegria atender você na Sinhôka bar! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "gastronomia_autoral",
+          "vibeLabel": "Coquetelaria & Experiência Noturna",
+          "vibeDescription": "A essência, capricho e qualidade da Sinhôka bar em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#F59E0B",
+            "secondaryAccent": "#064E3B",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#F59E0B25",
+            "accentBadgeText": "#F59E0B",
+            "buttonBg": "#F59E0B",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJa4FKRq-WNgcRrqrpWqG3S80",
+    "placeId": "ChIJa4FKRq-WNgcRrqrpWqG3S80",
+    "name": "Pousada Navegantes",
+    "category": "Hotel",
+    "segment": "Pousadas & Hospedagem",
+    "address": "Av. 22 de Abril, 202 - Porto Seguro, BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 3288-2390",
+    "whatsapp": "557332882390",
+    "isMobile": false,
+    "googleMapsUrl": "https://maps.google.com/?cid=14793119304671406766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "http://www.portonet.com.br/navegantes/",
+    "rating": 3.9,
+    "userRatingsTotal": 1069,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJa4FKRq-WNgcRrqrpWqG3S80%2Fphotos%2FAa-ngMbqgucAoslMDfXbZiH9rvN5Wxt1G3cq95i_QG27Abqq1_Jw8m4-NRidxdK19vm1OwbD82UHQUpBQoxKOumDV8R8y2-Fg5rYY97gESrncqJHW4KjOg_v5DM0rmxHdBBGsDcNbEDvV6AGRwOcru7PrxkmV11-nCo4O4f3aYur_JB1hKRgLhQE4r8Fc2FX3AJW1n9NYqrp8CLzD1zm4hcz8ryxRnyYdqq8-sz3zXuApYLOWeKlCsjstjo6V4ha6z1c-bEpwd68cCdL7WQV2Jh0WKYTbqbzDdhN7gXQHqrkcIUPcCGo3gX4VqRubakenV_fnOu5--OBdE7xvk3_vcFyNvKzJXizLxro8YWeDJuzf2P2VT_fivn04BxB0cDKMP0GMfQEd6KmSUySrA4wKVME3DJCqGw",
+      "/api/place-photo?name=places%2FChIJa4FKRq-WNgcRrqrpWqG3S80%2Fphotos%2FAa-ngMZ_ExFu14VJeNAlWtXKYba7_eUtJmkw_X0AOyCCw7quKo1Z8hQT24PqkY6WHjXi6KsMCN3qt4xkFzbHmmLJ0UPh9fwziJgzYoQgpt2OgSli8xKOBvqdJMarb-kZWNxoqSBX2Qs42CQLxkWHwNJJe_6vVOa-QhmLueAH_eq73RPop2eNUM4iH7OvnxvkaiuinUMM9m6XCHQG6jLVlbZVbruz4Y-CEMEKU1S-VpsG8TzIbnK1HFSxMgVRSA6UWztd9sa6hQ92zwBlTIlXhfH5mA05rbum1CqKYTu8Fo4ANZCRK3bWAkSnfCnCvlKfYdrmwZf71LuFmJzRTJeVk5ZBrseChu1KYZmkS2pCBQPtxZAcqHZ5TWEEnJ13FFugHTQfCbTsvRrJaS717StHw3kEpPyU6CKFP3E",
+      "/api/place-photo?name=places%2FChIJa4FKRq-WNgcRrqrpWqG3S80%2Fphotos%2FAa-ngMaUwsIpykIM9soCD943Ev3putu7kfqMd8z3tFZ2gg_F6yCIgBdrt_RAfGbYacxyNhEetkbTs_1SAtWs4iIuLsaJqI0RuV00EGay7Vo29oDs6hV30FuxY4YosujrrqzgwOVpm9Zt1Ppr3G-6ntKEvuzw5VBvukoTyDPXNthOLa3QuymDV8_UUurDUKZ-_AQF-9aIk1TBcYHp-7654bOwC0vmGTojuGDruAIN-WlG8y9qn5DT3yOSWE4Sp--gdBPOsiZOSFLS8I3uHdC4SOMn3TQb6fgRcQzmuADGyYKOyltc6QdpLW63g4WDIRqTDkReLBnPukw5a9BU1mYA8g5w7njs5VcXxkM-s6nejIjH-JbAzOuN7fOpi3YN1JHIPchKKMNIWEq4Tgz4su5jC0lFZmnGfohT-iM"
+    ],
+    "reviews": [
+      {
+        "author": "Marines Souza",
+        "rating": 1,
+        "text": "A pousada é simples, mas isso não pode ser sinônimo de sujeira e desleixo.\nO quarto 40 tinha cheiro terrivel de esgoto, mesmo sendo limpo o cheiro do banheiro infesta o local.\nTem um canto do lado de fora infestado de barata, eu colocava toalha em baixo da porta na hora de dormir por nojo delas entrarem.\nO café é sempre igual,  em 4 dias apenas 1 teve ovos.\nOs porteiros são gentis,  as meninas da limpeza e café são muito antipáticas.\nO frigobar do quarto nao fechava a porta, não gelava nada, um lixo.\nA única vantagem do lugar é aa localização.",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Aline Alves",
+        "rating": 1,
+        "text": "A única coisa boa é a localização do hotel, e o atendimento dos recepcionistas o resto deixou muito a desejar, quarto com frigobar vazando não gelava nada , chuveiro do nada para de sair água, ar condicionado não funciona direito, limpeza zero no quarto , elas não lavam nem o banheiro somente tiram os lixos e trocam as roupas de cama, o banheiro fedendo, café da manhã no primeiro horário com os ovos frios, precisei chamar alguém para acender o o rixo, máquina de café vazando com guardanapos e uma xícara para aparar o café pingando, salsicha da pior qualidade, cuscuz colocam já com açúcar , onde já se viu?! Máquina de suco encardida , acho que nunca foi feito uma limpeza, enfim não recomendo. A não ser que passe o dia fora passeando.",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Rodrigo Jose Santos",
+        "rating": 3,
+        "text": "O ponto forte do hotel é sua localização favorável pra quem quer se hospedar no centro da cidade.\nPontos fracos são garagem com vagas limitadas e você fica sujeito à ação de flanelinhas,  à noite, quando estaciona na rua em frente ao estacionamento.\nFuncionários com má vontade para reposição de itens do café quando você chega próximo ao termino do horário em que é servido. Pouca variedade de frutas (melancia, melão e mamão todo dia) e demais opções.\nCheck-in antes do horário não pode mas se pagar taxa extra pode e também não disponibilizam espaço pra guardar bagagem. A absoluta maioria dos hotéis onde já me hospedei liberam entrada antes do horário caso o quarto já esteja disponível para acomodação.",
+        "relativeTime": "5 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:52.400Z",
+    "developerPitch": {
+      "leadName": "Pousada Navegantes",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (3.9★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Pousada Navegantes* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (3.9★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Pousada Navegantes* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Pousada Navegantes possui excelente avaliação no Google Maps em Porto Seguro (3.9★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Seu refúgio de tranquilidade, aconchego e hospitalidade na Bahia.",
+        "subheadline": "Apresentação das suítes e reservas diretas no WhatsApp sem taxas de intermediários.",
+        "primaryColor": "#0284C7",
+        "secondaryColor": "#D97706",
+        "badge": "Refúgio & Hospitalidade Baiana",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Pousada Navegantes.",
+          "botReply": "Olá! Que alegria atender você na Pousada Navegantes! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "solar_praiano",
+          "vibeLabel": "Refúgio & Hospitalidade Baiana",
+          "vibeDescription": "A essência, capricho e qualidade da Pousada Navegantes em Porto Seguro.",
+          "typographyStyle": "serif",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#0284C7",
+            "secondaryAccent": "#D97706",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#0284C725",
+            "accentBadgeText": "#0284C7",
+            "buttonBg": "#0284C7",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJiYdaE5aXNgcRI9ZnZoIZf2Y",
+    "placeId": "ChIJiYdaE5aXNgcRI9ZnZoIZf2Y",
+    "name": "Pousada Rosa dos Ventos - Porto Seguro",
+    "category": "Pousada",
+    "segment": "Pousadas & Hospedagem",
+    "address": "R. das Ararás, 360 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99923-5745",
+    "whatsapp": "5573999235745",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=7385649961765426723&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.mochastay.com.br/landing/rosa-dos-ventos-boutique-pousada",
+    "rating": 4.9,
+    "userRatingsTotal": 15,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJiYdaE5aXNgcRI9ZnZoIZf2Y%2Fphotos%2FAa-ngMbKf5-UBqIdTjq3j19WJA927JUjrV6r_aVCkBiUMjyLlg_fkrXra5ngUwoT2JTxH3bgYZtzkL1bFyPC201zgl-Dsrrrlf_iw5OEWdLdD8xHexoOkrvlwROwHfpJWwjV3eiBu9dsnJ4uPlyu3NKP0ndMNFBM4z2dgTEockPyP_YZx6t-S0FXPnqetj9RdRfOVrGzE4nrEihDT3qD733xg6AmKmCSt-W4gucxe0v9DtY2VxSI6UOE4e_kogCWoRl7zaBPC3doQza0jyy4z5OZuqBLXWS7IoUsCW7aZWAmYt3cfweoA51m3v9qUUZOKjeipyip64OLyWLibyD2WOXEKXASEYdUOEvL4ldLAJ5bc4depUeipyP5vHOor2WJwGx8bgj_nnX91O8_jMQ1rAgXPDZzRXbaE5RgmqLcNNm7aKzh",
+      "/api/place-photo?name=places%2FChIJiYdaE5aXNgcRI9ZnZoIZf2Y%2Fphotos%2FAa-ngMapMTMvTgzQ7di4-byzPzXVvxXOEnj60rcE6azZ8gj9NfBd4c6rcIhBvZ3HXNEKo93mc0Mma8Fc3lkYXnb4bUbeG-MSOJp5XbF-iiqj0upq3Ad-Vabnb2y7sg7Jl8MbwYstAbBVJixtW7tDwGSkgxcOzvVIgjIOKIKSQdkQURYP51iusqCNQe-7CXJzS1-JTXWt4IriTe-R6HiejrSa3ZIKXyNXmDS4Wo1WP2GnBDGsCjcq7axPVl-bCZKrC3ERA_JWZx68ia5vxpm5ZZzFS0_3ASqelBxlliVCXXIdFtZRG3_O-dfO_Hj9S-F09T-BXJetOctBGZnZDVa3LrYPBHDC5-2lpmx75M1ys__jqr_uMUZRuNJ-MYdMv1M2KCG_frUGw2BJlwkeDdqWn4o3nn4FQDFuXcuSl1JyrIczRSaPNg",
+      "/api/place-photo?name=places%2FChIJiYdaE5aXNgcRI9ZnZoIZf2Y%2Fphotos%2FAa-ngMaB3t3MfjWaYn1-MU9O-ac_Vi8K6jHdNA52ayEuMDFLfY1robLA-5GckfYQaVr6Bn7nRI9QWefUW2aWsuveZ6ZboxYnYYPWPIrPEjfMK5qryFubyNrD80gcqIXujVqPZfdgEmKrSsQ8aYDtu44loWTmui6NyrxxrGtNLr9e2-vjo1_MW0wYAVBF7apVMRvCDChe0ShSY8rNI4Px8l83tBqOfLEhd-S2_IH2eVSsW2xfs98wxb7vudOeXrkefty8KN1g0zyD0bYRnuOzQl70_4VA2NPfUMZVLM5bH2nwptJ_h-XlFcn8vYJFQjzuU_E8DjVOMeMCg4oY506iGioXyxe8SLdwb5nbIr4b94hEyqAeNYGXa7U_jCrIwUosDsQW34v-UcWWJ2OMZWphzaTbOvWkDoCqMYN5cHMICdf_WxqB4w"
+    ],
+    "reviews": [
+      {
+        "author": "Julio Andrade",
+        "rating": 5,
+        "text": "Excelente atendimento, excelente localização.\nConforto, qualidade, café da manhã incrível, tudo fresquinho e de qualidade. Tudo muito limpo e organizado, móveis de madeira maciça, e um jardim incrível.\n\nLuciano, Gabriel e equipe te tratam como se você estivesse em casa.\n\nSimpatia, dedicação, vale a pena cada momento e experiência. Recomendo!",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "aj manutencao eletrica",
+        "rating": 5,
+        "text": "Lugar top, perto de tudo. Atendimento excelente.\nO Gabriel está de parabéns pela educação e atendimento, muito prestativo não deixou nos faltar nada. Já estamos programando a volta. Super recomendo.",
+        "relativeTime": "2 semanas atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Juliano Prado Rodrigues",
+        "rating": 5,
+        "text": "A Pousada é muito linda, ambiente com boa energia, os quartos são espaçosos e equipados com móveis de madeira, perfeitos, além de frigobar. Colchão ótimo, varanda no apartamento, com rede de balanço, banheiro grandes, lugar calmo, perto de tudo que precisamos em Porto Seguro. Próximo à praça e a passarela do álcool, menos de 250 MTS de tudo, supermercado grande, farmácia, restaurante, lanchonete 24 horas a menos de 100mts. Quero agradecer aos proprietários pela recepção e dizer que dá próxima vez estarei de volta nesta pousada, e vou levar meus pais.",
+        "relativeTime": "2 semanas atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:52.400Z",
+    "developerPitch": {
+      "leadName": "Pousada Rosa dos Ventos - Porto Seguro",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.9★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Pousada Rosa dos Ventos - Porto Seguro* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.9★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Pousada Rosa dos Ventos - Porto Seguro* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Pousada Rosa dos Ventos - Porto Seguro possui excelente avaliação no Google Maps em Porto Seguro (4.9★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Seu refúgio de tranquilidade, aconchego e hospitalidade na Bahia.",
+        "subheadline": "Apresentação das suítes e reservas diretas no WhatsApp sem taxas de intermediários.",
+        "primaryColor": "#0284C7",
+        "secondaryColor": "#D97706",
+        "badge": "Refúgio & Hospitalidade Baiana",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Pousada Rosa dos Ventos - Porto Seguro.",
+          "botReply": "Olá! Que alegria atender você na Pousada Rosa dos Ventos - Porto Seguro! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "solar_praiano",
+          "vibeLabel": "Refúgio & Hospitalidade Baiana",
+          "vibeDescription": "A essência, capricho e qualidade da Pousada Rosa dos Ventos - Porto Seguro em Porto Seguro.",
+          "typographyStyle": "serif",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#0284C7",
+            "secondaryAccent": "#D97706",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#0284C725",
+            "accentBadgeText": "#0284C7",
+            "buttonBg": "#0284C7",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJz-9Qz6-WNgcRCu4DiwNSPUU",
+    "placeId": "ChIJz-9Qz6-WNgcRCu4DiwNSPUU",
+    "name": "Odonto Center ( dr Everton Corrêa)",
+    "category": "Clínica odontológica",
+    "segment": "Odontologia & Saúde",
+    "address": "Ao lado do restaurante Point Açaí - R. Gen. Freitas, 50 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 98872-8624",
+    "whatsapp": "5573988728624",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=4989234137367047690&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": null,
+    "rating": 5,
+    "userRatingsTotal": 572,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJz-9Qz6-WNgcRCu4DiwNSPUU%2Fphotos%2FAa-ngMavWuskPP-iJbxJaaL5lFCkpzbOswWXIwQkFWRVyJI-bhJLggICzIRBvpWqXNkudNpPCp7ELcODgTQIpwk5JnsBzqwH2NfnLDWjZZ1Ic9LGAFcrqcm7FIHGEjXJyuW1uk4CAquGVXPDC4R1E7FUTYCk9FG1woKROSaIKKmIUBx5VHufGxbi0ZkXk1vvFxzBmEEq_TW47WQO2bBo2JRTxei8mFzq2iX7PqT14S-BLNTYrHUCbzhS0iRj4QfYSbPUVwNkWMxMDMTJhoqT59d10yoVMpexFkBN2MeG59mzh6uZop6nsCowyDMP4pI_yH_ckELMhfM1s5M_6dBZ2BLb35rVVaSvYZq2DvCGJycjcB4PYz52APKcigSOOz_KIVpOEBPw_pmfoWRQ67EV2d5GRsqBCDFRVP90reVk0JTa5VRYYQ",
+      "/api/place-photo?name=places%2FChIJz-9Qz6-WNgcRCu4DiwNSPUU%2Fphotos%2FAa-ngMbRnEVv85wRjJhCu-2qcPpeAPOjelzDCHTiOKTt3At1wCBGSwTb4d9iRlup05q_0sgjX5hNgzqr77pyDlqou5Y5pJ0D0sfgaUG-vvAbCtzjwJFnA45B9rZh7zsEcXkZNRMHSaKzMailhGyVJLO_0MXeHanjPTaIkenPCpGKZrXgkoebTtZkpYpkQgokMx4bVDVdAa7qdU2v7CBuWAOa6i-gC5AbJHyfWff2uAhwY8aJa2wiLC0Q1NpvG1IsWrOCyz74oOKoSAJkkJhSf8niDN_qJNlerCPINBY56eLAOSj5SFgaC6ysKmenzujwN2WCzudx6ghZoWqkRiY004g4wED50kcQETchAn4ll8VBuofA-KbWUIynUqAlSXhzlgIRVWqoNjQWBGRLMTwOv46pMZw_sg",
+      "/api/place-photo?name=places%2FChIJz-9Qz6-WNgcRCu4DiwNSPUU%2Fphotos%2FAa-ngMYh_KpuI5iB8uWY3_MCJIZWTqy8t5gjVAmzBcC_J1yZiMS-wY5lM585T9_J7mJP9Np4V-0mqQ1jXXlo4DdFE-TbjgsrASQHmxTR9wCxmA-FeyHBEC7oexejQX46u9OV6wwAiN45dpAdIDdYBrH237Wb68L7lQTHOki-0RlHzvPlkdN0oHzcbuQN0HtwTfzvY4NWBQR2aSAzvwcGGDCUgCUmJcJ_Vb6CzqzpL9v38T6SW-Gbo_L8RsvsTg2JsWkKggn5Xjp95CTfirCFadMrj3YfMARw7NgwKNY_MvzoH3pqwwHIPTOeBkJ1_fbKumCX9p8KHIkSZjrWXWgy0NNPzfa7T7YNShwTm2Vn0N855HEPTEOHeS4CPikVmtIyRS3SlNbxAYNjkRJuZEsmHytH--VPNrU0Rlo"
+    ],
+    "reviews": [
+      {
+        "author": "andrea gerlin",
+        "rating": 5,
+        "text": "Escolhi esta clínica pelas ótimas avaliações que encontrei no Google e, devo dizer, a experiência foi exatamente como esperava. O doutor Everton é um excelente profissional, muito atencioso e competente, que transmite confiança desde o primeiro atendimento. A doutora Brenda também merece destaque pelo cuidado e dedicação, proporcionando um ambiente acolhedor e um tratamento de alta qualidade. Além disso, o atendimento das meninas pelo WhatsApp é impecável, sempre rápidas e solícitas para esclarecer dúvidas e marcar consultas. Recomendo a clínica sem hesitar para quem busca um serviço eficiente e humanizado.",
+        "relativeTime": "5 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Arle Costa",
+        "rating": 5,
+        "text": "Excelente atendimento! Dr Éverton nos atendeu com muita gentileza e demonstrando grande capacidade profissional. Somos gratos pela excelência desse profissional.\nParabéns, dr. Éverton!",
+        "relativeTime": "7 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Brazilian American",
+        "rating": 5,
+        "text": "Super recomendo. Atendimento profissional e experiente, fui atendida rapida e de forma efficient, agradeco muito",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 95,
+    "opportunityFactors": [
+      "Sem website oficial cadastrado",
+      "Oportunidade de catálogo direto no WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:53.056Z",
+    "developerPitch": {
+      "leadName": "Odonto Center ( dr Everton Corrêa)",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (5.0★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Odonto Center ( dr Everton Corrêa)* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (5.0★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Odonto Center ( dr Everton Corrêa)* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Odonto Center ( dr Everton Corrêa) possui excelente avaliação no Google Maps em Porto Seguro (5.0★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Tecnologia avançada e cuidado acolhedor para o seu sorriso.",
+        "subheadline": "Apresentação dos tratamentos e agendamento de consultas sem burocracia.",
+        "primaryColor": "#0D9488",
+        "secondaryColor": "#0284C7",
+        "badge": "Odontologia de Alta Precisão",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Odonto Center ( dr Everton Corrêa).",
+          "botReply": "Olá! Que alegria atender você na Odonto Center ( dr Everton Corrêa)! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "clinico_humano",
+          "vibeLabel": "Odontologia de Alta Precisão",
+          "vibeDescription": "A essência, capricho e qualidade da Odonto Center ( dr Everton Corrêa) em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#0D9488",
+            "secondaryAccent": "#0284C7",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#0D948825",
+            "accentBadgeText": "#0D9488",
+            "buttonBg": "#0D9488",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJpfvRX2eXNgcRCMrnJ1_7XEY",
+    "placeId": "ChIJpfvRX2eXNgcRCMrnJ1_7XEY",
+    "name": "Odonto Excellence Porto Seguro",
+    "category": "Clínica odontológica",
+    "segment": "Odontologia & Saúde",
+    "address": "Rua: Pero Vaz de Caminha, 473 - Centro, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99951-8268",
+    "whatsapp": "5573999518268",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=5070203666622302728&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.odontoexcellenceps.com.br/",
+    "rating": 4.8,
+    "userRatingsTotal": 55,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJpfvRX2eXNgcRCMrnJ1_7XEY%2Fphotos%2FAa-ngMaygArMfRysA8V2g6_EBOB21tprEcxKUEcof80SaBW-m_ysQwcsKN3kNcNxyRC-abET8R1UktBIa5_k8x0Q7YxKqhy0dVIxOotgAQaBUMbWJKW9fqu3O4ENst4B7RD4nGdSTwdeND-MidbubzQ9ngxhhQrb430UFMmfhTWw1bjxD2Ne6AtDIRrqV5SHigTu3h_NplM8gmlSFSM8ffnnT4Jl6C9q8cNCVaY2GluARNSoN_z69EOmvt0FNPwpoBY9EPlmuK35LRTtzI-rtEEEydWDkuSXO_zYGq4IiiUTTZ5VmK8PGtb0AllBbkc5BbbeanPnm7FSjiyWocQNuNaFFnVV_ttO1KzuKk85ec_kUB6UTU3PUroxua_7_yK7cicGIviD8JHOeIgPJoged9iDAwayon4",
+      "/api/place-photo?name=places%2FChIJpfvRX2eXNgcRCMrnJ1_7XEY%2Fphotos%2FAa-ngMb18U31gTujcIdDbACZHOD0xwRdLx2E3exzuo7St4Vz4fHw28Q0Md2jqFOfY1UY3ipUDr0xyh5IIDChCpmvZ75e_xPQV-QFSJgpxj8DJntomVroCfBIOzOI6ErqPvrePFSgK-f3-nCWck8YzTCxRXN60NlYfYycaUlruLkkrMlojrlfil5VBfTiDsGV3p7CGfSFwnp6AKWArYQ3ov_M7Brw6Vli7c_F4vIOc9jMvARkiVVTST9ld5fVwOr2GFC3Zl3XyLOYnUk9DL1GvJ1XEYnFo1RExHpx8H5abGt3nfShtqV1-t9krPldTIRG0HnBgHFyzTfvauMcwlOs8WvCWPmHcXOWmMh8yfyUHdu7KwJNfnBQ6vul9it4ZOOvGe_WnnsD7j7QtUJlF0qXYFRhRojueGM",
+      "/api/place-photo?name=places%2FChIJpfvRX2eXNgcRCMrnJ1_7XEY%2Fphotos%2FAa-ngMZgKdH4tW0IUtVodLqmMisYQma9a273dhEvKMOwv9iuya7Y2a5PswrhKCzYsGwQsi615w010b5LBraTEz5bn6ZhG-eWUbzNu7pBbKHYqtcfQ0xdtAtIHVeL_z3KJQcTMVO0eilAa8zzlo4FSlvVqqblOjU2-XX11gYfmaGY-z02lh_G6ts16InKH91cuqS2lzLlHlprKdfb9aNRSOlqie8QbdABB9efWX4pWCN7StRA9sAOuDMfshT1pxIZcEuFl7LSseA-c-nd81bj7QafpvMb_ubwc4w7Erg1z_9xjJgg5kSyum7HdDrzlD836FL0ltNojasCjThl4BQQl-3V4lUb294G35yJ2KCwCuqUqeIZIhMN0SAksvHk4X961LzkMD0TIiEv4KJtEd6-1pD8dm-sbv4"
+    ],
+    "reviews": [
+      {
+        "author": "vitória Barros",
+        "rating": 5,
+        "text": "Vim de Nova Iorque fazer 3 restaurações com a Dra Daiane Moutinho. Uma minha experiência  excepcional. Apesar de eu ser uma cliente muito exigente, esse foi um caso delicado, a minha boca estava quase toda inflamada a 6anos, e eu tinha retirado 4 sisos e 1 dentes extra (5 no total), 7 dias antes de vir nela, as minhas dores estavam intensas nas raizes, e na gengiva toda só de tocar. No momento que eu entrei na sala dela, eu estava com medo da dor porém de cara ela já me passou confiança sobre conseguir resolver a situação. Um detalhe importante, quando ela colocou a pomada pra adormecer a area antes de aplicar a injeção, ela deu uma esfregadinha e aguardou uns segundos e quando aplicou a injeção eu tive 0 dor, nem a picada eu senti (bem diferente das experiências que eu tive antes), todas as vezes que eu sentia o mínimo de dor ela parava, adicionava mais anestesia e tentava de um jeito diferente.\nFinalizamos 3 dentes com excelência e posso dizer em um nível 10 de dor, eu senti 0.5.\nPenúltimo dente da foto foi 1 dente. Os outros três forem na parte de cima.",
+        "relativeTime": "2 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Alan Cléber Balieiro",
+        "rating": 5,
+        "text": "Gostaria de deixar minha avaliação sobre a Odonto Excellence Porto Seguro.\n\nAinda não concluí todo o meu tratamento, mas até o momento minha experiência tem sido muito positiva. Desde o primeiro atendimento tenho sido muito bem tratado, com atenção, cuidado e profissionalismo por toda a equipe. Sempre me sinto acolhido e seguro em cada etapa do processo.\n\nOutro ponto que valorizo é a preocupação em explicar os procedimentos e acompanhar a evolução do tratamento, transmitindo confiança e tranquilidade ao paciente.\n\nPor tudo o que vivenciei até agora, recomendo a clínica e agradeço pelo excelente atendimento que venho recebendo.",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Ítalo Souza",
+        "rating": 5,
+        "text": "Excelente atendimento, recepcionistas e Doutores muito educados, instruem bem cada detalhe do seu procedimento, fornecendo assim um ótimo desempenho com seus pacientes.",
+        "relativeTime": "3 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:53.056Z",
+    "developerPitch": {
+      "leadName": "Odonto Excellence Porto Seguro",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (4.8★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Odonto Excellence Porto Seguro* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (4.8★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Odonto Excellence Porto Seguro* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Odonto Excellence Porto Seguro possui excelente avaliação no Google Maps em Porto Seguro (4.8★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Tecnologia avançada e cuidado acolhedor para o seu sorriso.",
+        "subheadline": "Apresentação dos tratamentos e agendamento de consultas sem burocracia.",
+        "primaryColor": "#0D9488",
+        "secondaryColor": "#0284C7",
+        "badge": "Odontologia de Alta Precisão",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Odonto Excellence Porto Seguro.",
+          "botReply": "Olá! Que alegria atender você na Odonto Excellence Porto Seguro! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "clinico_humano",
+          "vibeLabel": "Odontologia de Alta Precisão",
+          "vibeDescription": "A essência, capricho e qualidade da Odonto Excellence Porto Seguro em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#0D9488",
+            "secondaryAccent": "#0284C7",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#0D948825",
+            "accentBadgeText": "#0D9488",
+            "buttonBg": "#0D9488",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJg8Mlc_OTNgcRZgHPXMOIu94",
+    "placeId": "ChIJg8Mlc_OTNgcRZgHPXMOIu94",
+    "name": "Ellegance Modas Boutique - Porto Seguro",
+    "category": "Loja de Roupa",
+    "segment": "Moda & Boutiques",
+    "address": "R. Praça do Mirante, 52 - Mirante Caravelas, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 98841-1247",
+    "whatsapp": "5573988411247",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=16049572069721964902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "https://www.instagram.com/ellegance_modas15?igsh=MTI2aGh2ajk0NDcwMw==",
+    "rating": 5,
+    "userRatingsTotal": 17,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJg8Mlc_OTNgcRZgHPXMOIu94%2Fphotos%2FAVoNoXTLiYwejRAubv3QsjDKCTzaR8uNRh9eHQi2vgztp0r_vgd5IzQzyud3Quhqd2FsNVwJgXMgXwJcEWDKSIClz1zN9616-FZ1AXk0XMYQbtLYSTQjstMMy9nYSR7jihoM7i8SyNzAa_QegC-l9UUS8veFIAntZtLGQuMbtAwv1_ekPdEj2eMx3glsj5kd62UB3yaiRvWduOEKroeIXD_GHeTUqUiGLsQjhehv0Az7BAp3u8HmicBBYMqiwEKgNDavVdwfqDrX5UUr-6jleaELrPGZqszqhfhQKLCzTyxdJIPsBZJdW0-6JLGz78quN6oZZkbD6P4X8u9ENMuVQA8TxbJpE6z82DYZOJNfoVugkd0fdo0js8Aol8YqkbEw9Cdw26fBOjOYOL9h2uzus5Ee0aMNXA6fQ4uc_gbmhYAvm8VbIABuwZfOcoMDcaAvbA",
+      "/api/place-photo?name=places%2FChIJg8Mlc_OTNgcRZgHPXMOIu94%2Fphotos%2FAVoNoXRJmTXfrcQMQSeqI7EdGKH-OSUYn78eBom2iW6AEauXTbbRH9gtg3eFp2njJoaGa0xwbU6QFpz4eQHFFHFFWojXTjrcC2-FOc2zm51k0oO6cPNLccwEJHmVkp47Zyweyr27iOzNkjmj25mpGgxEzHrXs_zrSs0Cw9285jD4wGqYhWT5w-M8sx0CxxpK-QXhkSA1bNljqoRkP7D5Vl9wdZ_lEtfIUYmkrT3q1ZgING4nX8f8w8orj0pVTqjAhYJTrOUeC66FROMv7WUMzXkVJwjPl8udqfD1VcdbfzHC3H4r8na4HuObOcPSM-DZCNtbDXVFH0DLpJQQc3Lg1L713JKWMMk1WtE-ixp9tsyLaKcqRePXXxD5g93eqc6SW8pfW2AaI-qLoBaxr9vf-nIXYBuPXI_GddPeJ4O6iEgi257GTP_pclG_jsOhVPdA9ydm",
+      "/api/place-photo?name=places%2FChIJg8Mlc_OTNgcRZgHPXMOIu94%2Fphotos%2FAVoNoXQvCyfJpL5vqkpstViWhgoULYkvXq0TrQm5mlJ6iI0RD5VA0f1WR2OdsiOr3yz0n5Jbp5lrqu5Ep9ZCIMDzZSIW2NUSAZxWb2V_596jEB5bvxzFOxrArmIobXMyNNXG3ncwEVydSNHL9TPCktZDeBuGI6elpAGs2JlcW2A3bYJ_M3KoWkVEHBvFGh7lYl73J8cE2131q1oGKNGZaxAJUA2UlduQD1pOjoe6AYcdg-2suXqkr72xJOiL6Az8iIU67wCMRZWhcuaeqeUw-Oa9bVSlbE5obhk9xY-qgV0vsYTXO83IqDfOPMm9OhafmTF84gS0HiVBcBwtkfl0cDCFePAryElF3wpDrvV8MlbslXzhZ292yUW-lTgM2g7qPbR0tk7N64mIVdkvYZo1PxKaqDos5BJJRwvfYXDhJua3YKCZaCNsKWDyUJ-YtELMEvmn"
+    ],
+    "reviews": [
+      {
+        "author": "Vivian Nunes",
+        "rating": 5,
+        "text": "Amo essa lojaaaaa... Marcas maravilhosas, tudo que vc procura tem! E com um excelente atendimento... Super recomendo",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Vivaldina ALVES OLIVEIRA DA SILVA",
+        "rating": 5,
+        "text": "As Olha a loja Elegance tem coisas bonitas muito bom a vendedora que atende assim super bem a dona da loja é muito carismática.",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Juvania Santos Leal",
+        "rating": 5,
+        "text": "Loja excelente,  atendimento perfeito e roupa de qualidade. Sou cliente a muitos anos.",
+        "relativeTime": "4 meses atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:53.664Z",
+    "developerPitch": {
+      "leadName": "Ellegance Modas Boutique - Porto Seguro",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (5.0★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *Ellegance Modas Boutique - Porto Seguro* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (5.0★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *Ellegance Modas Boutique - Porto Seguro* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A Ellegance Modas Boutique - Porto Seguro possui excelente avaliação no Google Maps em Porto Seguro (5.0★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Peças exclusivas e o bom gosto que define a sua essência.",
+        "subheadline": "Vitrine digital de novidades e atendimento exclusivo no WhatsApp.",
+        "primaryColor": "#FF6B00",
+        "secondaryColor": "#6366F1",
+        "badge": "Curadoria de Estilo & Moda",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a Ellegance Modas Boutique - Porto Seguro.",
+          "botReply": "Olá! Que alegria atender você na Ellegance Modas Boutique - Porto Seguro! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "moda_editorial",
+          "vibeLabel": "Curadoria de Estilo & Moda",
+          "vibeDescription": "A essência, capricho e qualidade da Ellegance Modas Boutique - Porto Seguro em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#FF6B00",
+            "secondaryAccent": "#6366F1",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#FF6B0025",
+            "accentBadgeText": "#FF6B00",
+            "buttonBg": "#FF6B00",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  },
+  {
+    "id": "ChIJPwUvhBADFgcR012tPuKJkPA",
+    "placeId": "ChIJPwUvhBADFgcR012tPuKJkPA",
+    "name": "By Taty Cruz - Roupas Femininas Porto Seguro Bahia",
+    "category": "Loja de moda feminina",
+    "segment": "Moda & Boutiques",
+    "address": "Av. 22 de Abril, 100 - Lj 02 - Shopping Avenida, Porto Seguro - BA, 45810-000, Brasil",
+    "city": "Porto Seguro",
+    "state": "BA",
+    "phoneRaw": "(73) 99954-9338",
+    "whatsapp": "5573999549338",
+    "isMobile": true,
+    "googleMapsUrl": "https://maps.google.com/?cid=17334506570556202451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "website": "http://www.bytatycruz.com.br/",
+    "rating": 5,
+    "userRatingsTotal": 10,
+    "photosCount": 10,
+    "photos": [
+      "/api/place-photo?name=places%2FChIJPwUvhBADFgcR012tPuKJkPA%2Fphotos%2FAVoNoXS8Otnng2QQyOufscWShE58AxvXXR-QPJ62uhbwGVwplkxSHf_vlN4cHMOqUKUJ1yRUKiD4m8NfrqMfgSuquat-zVzAsIdymUTtgt-G0aNcnT4o7mA2RTjWbw-18seJTUFK8ovLOejqx3KJVCkLvmWEVqLsxssajW2yl3TrYHG0V64DgvZCEtUTRokn6oo2oI4k65_CdxrQuwIC4dr9CawIYs8B7wAcg35EJdKrqnzI4FIoZOMURWqIvqF2LsKqdegza3AFLkmo1Cl8ekVMdKX3qi0jvAta0mEg3tDS5WweikWKYA_DXv0FR2_AyOR48HHUGjahCn6Qz1KfVvqmwGBnSb7OFp1Ho5v8qufly5DIIMdcC6Z6IZJXhpagRXdgn19DhUClCcXTLq-DkIBxjrD7s2A63M75iKj0sPRyAXE",
+      "/api/place-photo?name=places%2FChIJPwUvhBADFgcR012tPuKJkPA%2Fphotos%2FAVoNoXSCRyIdyU6CEX4Sj-2dzrLx0zK1abbd4TGYB-OhXD1hDX1os2xltGkGe1l0dPeAODTK0ObwWQrVhnc53ekJlQoY4jHXhZEmLQJVDGbj1_cp3gtRySeJwCh8UYH-bTqudcyejaoXnEZZVhaYXoW86fTG7-MNViKdi4SKXf8yhBzfl9SAjzxq-wdLV_Gxd0NBKZYjv1Uit087P1aScIPBCEsDxpIYtbWfEliSAlQi1JaO3e53iUAKcHFFRn9V7dmr-PLet6vfAnHQc6YGMYQoVufRRpJNvxnQS_otvFcnOKwCIn-YMNdxII5D3wG8d0Quiyf0mdOTMw4Jo7_4VeEuI1mrBk0T7lR92kiUyD5V16Yf28Nqf5SpTrKyOzXfPt8LR5JC8JCYKdRoVTIo978VVxf3esfvAuj7RM9Qs-6tL3NIOQ",
+      "/api/place-photo?name=places%2FChIJPwUvhBADFgcR012tPuKJkPA%2Fphotos%2FAVoNoXSH2vizsT93kVuKhbR27QvfEY9MJXiAtrp_lqBaPDKu15IodxBVtNxp7JJew5ZE5BZL2Bs2kqmT5lMI2AEhfTKQYfx-b0rkyyF2nxyZ1O-TO1Dqhu0rFhazzadN1GHQz__QVFsAtSvKAPQLW83tjl0hW7WMIpKOXQWheF2y3B_OQToTvNsCYExLkcyqbLLTed0rzytN6OcVIbnFjG4MZ-PoOzoRuKECVafo0NHM3WYMrmbHaonrh5yEWFm4UcNhQBed0wQWrq8EJqNZDkRN5bHupgfTG10dNocF9dH5wcAos42sc2-W92XCu2iRfiwGiNfnpBXFPyfCM8pp_1R_R71S17vxs33vxAWUHLu45-iURcIiq4gtKB-pirO_Oiyfvhk6p07ihXjDdllQbpwsKcO5YFYREe2LGATCI_o8GwtoDA"
+    ],
+    "reviews": [
+      {
+        "author": "Ambientha Interiores",
+        "rating": 5,
+        "text": "Atendimento excelente do começo ao fim! Toral atenção e cuidado de toda equipe, além da disponibilidade e qualidade dos produtos",
+        "relativeTime": "2 anos atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "Sheyla França",
+        "rating": 5,
+        "text": "Lugar bonito e aconchegante, looks lindos e com atendimento perfeito!",
+        "relativeTime": "6 anos atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      },
+      {
+        "author": "mila imbassahy",
+        "rating": 5,
+        "text": "Excelente atendimento e qualidade.",
+        "relativeTime": "5 anos atrás",
+        "sentiment": "positive",
+        "detectedPraise": "Atendimento atencioso e produtos de excelente qualidade"
+      }
+    ],
+    "opportunityScore": 65,
+    "opportunityFactors": [
+      "Presença digital com potencial de atualização para mobile WhatsApp"
+    ],
+    "status": "proposta_pronta",
+    "createdAt": "2026-09-23T19:46:53.664Z",
+    "developerPitch": {
+      "leadName": "By Taty Cruz - Roupas Femininas Porto Seguro Bahia",
+      "developerName": "José",
+      "summaryReason": "Comércio conceituado em Porto Seguro (5.0★). Oportunidade de presença mobile de alta conversão sem intermediários.",
+      "whatsappMessage": "Olá! Tudo bem com vocês? 😊\n\nMeu nome é José, moro aqui em Porto Seguro há muitos anos e minha família também tem comércio aqui na nossa cidade.\n\nAcompanho o trabalho da *By Taty Cruz - Roupas Femininas Porto Seguro Bahia* e vejo o quanto vocês são elogiados pelo atendimento e dedicação (5.0★ no Google).\n\nComo trabalho com design e presença digital para empresas locais, montei uma demonstração visual — sem custo algum nem compromisso — mostrando como a imagem da *By Taty Cruz - Roupas Femininas Porto Seguro Bahia* pode transmitir no celular o mesmo capricho que vocês já entregam no dia a dia (segue na imagem anexada).\n\nDá uma olhadinha quando tiver um tempinho! Se fizer sentido para vocês, vai ser um prazer trocar uma ideia rápida por aqui pelo WhatsApp (73) 99931-3401. Um abraço!",
+      "audit": {
+        "businessDiagnosis": "A By Taty Cruz - Roupas Femininas Porto Seguro Bahia possui excelente avaliação no Google Maps em Porto Seguro (5.0★), com alto apreço dos clientes locais e turistas.",
+        "profileGaps": [
+          {
+            "badge": "📱 Oportunidade de Canal Próprio",
+            "title": "Atendimento Mobile Direto no WhatsApp",
+            "description": "Clientes que pesquisam no Google Maps pelo celular procuram praticidade imediata para consultar opções e falar no WhatsApp.",
+            "impactOnSales": "Maior captação de clientes diretos sem depender de intermediários.",
+            "intuitiveAutomationSolution": "Presença mobile moderna One-Page com botão direto de WhatsApp."
+          }
+        ],
+        "customerSentiment": {
+          "praisedPoints": [
+            "Qualidade do serviço e dedicação da equipe",
+            "Excelente reputação na cidade"
+          ],
+          "recurringComplaints": [],
+          "sentimentSummary": "Clientes muito satisfeitos com a qualidade e atendimento presencial.",
+          "hasExplicitComplaints": false
+        },
+        "revenueLeaks": {
+          "description": "Clientes no celular que pesquisam no Google e optam por contatos mais rápidos.",
+          "estimatedLoss": "Novos clientes semanais que preferem facilidade de agendamento/pedidos."
+        },
+        "tailoredSolutions": [
+          {
+            "pillar": "Website & Conversão",
+            "deficiencyFound": "Falta de apresentação rápida e interativa no celular.",
+            "solutionTitle": "Presença Mobile One-Page de Alto Padrão",
+            "deliverable": "Página ultra-rápida no celular conectada ao WhatsApp.",
+            "revenueImpact": "Valorização imediata da marca e fidelização de clientes."
+          }
+        ],
+        "suggestedFee": "",
+        "potentialClientRevenue": "",
+        "objectionHandling": [
+          {
+            "objection": "Já tenho Instagram, preciso de site?",
+            "suggestedAnswer": "O Instagram é ótimo para fotos, mas o site One-Page garante que quem pesquisa no Google encontre você na hora com botão direto no WhatsApp."
+          }
+        ]
+      },
+      "suggestedServices": [
+        {
+          "title": "Presença Mobile One-Page",
+          "description": "Desenvolvimento visual responsivo para celulares.",
+          "deliverable": "Página moderna conectada ao WhatsApp."
+        }
+      ],
+      "visualConcept": {
+        "headline": "Peças exclusivas e o bom gosto que define a sua essência.",
+        "subheadline": "Vitrine digital de novidades e atendimento exclusivo no WhatsApp.",
+        "primaryColor": "#FF6B00",
+        "secondaryColor": "#6366F1",
+        "badge": "Curadoria de Estilo & Moda",
+        "keyBenefits": [
+          "Design visual sob medida que valoriza a marca",
+          "Botão direto no WhatsApp sem fricção",
+          "Carregamento instantâneo em qualquer celular",
+          "Destaque para avaliações e fotos reais"
+        ],
+        "features": [
+          {
+            "title": "Apresentação no Smartphone",
+            "description": "Experiência fluida e limpa para quem busca no Google.",
+            "icon": "Smartphone"
+          }
+        ],
+        "chatbotSample": {
+          "customerQuestion": "Olá! Gostaria de mais informações sobre a By Taty Cruz - Roupas Femininas Porto Seguro Bahia.",
+          "botReply": "Olá! Que alegria atender você na By Taty Cruz - Roupas Femininas Porto Seguro Bahia! Como podemos te ajudar hoje?"
+        },
+        "visualDNA": {
+          "vibe": "moda_editorial",
+          "vibeLabel": "Curadoria de Estilo & Moda",
+          "vibeDescription": "A essência, capricho e qualidade da By Taty Cruz - Roupas Femininas Porto Seguro Bahia em Porto Seguro.",
+          "typographyStyle": "sans",
+          "theme": {
+            "boardBg": "#0B111A",
+            "cardBg": "#111A26",
+            "innerCardBg": "#182434",
+            "primaryAccent": "#FF6B00",
+            "secondaryAccent": "#6366F1",
+            "textColor": "#F8FAFC",
+            "textMuted": "#94A3B8",
+            "borderColor": "#223247",
+            "accentBadgeBg": "#FF6B0025",
+            "accentBadgeText": "#FF6B00",
+            "buttonBg": "#FF6B00",
+            "buttonText": "#FFFFFF"
+          },
+          "highlightedRealAsset": "Reputação reconhecida e atendimento elogiado pelos clientes.",
+          "elevationConcept": "Presença mobile profissional com canal direto no WhatsApp."
+        }
+      }
+    }
+  }
+]
