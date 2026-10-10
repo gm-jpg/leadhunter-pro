@@ -24,7 +24,7 @@ export function Navbar({ onOpenSettings, onOpenContacts, developerName, isGoogle
               </span>
 
               {isGoogleLiveActive ? (
-                <span className="bg-emerald-100 text-emerald-800 text-[11px] font-extrabold px-2 py-0.5 rounded-full flex items-center gap-1 border border-emerald-300 animate-pulse">
+                <span className="bg-emerald-100 text-emerald-800 text-[11px] font-extrabold px-2 py-0.5 rounded-full flex items-center gap-1 border border-emerald-300">
                   <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Google Maps Ao Vivo
                 </span>
               ) : (
@@ -36,6 +36,11 @@ export function Navbar({ onOpenSettings, onOpenContacts, developerName, isGoogle
                   <Key className="w-3 h-3 text-violet-600" /> Modo Demo (Custo Zero)
                 </button>
               )}
+
+              <span className="bg-amber-100 text-amber-900 text-[11px] font-extrabold px-2 py-0.5 rounded-full flex items-center gap-1 border border-amber-300" title="Memória e histórico sincronizados na nuvem Firebase Firestore">
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+                <span>🔥 Firebase Cloud</span>
+              </span>
             </div>
             <p className="text-xs text-slate-500 hidden sm:block">
               Triagem de Comércios • Propostas Visuais com IA • WhatsApp 1-Clique

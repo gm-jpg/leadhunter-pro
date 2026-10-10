@@ -36,3 +36,4 @@ next-env.d.ts
 # binaries
 cloudflared.exe
 scratch/
+config.yml

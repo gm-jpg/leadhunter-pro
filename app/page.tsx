@@ -30,6 +30,11 @@ import {
 } from 'lucide-react';
 
 import initialPortoSeguroLeads from '@/lib/porto-seguro-20.json';
+import {
+  fetchLeadsFromFirebase,
+  syncBatchLeadsToFirebase,
+  saveContactToFirebase,
+} from '@/lib/firebase-leads';
 
 export default function DashboardPage() {
   const [leads, setLeads] = useState<Lead[]>(initialPortoSeguroLeads as Lead[]);
@@ -88,6 +93,33 @@ export default function DashboardPage() {
           console.error(e);
         }
       }
+
+      // Sincronizacao em segundo plano com a memoria permanente do Firebase Firestore
+      fetchLeadsFromFirebase()
+        .then((cloudLeads) => {
+          if (cloudLeads && cloudLeads.length > 0) {
+            setLeads((prev) => {
+              const map = new Map<string, Lead>();
+              prev.forEach((l) => map.set(l.id, l));
+              cloudLeads.forEach((cl) => {
+                const existing = map.get(cl.id);
+                if (existing) {
+                  map.set(cl.id, { ...existing, ...cl });
+                } else {
+                  map.set(cl.id, cl);
+                }
+              });
+              const merged = Array.from(map.values());
+              if (typeof window !== 'undefined') {
+                localStorage.setItem('lead_hunter_leads', JSON.stringify(merged));
+              }
+              return merged;
+            });
+          } else {
+            syncBatchLeadsToFirebase(initialPortoSeguroLeads as Lead[]);
+          }
+        })
+        .catch((e) => console.warn('[Firebase] Sync silencioso:', e));
     }
   }, []);
 
@@ -114,6 +146,8 @@ export default function DashboardPage() {
     if (typeof window !== 'undefined') {
       localStorage.setItem('lead_hunter_leads', JSON.stringify(newLeads));
     }
+    // Grava de forma persistente no Firebase Firestore
+    syncBatchLeadsToFirebase(newLeads).catch((e) => console.warn('[Firebase] Sync erro:', e));
   };
 
   const handleUpdateStatus = (id: string, status: LeadStatus) => {
@@ -224,6 +258,9 @@ export default function DashboardPage() {
         : l
     );
     updateAndSaveLeads(updatedList);
+    if (record) {
+      saveContactToFirebase(record).catch((e) => console.warn('[Firebase] Erro ao salvar contato:', e));
+    }
   };
 
   // Filtros de pipeline otimizados com useMemo (Zero overhead de re-renderização)
