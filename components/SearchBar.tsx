@@ -40,16 +40,16 @@ const BRAZILIAN_STATES = [
 
 export function SearchBar({ onSearch, isLoading }: Props) {
   const [query, setQuery] = useState('Pizzaria');
-  const [city, setCity] = useState('Campinas');
-  const [state, setState] = useState('SP');
+  const [city, setCity] = useState('Porto Seguro');
+  const [state, setState] = useState('BA');
   const [neighborhood, setNeighborhood] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
 
-  // Filtros Avançados
-  const [onlyWithoutWebsite, setOnlyWithoutWebsite] = useState(true);
-  const [onlyMobile, setOnlyMobile] = useState(true);
+  // Filtros Avançados (Padrão: DESATIVADOS para trazer TODOS os estabelecimentos da região sem descartar nada)
+  const [onlyWithoutWebsite, setOnlyWithoutWebsite] = useState(false);
+  const [onlyMobile, setOnlyMobile] = useState(false);
   const [hideContacted, setHideContacted] = useState(false);
-  const [minRating, setMinRating] = useState(4.0);
+  const [minRating, setMinRating] = useState(0);
   const [minOpportunityScore, setMinOpportunityScore] = useState(0);
 
   const handleSubmit = (e: React.FormEvent) => {

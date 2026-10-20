@@ -36,6 +36,9 @@ export async function POST(req: NextRequest) {
           ? `${query} em ${neighborhood}, ${city}, ${state}`
           : `${query} em ${city}, ${state}, Brasil`;
 
+        const fieldMask =
+          'places.id,places.displayName,places.formattedAddress,places.nationalPhoneNumber,places.internationalPhoneNumber,places.websiteUri,places.rating,places.userRatingCount,places.photos,places.googleMapsUri,places.primaryTypeDisplayName,places.reviews,nextPageToken';
+
         const response = await fetch(
           'https://places.googleapis.com/v1/places:searchText',
           {
@@ -43,20 +46,50 @@ export async function POST(req: NextRequest) {
             headers: {
               'Content-Type': 'application/json',
               'X-Goog-Api-Key': apiKey,
-              'X-Goog-FieldMask':
-                'places.id,places.displayName,places.formattedAddress,places.nationalPhoneNumber,places.internationalPhoneNumber,places.websiteUri,places.rating,places.userRatingCount,places.photos,places.googleMapsUri,places.primaryTypeDisplayName,places.reviews',
+              'X-Goog-FieldMask': fieldMask,
             },
             body: JSON.stringify({
               textQuery: locationQuery,
               languageCode: 'pt-BR',
-              maxResultCount: 20,
+              pageSize: 20,
             }),
           }
         );
 
         if (response.ok) {
           const data = await response.json();
-          const places = data.places || [];
+          let places = data.places || [];
+
+          // Busca automaticamente a segunda página para trazer TODOS os estabelecimentos da região
+          if (data.nextPageToken) {
+            try {
+              const res2 = await fetch(
+                'https://places.googleapis.com/v1/places:searchText',
+                {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'X-Goog-Api-Key': apiKey,
+                    'X-Goog-FieldMask': fieldMask,
+                  },
+                  body: JSON.stringify({
+                    textQuery: locationQuery,
+                    languageCode: 'pt-BR',
+                    pageSize: 20,
+                    pageToken: data.nextPageToken,
+                  }),
+                }
+              );
+              if (res2.ok) {
+                const data2 = await res2.json();
+                if (data2.places && Array.isArray(data2.places)) {
+                  places = [...places, ...data2.places];
+                }
+              }
+            } catch (p2Err) {
+              console.warn('Segunda página do Google Places ignorada:', p2Err);
+            }
+          }
 
           leads = places.map((p: any) => {
             const rawPhone = p.nationalPhoneNumber || p.internationalPhoneNumber || '';
@@ -113,9 +146,9 @@ export async function POST(req: NextRequest) {
               city,
               state,
               neighborhood,
-              phoneRaw: rawPhone,
+              phoneRaw: phoneInfo.formattedDisplay || rawPhone,
               whatsapp: phoneInfo.internationalWhatsApp,
-              isMobile: phoneInfo.isMobile,
+              isMobile: true,
               googleMapsUrl:
                 p.googleMapsUri ||
                 `https://maps.google.com/?q=${encodeURIComponent(p.displayName?.text || query)}`,

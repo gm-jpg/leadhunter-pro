@@ -51,33 +51,43 @@ export function parseBrazilianPhone(rawPhone: string | null | undefined): PhoneV
     // DDDs válidos no Brasil vão de 11 a 99
     if (dddNum >= 11 && dddNum <= 99) {
       isValidBR = true;
-      if (number.length === 9 && number.startsWith('9')) {
+      // No WhatsApp e telefonia móvel brasileira, o número OBRIGATORIAMENTE deve ter 9 dígitos
+      if (number.length === 8) {
+        // Se o número veio sem o 9º dígito (ex: 8 dígitos antigos ou cadastro incompleto), insere o '9'
+        number = '9' + number;
+      }
+
+      if (number.length === 9) {
         isMobile = true;
         formattedDisplay = `(${ddd}) ${number.substring(0, 5)}-${number.substring(5)}`;
-      } else if (number.length === 8) {
-        // Fixo ou celular antigo sem o 9
-        const firstDigit = number.charAt(0);
-        if (['6', '7', '8', '9'].includes(firstDigit)) {
-          // Provável celular que precisa de 9
-          isMobile = true;
-          number = '9' + number;
-          formattedDisplay = `(${ddd}) ${number.substring(0, 5)}-${number.substring(5)}`;
-        } else {
-          // Telefone fixo (iniciados com 2, 3, 4, 5)
-          isMobile = false;
-          formattedDisplay = `(${ddd}) ${number.substring(0, 4)}-${number.substring(4)}`;
-        }
       }
     }
   }
 
-  const internationalWhatsApp = isValidBR ? `55${ddd}${number}` : digits;
+  // O WhatsApp para o Brasil (DDI 55) sempre exige: 55 + DDD (2 dígitos) + 9 + 8 dígitos = 13 dígitos
+  let internationalWhatsApp = '';
+  if (isValidBR && ddd && number) {
+    const finalWaNumber = number.length === 8 ? '9' + number : number;
+    internationalWhatsApp = `55${ddd}${finalWaNumber}`;
+  } else {
+    // Fallback: se tiver 10 ou 11 dígitos, garante DDI 55 e 9º dígito
+    if (digits.length === 10) {
+      internationalWhatsApp = `55${digits.substring(0, 2)}9${digits.substring(2)}`;
+    } else if (digits.length === 11) {
+      internationalWhatsApp = `55${digits}`;
+    } else if (digits.length === 12 && digits.startsWith('55')) {
+      // 55 + DDD (2) + 8 dígitos -> insere o 9 entre o DDD e o número
+      internationalWhatsApp = `55${digits.substring(2, 4)}9${digits.substring(4)}`;
+    } else {
+      internationalWhatsApp = digits;
+    }
+  }
 
   return {
     raw: rawPhone,
     clean: digits,
     formattedDisplay: isValidBR ? formattedDisplay : rawPhone,
-    isMobile,
+    isMobile: true, // No contexto do WhatsApp todos devem ser acionáveis
     isValidBR,
     internationalWhatsApp,
   };

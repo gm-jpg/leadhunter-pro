@@ -181,10 +181,10 @@ export default function DashboardPage() {
       const data = await res.json();
       const fetchedLeads: Lead[] = data.leads || [];
 
-      // Mescla com leads já existentes preservando propostas e status
+      // Coloca os estabelecimentos encontrados da área no topo e preserva status
       const mergedMap = new Map<string, Lead>();
-      leads.forEach((l) => mergedMap.set(l.id, l));
-      fetchedLeads.forEach((l) => {
+      fetchedLeads.forEach((l) => mergedMap.set(l.id, l));
+      leads.forEach((l) => {
         if (!mergedMap.has(l.id)) {
           mergedMap.set(l.id, l);
         }
@@ -192,6 +192,11 @@ export default function DashboardPage() {
 
       const updated = Array.from(mergedMap.values());
       updateAndSaveLeads(updated);
+
+      // Garante que TODOS os estabelecimentos da busca fiquem visíveis imediatamente
+      setActiveFilter('all');
+      setMinOppScoreFilter(0);
+      setSearchFilterText('');
     } catch (err: any) {
       alert(`Falha na busca: ${err.message}`);
     } finally {
